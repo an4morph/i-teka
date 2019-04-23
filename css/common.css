@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Bold";
+    src: url("/fonts/GT-Walsheim-Pro-Bold.ttf");
+}
+@font-face {
+    font-family: "UltraBold";
+    src: url("/fonts/GT-Walsheim-Pro-Ultra-Bold.ttf");
+}
+@font-face {
+    font-family: "Light";
+    src: url("/fonts/GT-Walsheim-Pro-Light.ttf");
+}
+@font-face {
+    font-family: "Medium";
+    src: url("/fonts/GT-Walsheim-Pro-Medium.ttf");
+}
+@font-face {
+    font-family: "Regular";
+    src: url("/fonts/GT-Walsheim-Pro-Regular.ttf");
+}
+
+body {
+    background-color: #fbfbfb;
+    font-family: 'Regular';
+}
+body,h1,h2,h3,h4,ul,li {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'UltraBold';
+    font-size: 36px;
+    line-height: 51px;
+}
+h2 {
+    font-family: Medium;
+    font-size: 28px;
+    line-height: 28px;
+}
+h3 {
+    font-family: Bold;
+    font-size: 24px;
+    line-height: 26px;
+}
+h4 {
+    font-family: Bold;
+    font-size: 18px;
+    line-height: 26px;
+}
+p {
+    font-family: Light;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+
+/* icons */
+i.facebook {
+    background-image: url(/img/facebook.svg);
+    width: 30px;
+    height: 30px;
+}
+i.instagram {
+    background-image: url(/img/instagram.svg);
+    width: 30px;
+    height: 30px;
+}
+i.vkontakte {
+    background-image: url(/img/vk.svg);
+    width: 30px;
+    height: 30px;
+}
+i.copyright {
+    background-image: url(/img/copyright.svg);
+    width: 23px;
+    height: 23px;
+}
+/* end of icons */
+
+/* header */
+header {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Medium';
+    z-index: 20!important;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.header__logo {
+    background-image: url(/img/logo.svg);
+    width: 111px;
+    height: 34px;
+    background-size: cover;
+}
+.header__logo-min {
+    background-image: url(/img/logo.svg);
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+}
+.header__logo img {
+    width: 100%;
+}
+.header .row {
+    width: 100%;
+}
+.header__geo-icon {
+    margin-bottom: 7px;
+}
+.header__city-select-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header__menu {
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu__item {
+    font-size: 18px;
+}
+.header__menu__item:hover {
+    color: #713091;
+    cursor: pointer;
+    border-bottom: 2px solid #713091;
+    margin-top: 1px;
+}
+.header__logout {
+    cursor: pointer;
+    width: 15px;
+    min-width: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: flex-end;
+}
+.header__burger {
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    position: relative;
+}
+.header__burger i {
+    cursor: pointer;
+    font-size: 30px;
+}
+.header__burger__menu {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px 13px;
+}
+.header__burger__menu__item {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 0;
+    color: #000;
+}
+@media screen and (max-width: 370px) {
+    .header__city-select .label {
+        margin: 0 15px 0 5px!important;
+    }
+}
+/* end of header */
+
+
+/* footer */ 
+footer {
+    overflow: hidden;
+    background-color: #F0F0F0;
+    padding: 55px 0 38px 0;
+}
+footer h3 {
+    margin-bottom: 22px;
+}
+footer li {
+    margin-bottom: 6px;
+    list-style: none;
+}
+.footer__social {
+    display: flex;
+    width: 118px;
+    justify-content: space-between;
+}
+.footer__social i {
+    cursor: pointer;
+}
+.footer__copyright {
+    display: flex;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 27px;
+}
+.footer__copyright i {
+    margin-right: 16px;
+    min-width: 23px;
+}
+.footer__divider {
+    margin-top: 47px;
+    width: 200%;
+    margin-left: -50%;
+    height: 2px;
+    background-color: #DCDCDC;
+}
+@media screen and (max-width: 992px) {
+    footer {
+        padding: 10px 0;
+    }
+    footer h3 {
+        margin-top: 22px;
+    }
+}
+
+/* end of footer */ 

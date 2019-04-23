@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/drug-page.css">
+    <link rel="stylesheet" href="css/selectric.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+
+<body>
+    <!----header------->
+    <header>
+        <div class="header container">
+            <div class="row">
+                <div class="col-3 col-lg-2 d-none d-md-flex">
+                    <div class="header__logo"></div>
+                </div>
+                <div class="col-3 col-lg-2 d-flex d-md-none">
+                    <div class="header__logo-min"></div>
+                </div>
+
+                <div class="header__city-select-wrapper col-4 col-lg-2">
+                    <img class="header__geo-icon" src="img/geo-point.svg" alt="geo-point icon">
+                    <div class="header__city-select">
+                        <select id="city-select" class="city-select">
+                            <option>Алматы</option>
+                            <option>Нур-Султан</option>
+                            <option>Актау</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="header__menu col-7 d-none d-lg-flex">
+                    <div class="header__menu__item">
+                        Вызвать врача
+                    </div>
+                    <div class="header__menu__item">
+                        Записаться на прием
+                    </div>
+                    <div class="header__menu__item">
+                        Доставить лекарства
+                    </div>
+                </div>
+
+                <div class="header__burger col-4 d-flex d-lg-none">
+                    <i id="burger-icon" class="material-icons">menu</i>
+                    <div id="burger-menu" class="header__burger__menu ">
+                        <div class="header__burger__menu__item">
+                            Вызвать врача
+                        </div>
+                        <div class="header__burger__menu__item">
+                            Записаться на прием
+                        </div>
+                        <div class="header__burger__menu__item">
+                            Доставить лекарства
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1 header__logout">
+                    <img id="logout-icon" src="img/logout.svg" alt="logout icon">
+                    <div id="logout-menu" class="header__burger__menu ">
+                        <div class="header__burger__menu__item">
+                            Войти
+                        </div>
+                        <div class="header__burger__menu__item">
+                            Избранные
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!----end of header------->
+
+
+    <div class="container drug-page">
+        <div class="row">
+            <section class="col-sm-12 col-lg-7 drug-page-left">
+                <div class="reveal">
+                    <h1 class="drug-page__drug-name">
+                        Амлодипин Канон:
+                        инструкция по применению
+                    </h1>
+                    <h4 class="drug-page__release-form">Форма выпуска:</h4>
+                    <select id="release-form" class="drug-page__drug-form-select">
+                        <option>Таблетки</option>
+                        <option>Капсулы</option>
+                        <option>Суспензия</option>
+                        <option>Таблетки</option>
+                    </select>
+                    <div class="drug-page__mnn">
+                        <h4>МНН:</h4>
+                        <span>Амлодипин</span>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div class="drug-page__divider"></div>
+
+                    <div class="drug-page__price-title">
+                        <h3>Цены в аптеках Алматы</h3>
+                        <span>Изменить</span>
+                    </div>
+                    <div class="drug-page__price-block" id="where-to-buy">
+                        <div class="drug-page__price-block__close" id="where-to-buy-close">Закрыть</div>
+                    
+                        <span>1398 - 1500 тенге</span>
+                        <button>Где купить</button>
+                    </div>
+
+                    <h3 class="drug-page__anchor" id="m1">Лекарственная форма</h3>
+                    <p>Таблетки 5 мг и 10 мг</p>
+                    <h3 class="drug-page__anchor" id="m2">Состав</h3>
+                    <p>
+                        Одна таблетка содержит активное вещество - амлодипина бесилата 6,93 мг или 13,86 мг,
+                        в пересчете на амлодипин 5 мг или 10 мг, вспомогательные вещества: кальция стеарат,
+                        крахмал картофельный, лактозы моногидрат, магния стеарат, целлюлоза микрокристаллическая
+                    </p>
+                    <h3 class="drug-page__anchor" id="m3">Описание</h3>
+                    <p>
+                        Таблетки плоскоцилиндрической формы, белого или почти белого цвета, с риской и фаской
+                    </p>
+                    <h3 class="drug-page__anchor" id="m4">Фармакотерапевтическая группа</h3>
+                    <p>
+                        Блокаторы «медленных» кальциевых каналов. Блокаторы «медленных» кальциевых каналов
+                        селективные. Дигидропиридиновые производные. Амлодипин.
+                    </p>
+                    <h3 class="drug-page__anchor" id="m5">Фармакотерапевтическая группа1</h3>
+                    <p>
+                        Блокаторы «медленных» кальциевых каналов. Блокаторы «медленных» кальциевых каналов
+                        селективные. Дигидропиридиновые производные. Амлодипин.
+                    </p>
+                    <h3 class="drug-page__anchor" id="m6">Фармакотерапевтическая группа2</h3>
+                    <p>
+                        Блокаторы «медленных» кальциевых каналов. Блокаторы «медленных» кальциевых каналов
+                        селективные. Дигидропиридиновые производные. Амлодипин.
+                    </p>
+                </div>
+
+
+                <div class="reveal">
+                <div class="drug-page__apteka-prices">
+
+                    <h3>Цены в аптеках</h3>
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+
+
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+
+
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+
+
+                    <img src="img/advert-min.png" alt="mini baner" class="banner">
+
+
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+
+
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+
+
+                    <div class="drug-page__apteka-prices__item">
+                        <i class="drug-item"></i>
+                        <div class="drug-page__apteka-prices__item_name">
+                            <h2>Ново-пассит раствор х1</h2>
+                            <div class="drug-page__apteka-prices__item_name_bottom">
+                                <div class="drug-page__apteka-prices__item_name_bottom_receipt">
+                                    Без рецепта
+                                </div>
+                                <div class="drug-page__apteka-prices__item_name_bottom_price">
+                                    <span class="price-name">Цена:</span>
+                                    <span class="price-text">от 1300 тг</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="d-none d-md-flex">Где купить</button>
+                        <i class="material-icons d-block d-md-none">chevron_right</i>
+                    </div>
+
+                    <!--------=====================------------>
+                    <div class="drug-page__divider"></div>
+                    <!--------=====================------------>
+                    <img src="img/advert-min.png" alt="mini baner" class="banner">
+
+                </div>
+                </div>
+
+                <div class="drug-page__reviews">
+                    <h3>Амлодипин канон отзывы</h3>
+                    <p>Отзывы</p>
+                </div>
+            </section>
+
+            <!----left block------->
+            <section class="drug-page-right d-none d-lg-flex col-lg-5">
+                <img class="drug-page__drug-photo" src="img/drug-photo.png" alt="photo of drug">
+                <div class="drug-page__maintenance" id="maintenance">
+                    <h3>Содержание</h3>
+                    <ul>
+                        <li><a href="#m1">Лекарственная форма</a></li>
+                        <li><a href="#m2">Состав</a></li>
+                        <li><a href="#m3">Описание</a></li>
+                        <li><a href="#m4">Фармакотерапевтическая группа</a></li>
+                        <li><a href="#m5">Фармакотерапевтическая группа1</a></li>
+                        <li><a href="#m6">Фармакотерапевтическая группа2</a></li>
+                    </ul>
+                </div>
+                <img class="drug-page__big-banner" src="img/advert-big.png" alt="banner">
+            </section>
+            <!----end of left block------->
+        </div>
+    </div>
+
+    <!----footer------->
+    <footer>
+        <div class="container footer">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li>О проекте</li>
+                        <li>Вопросы ответы</li>
+                        <li>Пользовательское соглашение</li>
+                        <li>Контакты</li>
+                        <li>Карта сайта</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Служебное</h3>
+                    <ul>
+                        <li>Присоединиться к нам</li>
+                        <li>Войти в личный кабинет</li>
+                        <li>Разместить рекламу</li>
+                        <li>Скачать мобильное приложение IOS</li>
+                        <li>Скачать мобильное приложение Android</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li>Вызов врача</li>
+                        <li>Доставка лекарств</li>
+                        <li>Онлайн запись на прием</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Социальные сети</h3>
+                    <div class="footer__social">
+                        <i class="facebook"></i>
+                        <i class="instagram"></i>
+                        <i class="vkontakte"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__copyright">
+                <i class="copyright"></i>
+                2019 I-teka.kz. Использование материалов разрешено только при наличии активной ссылки на источник
+            </div>
+        </div>
+    </footer>
+    <!----end of footer------->
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/stickyjs/jquery.sticky.js"></script>
+    <script src="lib/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="lib/selectric/public/jquery.selectric.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
