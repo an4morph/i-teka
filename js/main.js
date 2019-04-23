@@ -15,12 +15,8 @@ $(document).ready(function () {
         disableOnMobile: false,
         nativeOnMobile: false
     });
-    $("where-to-buy").sticky({ topSpacing: 100 });
     $("header").sticky({ topSpacing: 0 });
-    $("#maintenance").sticky({ topSpacing: 57, zIndex: 20 });
-    $("#where-to-buy-close").on('click', () => {
-        $("#where-to-buy").unstick();
-    })
+    $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
     $('#burger-icon').on('click', () => {
         $('#burger-menu').toggle('fast')
