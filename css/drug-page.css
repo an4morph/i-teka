@@ -136,73 +136,73 @@
 .drug-page__price-block button:active {
     transform: scale(0.99);
 }
-.drug-page__apteka-prices h2 {
-    margin-bottom: 13px;
-}
-.drug-page__apteka-prices__item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-top: 32px;
-    margin-bottom: 20px;
-}
-.drug-page__apteka-prices__item i.drug-item {
-    width: 52px;
-    height: 53px;
-    background-image: url(/img/drug-icon.svg);
-    margin-right: 33px;
-    background-repeat: no-repeat;
-}
-.drug-page__apteka-prices__item i.drug-item:hover {
-    background-image: url(/img/drug-icon-fill.svg);
-}
-.drug-page__apteka-prices__item_name {
-    flex: 1;
-    margin-bottom: 13px;
-}
-.drug-page__apteka-prices__item_name_bottom {
-    display: flex;
-    justify-content: space-between;
-}
-.drug-page__apteka-prices__item_name_bottom_receipt {
-    color: #53994D;
-    font-family: Regular;
-}
-.drug-page__apteka-prices__item_name_bottom_price{
-    font-family: Bold;
-} 
-.drug-page__apteka-prices__item_name_bottom_price .price-text {
-    color: #823EA0;
-} 
-.drug-page__apteka-prices__item button {
-    cursor: pointer;
-    border: 1px solid #713091;
-    border-radius: 24px;
-    color: #713091;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 16px 49px;
-    margin-left: 15px;
-    background-color: transparent;
-}
-.drug-page__apteka-prices__item button:hover {
-    color: #fff;
-    background: linear-gradient(178.91deg, #AA5EC4 -104.96%, #713091 184.38%);
-}
-.drug-page__apteka-prices__item button:focus {
-    outline: none;
-}
-.drug-page__apteka-prices__item button:active {
-    transform: scale(0.98);
-}
-.drug-page__apteka-prices .banner {
-    margin-top: 36px;
-    width: 100%;
-}
 .drug-page__reviews {
     margin-bottom: 25px;
     margin-top: 40px;
+}
+.drug-page__apteka-prices h2 {
+    margin-bottom: 10px;
+}
+.drug-page__apteka-prices h3 {
+    margin-bottom: 43px;
+}
+.drug-page__apteka-prices__item {
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.drug-page__apteka-prices__item > div:last-child {
+    padding: 0;
+    text-align: center;
+}
+.drug-page__apteka-prices__item > div:last-child > div {
+    display: flex;
+    align-items: center;
+}
+.drug-page__apteka-prices__price-col {
+    font-family: Bold;
+    font-size: 18px;
+    color: #8540A3;
+}
+.drug-page__apteka-prices > .title > div {
+    padding-left: 0;
+}
+.drug-page__apteka-prices > .title > div:first-child {
+    padding-left: 15px;
+}
+.drug-page__apteka-prices__phone-col i {
+    color: #8540A3;
+    font-size: 34px;
+}
+.drug-page__apteka-prices__item-address  {
+    margin-bottom: 7px;
+    font-family: Light;
+    font-size: 18px;
+}
+.drug-page__apteka-prices__item-worktime  {
+    color: #53994D;
+    font-size: 18px;
+}
+.drug-page__apteka-prices .banner {
+    width: 100%;
+}
+.drug-page__apteka-prices__item-reklama {
+    color: #F26060;
+    font-size: 14px;
+    margin-right: 35px;
+}
+.drug-page__apteka-prices__item-additional {
+    display: flex;
+    font-family: Light;
+    margin-top: 9px;
+}
+.drug-page__apteka-prices__item-additional-item .check_circle {
+    color: #53994D;
+    font-size: 14px;
+}
+.drug-page__apteka-prices__item-additional-item .add_circle {
+    color: #F26060;
+    font-size: 14px;
+    transform: rotate(45deg);
 }
 
 @media screen and (max-width: 992px) {
