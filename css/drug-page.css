@@ -23,11 +23,10 @@
 .drug-page__top-menu {
     margin-top: 101px;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .drug-page__top-menu__item {
     font-size: 18px;
-    width: 100%;
 }
 .drug-page__release-form {
     margin-bottom: 13px;
