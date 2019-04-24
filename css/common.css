@@ -178,10 +178,12 @@ header {
     justify-content: space-around;
     align-items: center;
     border-top: 9px solid #fbfbfb;
-    height: 35px;
+    padding: 10px 0;
+    flex-wrap: wrap;
 }
 .secondary-header__menu-item {
     font-size: 18px;
+    padding: 0 15px;
 }
 .secondary-header__menu-item.active {
     color: #713091;
