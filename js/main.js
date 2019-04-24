@@ -107,16 +107,6 @@ const onScroll = () => {
 
         currLink.ref.addClass("active");
     }
-
-    // const lastLink = $('.drug-page__anchor').last()
-    // const lastPos = lastLink.last().next().position().top + lastLink.height()
-
-    // if (links.some(link => console.log(link) || link.ref.visible(true))) {
-    //     $("#maintenance").unstick();
-    // } else {
-    //     $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
-    // }
-    
 }
 
 
