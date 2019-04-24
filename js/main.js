@@ -107,6 +107,20 @@ const onScroll = () => {
 
         currLink.ref.addClass("active");
     }
+
+
+    const isStopMaintenance =  bottom_of_element($('.first-section')) - bottom_of_element($('#maintenance'))
+    const isStartMaintenance = top_of_screen - top_of_element($('#maintenance'))
+    
+    if (isStopMaintenance < 0) {
+        $('#maintenance').addClass('bottom')
+        $('#maintenance').unstick()
+    } 
+
+    if ($('#maintenance').hasClass('bottom') && isStartMaintenance < 0) {
+        $('#maintenance').removeClass('bottom')
+        $('#maintenance').sticky({ topSpacing: 107, zIndex: 20 })
+    }
 }
 
 

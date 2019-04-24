@@ -9,6 +9,9 @@
 .drug-page-right .sticky-wrapper {
     width: 100%;
 }
+.drug-page-left {
+    position: relative;
+}
 .drug-page-left h3 {
     margin-top: 23px;
     margin-bottom: 18px;
@@ -47,6 +50,10 @@
     padding-bottom: 17px;
     margin-top: 23px;
 }
+.drug-page__maintenance.bottom {
+    position: absolute;
+    bottom: 0;
+}
 .drug-page__maintenance h3 {
     margin-bottom: 26px;
     margin-left: 98px;
@@ -54,6 +61,7 @@
 .drug-page__maintenance li {
     list-style: none;
     margin-left: 98px;
+    margin-right: 24px;
     font-size: 18px;
     line-height: 26px;
 }
