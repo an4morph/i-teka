@@ -55,7 +55,7 @@ $(document).ready(function () {
         var target = this.hash,
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 120
+            'scrollTop': $target.offset().top - 140
         }, 500, 'swing', function () {
             if(history.pushState) {
                 history.pushState(null, null, target);
@@ -69,29 +69,33 @@ $(document).ready(function () {
 });
 
 const onScroll = () => {
-    var scrollPos = $(document).scrollTop() + 120;
+    const top_of_element = (el) => el.offset().top;
+    const bottom_of_element = (el) => el.offset().top + el.outerHeight();
+    const bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    const top_of_screen = $(window).scrollTop() + 140;
+
     let links = []
     
     $('.drug-page__anchor').each(function () {
         var currLink = $(this);
         var ref = $(`a[href="#${currLink.attr("id")}"]`);
-        const start = currLink.position().top
-        const end = currLink.next('p').position().top + currLink.next('p').outerHeight(true)
+        const start = top_of_element(currLink)
+        const end = bottom_of_element(currLink.next('p'))
         links.push({ id: currLink.attr("id"), start, end, ref })
     });
 
-    const isContain = (scrollPos) => {
+    const isContain = (top_of_screen) => {
         let obj = null
         links.forEach(link => {
             link.ref.removeClass("active");
-            if (link.start <= scrollPos && link.end >= scrollPos) {
+            if (link.start <= top_of_screen && link.end >= top_of_screen) {
                 obj = link
             }
         })
         return obj
     }
 
-    const currLink = isContain(scrollPos)
+    const currLink = isContain(top_of_screen)
     if (currLink) {
         const hash = `#${currLink.id}`
         if(history.pushState) {
@@ -104,7 +108,14 @@ const onScroll = () => {
         currLink.ref.addClass("active");
     }
 
-    
+    // const lastLink = $('.drug-page__anchor').last()
+    // const lastPos = lastLink.last().next().position().top + lastLink.height()
+
+    // if (links.some(link => console.log(link) || link.ref.visible(true))) {
+    //     $("#maintenance").unstick();
+    // } else {
+    //     $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
+    // }
     
 }
 
