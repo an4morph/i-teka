@@ -7,6 +7,11 @@
   flex-wrap: wrap;
   width: calc(100% + 20px);
 }
+.main-page__content h3 {
+  font-family: Regular;
+  margin-bottom: 15px;
+  margin-top: 55px;
+}
 .main-page__content menu li {
   list-style: none;
   width: calc(100% - 20px);
@@ -124,4 +129,48 @@
 }
 .main-page__search button:focus {
   outline: none;
+}
+
+.main-page__join-us {
+  background-image: url(/img/doctor-bg.png);
+  padding-top: 42px;
+  padding-bottom: 86px;
+  background-size: cover;
+}
+.main-page__join-us h1 {
+  color: #fff;
+}
+.main-page__join-us__row {
+  
+}
+.main-page__join-us__row .box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12%;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.main-page__join-us__row h3 {
+  background-color: #fff;
+  font-family: UltraBold;
+  font-size: 14px;
+  color: #713091;
+}
+.main-page__join-us__row p {
+  font-size: 18px;
+  font-family: Light;
+}
+.main-page__join-us__row a {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(179.11deg, #AA5EC4 -104.96%, #713091 184.38%);
+  border-radius: 24px;
+  box-shadow: 0px 4px 20px #71309199;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
