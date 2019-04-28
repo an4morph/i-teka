@@ -1,5 +1,11 @@
+const ScrollReveal = require("scrollreveal").default;
+const $ = require("jquery");
+require("jquery-sticky");
+require("./selects");
+
+
 $(document).ready(function () {
-    // customize selects with javascript
+    window.sr = ScrollReveal({ reset: true })
     ScrollReveal().reveal('.reveal', {
         delay: 200,
         duration: 1000,
@@ -7,14 +13,7 @@ $(document).ready(function () {
         origin: 'bottom',
         opacity: 0
     })
-    $('#city-select').selectric({
-        disableOnMobile: false,
-        nativeOnMobile: false
-    });
-    $('#release-form').selectric({
-        disableOnMobile: false,
-        nativeOnMobile: false
-    });
+    
     $("header").sticky({ topSpacing: 0 });
     $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
