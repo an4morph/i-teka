@@ -23,6 +23,7 @@
   font-family: Bold;
   padding: 10%;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .main-page__content menu li .box.active {
   background: linear-gradient(176.12deg, #AA5EC4 -104.96%, #713091 184.38%);
@@ -71,4 +72,16 @@
 }
 .main-page__content menu li .box.active i.menu-img-ills {
   background-image: url(/img/main-menu-icons/ills-w.svg);
+}
+
+.main-page__also-intrested {
+  margin-bottom: 29px;
+  margin-top: 50px;
+}
+.main-page__also-intrested h1 {
+  margin-bottom: 42px;
+}
+.main-page__also-intrested__row img {
+  width: 100%;
+  margin-bottom: 20px;
 }

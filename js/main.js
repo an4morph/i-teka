@@ -2,6 +2,7 @@ const ScrollReveal = require("scrollreveal").default;
 const $ = require("jquery");
 require("jquery-sticky");
 require("./selects");
+require("./main-page");
 
 
 $(document).ready(function () {
