@@ -1,3 +1,6 @@
+.main-page__content {
+  background-color: #eee;
+}
 .main-page__content menu {
   padding-inline-start: 0px;
   margin: 0;
@@ -10,7 +13,7 @@
 .main-page__content h3 {
   font-family: Regular;
   margin-bottom: 15px;
-  margin-top: 55px;
+  padding-top: 55px;
 }
 .main-page__content menu li {
   list-style: none;
