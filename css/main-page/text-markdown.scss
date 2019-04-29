@@ -1,3 +1,5 @@
+@import '../vars.scss';
+
 .main-page h1 {
   font-family: Regular;
   font-size: 24px;
@@ -5,6 +7,11 @@
 .main-page h2 {
   font-family: UltraBold;
   font-size: 36px;
+}
+.main-page h3 {
+  font-family: UltraBold;
+  font-size: 24px;
+  color: $mainColor;
 }
 .main-page a {
   text-decoration: none;
@@ -16,13 +23,4 @@
 }
 .main-page span.bold {
   font-family: Bold;
-}
-
-.main-page__news h3 {
-  font-family: Regular;
-  font-size: 24px;
-}
-.main-page__news h4 {
-  font-family: UltraBold;
-  font-size: 36px;
 }

@@ -1,175 +1,100 @@
 @import '../vars.scss';
-// @import './text-markdown.scss';
+@import './text-markdown.scss';
+@import './menu.scss';
+@import './search.scss';
 
-.main-page__content {
-  background-color: #eee;
-}
-.main-page__content menu {
-  padding-inline-start: 0px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: calc(100% + 20px);
-}
-.main-page__content h3 {
-  font-family: Regular;
-  margin-bottom: 15px;
-  padding-top: 55px;
-}
-.main-page__content menu li {
-  list-style: none;
-  width: calc(100% - 20px);
-  padding: 0 20px 0 0;
-}
-.main-page__content menu li .box {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.06);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #713091;
-  font-family: Bold;
-  padding: 10%;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-.main-page__content menu li .box.active {
-  background: linear-gradient(176.12deg, #AA5EC4 -104.96%, #713091 184.38%);
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-  color: #fff;
-}
-.main-page__content menu li .box i {
-  width: 50%;
-  padding-bottom: 65%;
-  background-repeat: no-repeat;
-  display: block;
-  background-size: contain;
-}
-.main-page__content menu li .box i.menu-img-apteki {
-  background-image: url(/img/main-menu-icons/apteki.svg);
-}
-.main-page__content menu li .box.active i.menu-img-apteki {
-  background-image: url(/img/main-menu-icons/apteki-w.svg);
-}
-.main-page__content menu li .box i.menu-img-drugs {
-  background-image: url(/img/main-menu-icons/drugs.svg);
-}
-.main-page__content menu li .box.active i.menu-img-drugs {
-  background-image: url(/img/main-menu-icons/drugs-w.svg);
-}
-.main-page__content menu li .box i.menu-img-medcenters {
-  background-image: url(/img/main-menu-icons/medcenters.svg);
-}
-.main-page__content menu li .box.active i.menu-img-medcenters {
-  background-image: url(/img/main-menu-icons/medcenters-w.svg);
-}
-.main-page__content menu li .box i.menu-img-doctors {
-  background-image: url(/img/main-menu-icons/doctors.svg);
-}
-.main-page__content menu li .box.active i.menu-img-doctors {
-  background-image: url(/img/main-menu-icons/doctors-w.svg);
-}
-.main-page__content menu li .box i.menu-img-services {
-  background-image: url(/img/main-menu-icons/services.svg);
-}
-.main-page__content menu li .box.active i.menu-img-services {
-  background-image: url(/img/main-menu-icons/services-w.svg);
-}
-.main-page__content menu li .box i.menu-img-ills {
-  background-image: url(/img/main-menu-icons/ills.svg);
-}
-.main-page__content menu li .box.active i.menu-img-ills {
-  background-image: url(/img/main-menu-icons/ills-w.svg);
-}
+// .main-page__content {
+//   background-color: #eee;
+// }
 
-.main-page__also-intrested {
-  margin-bottom: 29px;
-  margin-top: 50px;
-}
-.main-page__also-intrested h1 {
-  margin-bottom: 42px;
-}
-.main-page__also-intrested__row img {
-  width: 100%;
-  margin-bottom: 20px;
-}
+// .main-page__content h3 {
+//   font-family: Regular;
+//   margin-bottom: 15px;
+//   padding-top: 55px;
+// }
 
-.main-page__search input {
-  padding: 15px 9%;
-  font-size: 24px;
-  width: 100%;
-  font-family: Regular;
-  border-radius: 38.5px;
-  border: none;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
-}
-.main-page__search input[placeholder]          {color: #4F4F4F;}
-.main-page__search input::-moz-placeholder     {color: #4F4F4F;} 
-.main-page__search input:-moz-placeholder      {color: #4F4F4F;} 
-.main-page__search input:-ms-input-placeholder {color: #4F4F4F;} 
-.main-page__search form {
-  position: relative;
-  margin-top: 27px;
-  margin-bottom: 78px;
-}
-.main-page__search button {
-  @extend %button;
-  position: absolute;
-  top: calc(50% - 22px);
-  width: 20%;
-  right: 10px;
-  padding-top: 5px;
-  height: calc(100% - 20px);
-}
-.main-page__search input:focus {
-  outline: none;
-  box-shadow: 0px 0px 5px #713091;
-}
-.main-page__search button:focus {
-  outline: none;
-}
+// .main-page__also-intrested {
+//   margin-bottom: 29px;
+//   margin-top: 50px;
+// }
+// .main-page__also-intrested h1 {
+//   margin-bottom: 42px;
+// }
+// .main-page__also-intrested__row img {
+//   width: 100%;
+//   margin-bottom: 20px;
+// }
 
-.main-page__join-us {
-  background-image: url(/img/doctor-bg.png);
-  padding-top: 42px;
-  padding-bottom: 86px;
-  background-size: cover;
-}
-.main-page__join-us h1 {
-  color: #fff;
-}
-.main-page__join-us__row {
+// .main-page__join-us {
+//   background-image: url(/img/doctor-bg.png);
+//   padding-top: 42px;
+//   padding-bottom: 86px;
+//   background-size: cover;
+// }
+// .main-page__join-us h1 {
+//   color: #fff;
+// }
+// .main-page__join-us__row {
   
-}
-.main-page__join-us__row .box {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 12%;
-  margin-top: 42px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.main-page__join-us__row h3 {
-  background-color: #fff;
-  font-family: UltraBold;
-  font-size: 14px;
-  color: #713091;
-}
-.main-page__join-us__row p {
-  font-size: 18px;
-  font-family: Light;
-}
-.main-page__join-us__row a {
-  @extend %button;
-  text-decoration: none;
-  box-shadow: 0px 4px 20px #71309199;
-  padding: 15px;
-  width: 100%;
-  display: block;
-  text-align: center;
+// }
+// .main-page__join-us__row .box {
+//   background-color: #fff;
+//   border-radius: 10px;
+//   padding: 12%;
+//   margin-top: 42px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   height: 100%;
+// }
+// .main-page__join-us__row h3 {
+//   background-color: #fff;
+//   font-family: UltraBold;
+//   font-size: 14px;
+//   color: #713091;
+// }
+// .main-page__join-us__row p {
+//   font-size: 18px;
+//   font-family: Light;
+// }
+// .main-page__join-us__row a {
+//   @extend %button;
+//   text-decoration: none;
+//   box-shadow: 0px 4px 20px #71309199;
+//   padding: 15px;
+//   width: 100%;
+//   display: block;
+//   text-align: center;
+// }
+
+.main-page .third-block {
+  background-color: #5cf;
+  padding: 42px 0 56px 0;
+
+  .box {
+    background-color: #fff;
+    padding: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .box-outer {
+    padding-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 42px;
+  }
+  h3, p {
+    margin-bottom: 10%;
+  }
+  a {
+    @extend %button;
+    box-shadow: 0px 4px 20px #71309199;
+    padding: 17px 15px 15px 15px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }

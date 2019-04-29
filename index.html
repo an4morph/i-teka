@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="dist/bundle.css"> 
+
+  <link rel="stylesheet" href="dist/bundle.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Главная</title>
 </head>
@@ -77,57 +77,68 @@
     </div>
   </header>
   <!----end of header------->
-  <div class="main-page__content">
-    <div class="container first-cont">
-      <div class="main-page__search">
-        <h3>Единый портал записи к врачу, поиска клиник, лекарств и медицинских услуг</h3>
-        <h1>Найдите из 31 430 препаратов в 438 аптеках Алматы</h1>
-        <form>
-          <input type="text" placeholder="Введите название лекарства, аптек и находите врачей"
-            class="main-page__search">
-          <button type="submit">Найти</button>
-        </form>
+
+
+  <!----first----->
+  <div class="main-page">
+    <div class="first-block">
+      <div class="container">
+        <div class="main-page__search">
+          <h1>Единый портал записи к врачу, поиска клиник, лекарств и медицинских услуг</h1>
+          <h2>Найдите из 31 430 препаратов в 438 аптеках Алматы</h2>
+          <form>
+            <input type="text" placeholder="Введите название лекарства, аптек и находите врачей"
+              class="main-page__search">
+            <button type="submit">Найти</button>
+          </form>
+        </div>
+        <menu class="row">
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-apteki"></i>
+              <div class="text">Аптеки</div>
+            </div>
+          </li>
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-drugs"></i>
+              <div class="text">Лекарства</div>
+            </div>
+          </li>
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-medcenters"></i>
+              <div class="text">Медцентры</div>
+            </div>
+          </li>
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-doctors"></i>
+              <div class="text">Врачи</div>
+            </div>
+          </li>
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-services"></i>
+              <div class="text">Медуслуги</div>
+            </div>
+          </li>
+          <li class="col-6 col-md-4 col-lg-2">
+            <div class="box">
+              <i class="menu-img-ills"></i>
+              <div class="text">Заболевания</div>
+            </div>
+          </li>
+        </menu>
       </div>
-      <menu class="row">
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-apteki"></i>
-            <div class="text">Аптеки</div>
-          </div>
-        </li>
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-drugs"></i>
-            <div class="text">Лекарства</div>
-          </div>
-        </li>
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-medcenters"></i>
-            <div class="text">Медцентры</div>
-          </div>
-        </li>
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-doctors"></i>
-            <div class="text">Врачи</div>
-          </div>
-        </li>
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-services"></i>
-            <div class="text">Медуслуги</div>
-          </div>
-        </li>
-        <li class="col-6 col-md-4 col-lg-2">
-          <div class="box">
-            <i class="menu-img-ills"></i>
-            <div class="text">Заболевания</div>
-          </div>
-        </li>
-      </menu>
-      <div class="main-page__also-intrested">
-        <h1>Вас так же заинтересует</h1>
+    </div>
+    <!----first----->
+
+
+    <!----second----->
+    <div class="second-block">
+      <div class="container">
+        <h2>Вас так же заинтересует</h2>
         <div class="row main-page__also-intrested__row">
           <div class="col-12 col-md-4 item">
             <img src="img/intresting.png" alt="intresting item">
@@ -141,37 +152,50 @@
         </div>
       </div>
     </div>
-    <div class="main-page__join-us">
+    <!----second----->
+
+
+    <!----third----->
+    <div class="third-block">
       <div class="container">
-        <h1>Присоединиться к нам</h1>
-        <div class="main-page__join-us__row row">
-          <div class="col-12 col-md-4">
-              <div class="box">
-                  <h4>Присоединить аптеку</h4>
-                  <p>Разместите у нас информацию о Вашей аптеке, повысьте количество покупателей на 10% – 30% ежемесячно</p>
-                  <a href="#" type="button">Присоединить</a>
-                </div>
+        <h2>Присоединиться к нам</h2>
+        <div class="row">
+          <div class="box-outer col-12 col-md-6 col-lg-4">
+            <div class="box">
+              <h3>Присоединить аптеку</h3>
+              <p>Разместите у нас информацию о Вашей аптеке, повысьте количество покупателей на 10% – 30% ежемесячно</p>
+              <a href="#" type="button">Присоединить</a>
+            </div>
           </div>
-          <div class="col-12 col-md-4">
-              <div class="box">
-                  <h4>Подключить мед.учереждение</h4>
-                  <p>Ваши пациенты смогут в кратчайшее время найти Вашу клинику и записаться на прием в онлайн режиме за 2
-                    минуты</p>
-                  <a href="#" type="button">Подключить</a>
-                </div>
+          <div class="box-outer col-12 col-md-6 col-lg-4">
+            <div class="box">
+              <h3>Подключить мед.учереждение</h3>
+              <p>Ваши пациенты смогут в кратчайшее время найти Вашу клинику и записаться на прием в онлайн режиме за 2
+                минуты</p>
+              <a href="#" type="button">Подключить</a>
+            </div>
           </div>
-          <div class="col-12 col-md-4">
-              <div class="box">
-                  <h4>Добавить врача</h4>
-                  <p>Расскажите о себе на нашем сервисе, о Вас узнают тысячи пользователей портала и будут стремиться попасть
-                    к Вам на прием</p>
-                  <a href="#" type="button">Добавить</a>
-                </div>
+          <div class="box-outer col-12 col-md-12 col-lg-4">
+            <div class="box">
+              <h3>Добавить врача</h3>
+              <p>Расскажите о себе на нашем сервисе, о Вас узнают тысячи пользователей портала и будут стремиться
+                попасть
+                к Вам на прием</p>
+              <a href="#" type="button">Добавить</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!----third----->
+
+
+  <!----forth----->
+  <!----forth----->
+
+
+
   <!----footer------->
   <footer>
     <div class="container footer">
