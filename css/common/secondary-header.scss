@@ -1,0 +1,27 @@
+.secondary-header-wrapper {
+  background-color: #fff;
+}
+.secondary-header {
+  display: flex;
+  box-sizing: content-box;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 9px solid #fbfbfb;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+.secondary-header__menu-item {
+  font-size: 18px;
+  padding: 0 15px;
+}
+.secondary-header__menu-item.active {
+  color: #713091;
+  font-family: Bold;
+}
+.secondary-header__menu-item:hover {
+  text-decoration: underline;
+}
+.secondary-header a {
+  text-decoration: none;
+  color: #000;
+}

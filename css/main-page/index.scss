@@ -1,3 +1,6 @@
+@import '../vars.scss';
+// @import './text-markdown.scss';
+
 .main-page__content {
   background-color: #eee;
 }
@@ -113,18 +116,13 @@
   margin-bottom: 78px;
 }
 .main-page__search button {
-  cursor: pointer;
+  @extend %button;
   position: absolute;
   top: calc(50% - 22px);
   width: 20%;
   right: 10px;
-  font-family: Medium;
   padding-top: 5px;
   height: calc(100% - 20px);
-  font-size: 18px;
-  background: linear-gradient(179.11deg, #AA5EC4 -104.96%, #713091 184.38%);
-  border-radius: 24px;
-  color: #fff;
 }
 .main-page__search input:focus {
   outline: none;
@@ -167,10 +165,8 @@
   font-family: Light;
 }
 .main-page__join-us__row a {
+  @extend %button;
   text-decoration: none;
-  color: #fff;
-  background: linear-gradient(179.11deg, #AA5EC4 -104.96%, #713091 184.38%);
-  border-radius: 24px;
   box-shadow: 0px 4px 20px #71309199;
   padding: 15px;
   width: 100%;

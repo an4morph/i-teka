@@ -3,6 +3,8 @@ const $ = require("jquery");
 require("jquery-sticky");
 require("./selects");
 require("./main-page");
+require("../css/index.scss");
+require('bootstrap-scss/bootstrap-grid.scss');
 
 
 $(document).ready(function () {

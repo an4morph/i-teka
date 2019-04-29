@@ -1,0 +1,20 @@
+$gradient: linear-gradient(178.39deg, #AA5EC4 -104.96%, #713091 184.38%);
+$mainColor: #713091;
+$grey1: #F7F7F7;
+
+%button {
+  cursor: pointer;
+  font-family: Medium;
+  color: #fff;
+  background: $gradient;
+  border-radius: 24px;
+  font-size: 18px;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}

@@ -1,0 +1,88 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Medium';
+  z-index: 20!important;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.header__logo {
+  background-image: url(/img/logo.svg);
+  width: 111px;
+  height: 34px;
+  background-size: cover;
+}
+.header__logo-min {
+  background-image: url(/img/logo.svg);
+  width: 34px;
+  height: 34px;
+  background-size: cover;
+}
+.header__logo img {
+  width: 100%;
+}
+.header .row {
+  width: 100%;
+}
+.header__geo-icon {
+  margin-bottom: 7px;
+}
+.header__city-select-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu__item {
+  font-size: 18px;
+}
+.header__menu__item:hover {
+  color: #713091;
+  cursor: pointer;
+  border-bottom: 2px solid #713091;
+  margin-top: 1px;
+}
+.header__logout {
+  cursor: pointer;
+  width: 15px;
+  min-width: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: flex-end;
+}
+.header__burger {
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  position: relative;
+}
+.header__burger i {
+  cursor: pointer;
+  font-size: 30px;
+}
+.header__burger__menu {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 45px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 8px 13px;
+}
+.header__burger__menu__item {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 0;
+  color: #000;
+}
+@media screen and (max-width: 370px) {
+  .header__city-select .label {
+      margin: 0 15px 0 5px!important;
+  }
+}
