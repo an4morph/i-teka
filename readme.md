@@ -10,4 +10,4 @@ To start project run:
 ```
 npm start
 ```
-It will run by `serve` here -  https://localhost:5000/
+It will run by `serve` here -  http://localhost:5000/
