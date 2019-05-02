@@ -14,24 +14,24 @@
 <body class="terms-of-use-body">
   <!----header------->
   <header>
-    <div class="header container">
+    <div class="container">
       <div class="row">
         <div class="col-3 col-lg-2 d-none d-md-flex">
-          <div class="header__logo"></div>
+          <!-- <div class="logo"></div> -->
+          <img src="img/logo.svg" alt="logo" class="logo">
         </div>
         <div class="col-3 col-lg-2 d-flex d-md-none">
-          <div class="header__logo-min"></div>
+          <div class="logo-min"><img src="img/logo.svg" alt="logo"></div>
         </div>
 
-        <div class="header__city-select-wrapper col-4 col-lg-2">
-          <img class="header__geo-icon" src="img/geo-point.svg" alt="geo-point icon">
-          <div class="header__city-select">
-            <select id="city-select" class="city-select">
-              <option>Алматы</option>
-              <option>Нур-Султан</option>
-              <option>Актау</option>
-            </select>
-          </div>
+        <div class="city-select col-4 col-lg-2">
+          <i class="material-icons">location_on</i>
+          <select id="city-select" class="city-select">
+            <option>Алматы</option>
+            <option>Нур-Султан</option>
+            <option>Актау</option>
+          </select>
+          <i class="material-icons">expand_more</i>
         </div>
 
         <div class="header__menu col-7 d-none d-lg-flex">
