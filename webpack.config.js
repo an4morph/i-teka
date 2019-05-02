@@ -10,6 +10,7 @@ module.exports = {
     filename: 'main.js',
     publicPath: 'dist/',
   },
+  mode: 'development',
   module: {
     rules: [
       {
