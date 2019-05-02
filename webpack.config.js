@@ -4,10 +4,10 @@ const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 
 module.exports = {
-  entry: './js/main.js',
+  entry: './js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'main.js',
     publicPath: 'dist/',
   },
   module: {
@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: 'styles.css'
     })
   ],
 }
