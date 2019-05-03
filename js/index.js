@@ -3,6 +3,7 @@ const $ = require("jquery");
 require("jquery-sticky");
 require("selectric");
 require("../scss/index.scss");
+require("./custom-selects");
 require('bootstrap-scss/bootstrap-grid.scss');
 
 
@@ -25,10 +26,10 @@ $(document).ready(function () {
         })
     })
 
-    $('#city-select').selectric({
-    disableOnMobile: false,
-    nativeOnMobile: false
-    });
+    // $('#city-select').selectric({
+    // disableOnMobile: false,
+    // nativeOnMobile: false
+    // });
     $('#release-form').selectric({
     disableOnMobile: false,
     nativeOnMobile: false
