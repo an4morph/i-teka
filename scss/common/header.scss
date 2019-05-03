@@ -16,17 +16,19 @@ header .logo-min {
   }
 }
 header .city-select {
-  display: flex;
-  align-items: center;
   font-size: 18px;
+  display: flex;
+  width: auto;
 
   i.geo {
     color: $mainColor;
     font-size: 21px;
   }
-  i.arrow {
-    color: #000;
-    font-size: 20px;
+  .select-selected {
+    padding-right: 62px;
+  }
+  .select-selected:after {
+    right: 40px;
   }
 }
 

@@ -13,7 +13,7 @@ for (i = 0; i < x.length; i++) {
   /* For each element, create a new DIV that will contain the option list: */
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < selElmnt.length; j++) {
+  for (j = 0; j < selElmnt.length; j++) {
     /* For each option in the original select element,
     create a new DIV that will act as an option item: */
     c = document.createElement("DIV");
