@@ -26,10 +26,6 @@ $(document).ready(function () {
         })
     })
 
-    // $('#city-select').selectric({
-    // disableOnMobile: false,
-    // nativeOnMobile: false
-    // });
     $('#release-form').selectric({
     disableOnMobile: false,
     nativeOnMobile: false
@@ -38,18 +34,27 @@ $(document).ready(function () {
     $("header").sticky({ topSpacing: 0 });
     $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
-    $('#burger-icon').on('click', () => {
-        $('#burger-menu').toggle('fast')
+    ///////////////////////////
+    $('#burger1-icon').on('click', () => {
+        $('#burger1-menu').toggle('fast')
     });
     $('body').on('click', (e) => {
-        //e.stopPropagation();
-        const isIcon = document.getElementById('burger-icon') === e.target
+        const isIcon = document.getElementById('burger1-icon') === e.target
         if (!isIcon) {
-            $('#burger-menu').hide('fast')
+            $('#burger1-menu').hide('fast')
         }
     });
-
+    $('#burger2-icon').on('click', () => {
+        $('#burger2-menu').toggle('fast')
+    });
+    $('body').on('click', (e) => {
+        const isIcon = document.getElementById('burger2-icon') === e.target
+        if (!isIcon) {
+            $('#burger2-menu').hide('fast')
+        }
+    });
     $('#logout-icon').on('click', () => {
+        console.log('logout', $('#logout-menu'))
         $('#logout-menu').toggle('fast')
     });
     $('body').on('click', (e) => {
@@ -58,6 +63,7 @@ $(document).ready(function () {
             $('#logout-menu').hide('fast')
         }
     });
+    ///////////////////////
 
 
     $(document).on("scroll", onScroll);
