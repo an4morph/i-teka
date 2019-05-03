@@ -17,14 +17,13 @@
     <div class="container">
       <div class="row">
         <div class="col-3 col-lg-2 d-none d-md-flex">
-          <!-- <div class="logo"></div> -->
           <img src="img/logo.svg" alt="logo" class="logo">
         </div>
         <div class="col-3 col-lg-2 d-flex d-md-none">
           <div class="logo-min"><img src="img/logo.svg" alt="logo"></div>
         </div>
 
-        <div class="col-4 col-lg-2">
+        <div class="col-4 col-lg-2 city-select-col">
           <div class="city-select">
             <i class="material-icons geo">location_on</i>
             <div class="custom-select city-select">
@@ -37,40 +36,61 @@
           </div>
         </div>
 
-        <div class="header__menu col-7 d-none d-lg-flex">
-          <div class="header__menu__item">
+        <menu class="inline col-7 d-none d-lg-flex">
+          <li>
             Вызвать врача
-          </div>
-          <div class="header__menu__item">
+          </li>
+          <li>
             Записаться на прием
-          </div>
-          <div class="header__menu__item">
+          </li>
+          <li>
             Доставить лекарства
-          </div>
-        </div>
+          </li>
+        </menu>
 
-        <div class="header__burger col-4 d-flex d-lg-none">
+        <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
           <i id="burger-icon" class="material-icons">menu</i>
-          <div id="burger-menu" class="header__burger__menu ">
-            <div class="header__burger__menu__item">
+          <div class="modal d-none">
+            <div>
               Вызвать врача
             </div>
-            <div class="header__burger__menu__item">
+            <div>
               Записаться на прием
             </div>
-            <div class="header__burger__menu__item">
+            <div>
               Доставить лекарства
             </div>
           </div>
         </div>
 
-        <div class="col-1 header__logout">
-          <img id="logout-icon" src="img/logout.svg" alt="logout icon">
-          <div id="logout-menu" class="header__burger__menu ">
-            <div class="header__burger__menu__item">
+        <div class="burger-menu col-5 col-sm-4 d-flex d-sm-none">
+          <i id="burger-icon" class="material-icons">menu</i>
+          <div class="modal d-none">
+            <div>
+              Вызвать врача
+            </div>
+            <div>
+              Записаться на прием
+            </div>
+            <div>
+              Доставить лекарства
+            </div>
+            <div>
               Войти
             </div>
-            <div class="header__burger__menu__item">
+            <div>
+              Избранные
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 logout d-sm-flex d-none">
+          <img id="logout-icon" src="img/logout.svg" alt="logout icon">
+          <div class="modal d-none">
+            <div>
+              Войти
+            </div>
+            <div>
               Избранные
             </div>
           </div>

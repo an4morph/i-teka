@@ -31,4 +31,15 @@ header .city-select {
     right: 40px;
   }
 }
+header .burger-menu {
+  position: relative;
+  justify-content: flex-end;
+}
+header .modal {
+  position: absolute;
+  top: 0;
+}
+header .logout {
+  justify-content: flex-end;
+}
 
