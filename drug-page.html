@@ -13,67 +13,90 @@
 
 <body>
     <!----header------->
-    <header>
-        <div class="header container">
-            <div class="row">
-                <div class="col-3 col-lg-2 d-none d-md-flex">
-                    <div class="header__logo"></div>
-                </div>
-                <div class="col-3 col-lg-2 d-flex d-md-none">
-                    <div class="header__logo-min"></div>
-                </div>
-
-                <div class="header__city-select-wrapper col-4 col-lg-2">
-                    <img class="header__geo-icon" src="img/geo-point.svg" alt="geo-point icon">
-                    <div class="header__city-select">
-                        <select id="city-select" class="city-select">
-                            <option>Алматы</option>
-                            <option>Нур-Султан</option>
-                            <option>Актау</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="header__menu col-7 d-none d-lg-flex">
-                    <div class="header__menu__item">
-                        Вызвать врача
-                    </div>
-                    <div class="header__menu__item">
-                        Записаться на прием
-                    </div>
-                    <div class="header__menu__item">
-                        Доставить лекарства
-                    </div>
-                </div>
-
-                <div class="header__burger col-4 d-flex d-lg-none">
-                    <i id="burger-icon" class="material-icons">menu</i>
-                    <div id="burger-menu" class="header__burger__menu ">
-                        <div class="header__burger__menu__item">
-                            Вызвать врача
-                        </div>
-                        <div class="header__burger__menu__item">
-                            Записаться на прием
-                        </div>
-                        <div class="header__burger__menu__item">
-                            Доставить лекарства
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-1 header__logout">
-                    <img id="logout-icon" src="img/logout.svg" alt="logout icon">
-                    <div id="logout-menu" class="header__burger__menu ">
-                        <div class="header__burger__menu__item">
-                            Войти
-                        </div>
-                        <div class="header__burger__menu__item">
-                            Избранные
-                        </div>
-                    </div>
-                </div>
-
+  <header>
+        <div class="container">
+          <div class="row header">
+            <div class="col-3 col-lg-2 d-none d-md-flex">
+                <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
             </div>
+            <div class="col-3 col-lg-2 d-flex d-md-none">
+                <a href="/"><div class="logo-min"><img src="img/logo.svg" alt="logo"></div></a>
+            </div>
+    
+            <div class="col-6 col-sm-4 col-lg-2 city-select-col">
+              <div class="city-select">
+                <i class="material-icons geo">location_on</i>
+                <div class="custom-select city-select">
+                  <select>
+                    <option value="1">Алматы</option>
+                    <option value="2">Нур-Султан</option>
+                    <option value="3">Актау</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+    
+            <menu class="inline col-7 d-none d-lg-flex">
+              <li>
+                <a href="#">Вызвать врача</a>
+              </li>
+              <li>
+                <a href="#">Записаться на прием</a>
+              </li>
+              <li>
+                <a href="#">Доставить лекарства</a>
+              </li>
+            </menu>
+    
+            <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
+              <i id="burger1-icon" class="material-icons">menu</i>
+              <div id="burger1-menu" class="modal">
+                <div>
+                  <a href="#">Вызвать врача</a>
+                </div>
+                <div>
+                  <a href="#">Записаться на прием</a>
+                </div>
+                <div>
+                  <a href="#">Доставить лекарства</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="burger-menu col-3 col-sm-4 d-flex d-sm-none">
+              <i id="burger2-icon" class="material-icons">menu</i>
+              <div id="burger2-menu" class="modal">
+                <div>
+                  <a href="#">Вызвать врача</a>
+                </div>
+                <div>
+                  <a href="#">Записаться на прием</a>
+                </div>
+                <div>
+                  <a href="#">Доставить лекарства</a>
+                </div>
+                <div>
+                  <a href="#">Войти</a>
+                </div>
+                <div>
+                  <a href="#">Избранные</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-1 logout d-sm-flex d-none">
+              <img id="logout-icon" src="img/logout.svg" alt="logout icon">
+              <div id="logout-menu" class="modal">
+                <div>
+                  <a href="#">Войти</a>
+                </div>
+                <div>
+                  <a href="#">Избранные</a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
         </div>
 
         <div class="secondary-header-wrapper">
