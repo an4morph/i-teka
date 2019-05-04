@@ -4,6 +4,7 @@ header {
   background-color: #fff;
   font-family: Meduim;
   box-shadow: $shadowHeader;
+  z-index: 100!important;
 }
 .header {
   align-items: center;
@@ -28,12 +29,26 @@ header .city-select {
   i.geo {
     color: $mainColor;
     font-size: 21px;
+    padding-top: 5px;
   }
   .select-selected {
     padding-right: 62px;
+    padding-left: 8px;
   }
   .select-selected:after {
     right: 40px;
+  }
+}
+
+%menu-item {
+  color: #000;
+  font-size: 18px;
+  font-family: Medium;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    color: $mainColor;
   }
 }
 header menu {
@@ -43,26 +58,35 @@ header menu {
     border-bottom: 2px solid transparent;
   }
   li a {
-    color: inherit;
-    font-size: 18px;
-    font-family: Medium;
+    @extend %menu-item;
     margin-top: 2px;
-    text-decoration: none;
   }
   li:hover {
-    cursor: pointer;
-    color: $mainColor;
     border-bottom: 2px solid $mainColor;
   }
 }
 header .burger-menu {
   position: relative;
   justify-content: flex-end;
+  i {
+    font-size: 33px;
+    cursor: pointer;
+  }
 }
 header .modal {
   display: none;
   position: absolute;
-  top: 0;
+  top: 100%;
+  background-color: #fff;
+  box-shadow: $shadow1;
+  padding: 8px 16px;
+  font-family: Light;
+  font-size: 18px;
+
+  div a {
+    font-family: Light;
+    @extend %menu-item;
+  }
 }
 header .logout {
   justify-content: flex-end;
