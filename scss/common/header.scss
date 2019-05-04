@@ -3,6 +3,11 @@
 header {
   background-color: #fff;
   font-family: Meduim;
+  box-shadow: $shadowHeader;
+}
+.header {
+  align-items: center;
+  height: 80px;
 }
 header .logo {
   height: 34px;
@@ -29,6 +34,25 @@ header .city-select {
   }
   .select-selected:after {
     right: 40px;
+  }
+}
+header menu {
+  justify-content: space-between;
+  li {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+  }
+  li a {
+    color: inherit;
+    font-size: 18px;
+    font-family: Medium;
+    margin-top: 2px;
+    text-decoration: none;
+  }
+  li:hover {
+    cursor: pointer;
+    color: $mainColor;
+    border-bottom: 2px solid $mainColor;
   }
 }
 header .burger-menu {
