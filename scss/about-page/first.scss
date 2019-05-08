@@ -1,0 +1,33 @@
+@import '../vars.scss';
+
+
+.about-page .first-block {
+  padding: 73px 0;
+  @include media(0, $media-md) {
+    padding: 44px 0;
+  }
+  h1 {
+    margin-bottom: 44px;
+    @include media(0, $media-md) {
+      margin-bottom: 24px;
+    }
+  }
+  .text {
+    padding-left: 70px;
+    @include media(0, $media-md) {
+      padding-left: 0;
+    }
+  }
+  ul {
+    padding-left: 70px;
+  }
+  p, li {
+    font-family: Light;
+    color: #000000;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,48 @@
+@import '../vars.scss';
+
+.about-page .second-block {
+  background: url(/img/office-bg.png) left no-repeat;
+  background-size: cover;
+  padding: 76px 0 81px 0;
+  @include media(0, $media-md) {
+    padding: 30px 0 50px 0;
+  }
+  img {
+    width: 100%;
+  }
+  .first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .second-col {
+    max-width: 390px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text {
+    color: #fff;
+    font-family: Light;
+    font-size: 24px;
+    line-height: 37px;
+  }
+  .features {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 35px;
+
+    p {
+      text-align: center;
+      color: #fff;
+      font-family: Light;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .item:nth-child(2) {
+      padding-top: 15px;
+    }
+  }
+}
