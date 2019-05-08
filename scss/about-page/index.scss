@@ -110,3 +110,27 @@
     text-align: center;
   }
 }
+
+
+// <-------------- forth-block ----------------> //
+.about-page .forth-block {
+  padding-bottom: 80px;
+  @include media(0, $media-md) {
+    padding-bottom: 40px;
+  }
+  img {
+    width: 100%;
+    padding-right: 15px;
+    margin-top: 20px;
+    @include media(0, $media-lg) {
+      padding-right: 0;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+  p {
+    font-size: 24px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+}
