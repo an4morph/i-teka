@@ -96,6 +96,9 @@
 // <-------------- third-block ----------------> //
 .about-page .third-block {
   padding: 106px 0 82px 0;
+  @include media(0, $media-md) {
+    padding: 60px 0 40px 0;
+  }
 
   h2 {
     margin-bottom: 28px;
