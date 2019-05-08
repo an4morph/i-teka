@@ -39,7 +39,6 @@
     "bootstrap-scss": "^4.3.1",
     "jquery": "^3.4.0",
     "jquery-sticky": "^1.0.4",
-    "scrollreveal": "^4.0.5",
-    "selectric": "^1.13.0"
+    "scrollreveal": "^4.0.5"
   }
 }

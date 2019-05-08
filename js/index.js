@@ -1,7 +1,7 @@
 const ScrollReveal = require("scrollreveal").default;
 const $ = require("jquery");
+const createDropdown = require('./dropdown');
 require("jquery-sticky");
-require("selectric");
 require("../scss/index.scss");
 require("./custom-selects");
 require('bootstrap-scss/bootstrap-grid.scss');
@@ -25,44 +25,14 @@ $(document).ready(function () {
             $(e.target).removeClass('active')
         })
     })
-
-    $('#release-form').selectric({
-    disableOnMobile: false,
-    nativeOnMobile: false
-    });
     
     $("header").sticky({ topSpacing: 0 });
     $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
     ///////////////////////////
-    $('#burger1-icon').on('click', () => {
-        $('#burger1-menu').toggle('fast')
-    });
-    $('body').on('click', (e) => {
-        const isIcon = document.getElementById('burger1-icon') === e.target
-        if (!isIcon) {
-            $('#burger1-menu').hide('fast')
-        }
-    });
-    $('#burger2-icon').on('click', () => {
-        $('#burger2-menu').toggle('fast')
-    });
-    $('body').on('click', (e) => {
-        const isIcon = document.getElementById('burger2-icon') === e.target
-        if (!isIcon) {
-            $('#burger2-menu').hide('fast')
-        }
-    });
-    $('#logout-icon').on('click', () => {
-        console.log('logout', $('#logout-menu'))
-        $('#logout-menu').toggle('fast')
-    });
-    $('body').on('click', (e) => {
-        const isIcon = document.getElementById('logout-icon') === e.target
-        if (!isIcon) {
-            $('#logout-menu').hide('fast')
-        }
-    });
+    createDropdown('#burger1-icon', '#burger1-menu')
+    createDropdown('#burger2-icon', '#burger2-menu')
+    createDropdown('#logout-icon', '#logout-menu')
     ///////////////////////
 
 

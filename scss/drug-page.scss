@@ -231,3 +231,25 @@
     }
 }
 
+.drug-page__drug-form-select {
+    width: 100%;
+    .select-selected {
+        border-radius: 79px;
+        padding: 12px 27px 10px 27px;
+    }
+    .select-selected:after {
+        top: 17px;
+        right: 27px;
+    }
+    .select-arrow-active {
+        box-shadow: $shadowHeader;
+        transition: all 0.4s;
+    }
+    .select-items {
+        top: calc(100% - 21px);
+        background-color: #fff;
+        padding-top: 21px;
+        z-index: -1;
+    }
+}
+
