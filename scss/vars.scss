@@ -21,3 +21,13 @@ $shadowHeader: 0px 4px 10px rgba(0,0,0,0.03);
     transform: scale(0.98);
   }
 }
+
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+@mixin media($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
