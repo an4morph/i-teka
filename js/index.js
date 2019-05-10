@@ -26,8 +26,8 @@ $(document).ready(function () {
         })
     })
     
-    $("header").sticky({ topSpacing: 0 });
-    $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
+    // $("header").sticky({ topSpacing: 0 });
+    // $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
     ///////////////////////////
     createDropdown('#burger1-icon', '#burger1-menu')
@@ -36,7 +36,7 @@ $(document).ready(function () {
     ///////////////////////
 
 
-    $(document).on("scroll", onScroll);
+    //$(document).on("scroll", onScroll);
     
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {

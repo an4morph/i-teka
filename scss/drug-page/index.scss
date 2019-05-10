@@ -1,5 +1,15 @@
 @import '../vars.scss';
+@import './text-markdown.scss';
 
-.drug-page {
-  
+.drug-page section.right {
+  .maintenance {
+    background-color: #fff;
+    padding: 17px 98px 17px 50px;
+    h2 {
+      margin-bottom: 26px;
+    }
+    li {
+      list-style: none;
+    }
+  }
 }
