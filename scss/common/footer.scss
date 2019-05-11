@@ -5,6 +5,7 @@ footer {
   padding: 55px 0 38px 0;
   font-family: Regular;
   font-size: 18px;
+  overflow: hidden;
   @include media(0, $media-lg) {
     padding: 10px 0 38px 0;
   }
