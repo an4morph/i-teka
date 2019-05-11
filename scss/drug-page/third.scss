@@ -1,12 +1,28 @@
 @import '../vars.scss';
 
 .drug-page .third-block {
+  padding-top: 45px;
   h2 {
     margin-bottom: 49px;
   }
   .item {
     display: flex;
     align-items: flex-start;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 23px;
+    margin-bottom: 36px;
+  }
+  .banner {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 23px;
   }
   i.apteka {
     cursor: pointer;
@@ -40,7 +56,7 @@
   }
   .bottom {
     display: flex;
-    //justify-content: space-between;
+    justify-content: space-between;
     margin-top: 13px;
     @include media(0, $media-sm) {
       flex-direction: column;
