@@ -1,0 +1,75 @@
+@import '../vars.scss';
+
+.drug-page .third-block {
+  h2 {
+    margin-bottom: 49px;
+  }
+  .item {
+    display: flex;
+    align-items: flex-start;
+  }
+  i.apteka {
+    cursor: pointer;
+    margin-right: 33px;
+    display: block;
+    width: 52px;
+    height: 53px;
+    background-size: cover;
+    background-image: url(/img/drug-icon.svg);
+    @include media(0, $media-sm) {
+      margin-right: 15px;
+    }
+    &:hover {
+      background-image: url(/img/drug-icon-fill.svg);
+    }
+  }
+  .text {
+    flex: 1;
+    padding-right: 20px;
+    @include media(0, $media-sm) {
+      padding-right: 0;
+    }
+  }
+  .receipt {
+    font-family: Regular;
+    font-size: 18px;
+  }
+  .price {
+    font-family: Bold;
+    font-size: 18px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    @include media(0, $media-sm) {
+      flex-direction: column;
+    }
+  }
+  button.next-md {
+    padding: 16px 49px 14px 49px;
+
+    color: $mainColor;
+    font-size: 16px;
+    font-family: Medium;
+
+    border-radius: 24px;
+    border: 1px solid $mainColor;
+
+    &:hover {
+      background: $gradient;
+      color: #fff;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  button.next-sm {
+    background: transparent;
+    border: none;
+  }
+  button.next-sm img {
+    transform: rotate(-90deg);
+    width: 20px;
+  }
+}

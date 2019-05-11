@@ -1,8 +1,14 @@
 @import '../vars.scss';
 @import './text-markdown.scss';
+@import './third.scss';
+
+.drug-page {
+  padding: 75px 0;
+}
 
 .drug-page section.right {
   .maintenance {
+    margin-top: 19px;
     background-color: #fff;
     padding: 17px 98px 17px 50px;
     h2 {

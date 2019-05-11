@@ -1,15 +1,41 @@
+@import '../vars.scss';
+
 h1 {
   font-size: 36px;
   line-height: 51px;
   font-family: UltraBold;
+  @include media(0, $media-sm) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 h2 {
   font-family: Bold;
   font-size: 24px;
   line-height: 26px;
 }
-li {
+h3 {
+  font-family: Bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+h4 {
+  font-size: 28px;
+  font-family: Medium;
+}
+h1,h2,h3,h4,p,li {
+  @include media(0, $media-sm) {
+    word-break: break-word;
+  }
+}
+p, li {
   font-family: Light;
   font-size: 18px;
   line-height: 26px;
+}
+span.violet {
+  color: #713091;
+}
+span.green {
+  color: #53994D;
 }

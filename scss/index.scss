@@ -4,6 +4,11 @@
 @import './main-page/index.scss';
 @import './terms-of-use/index.scss';
 
+a, button {
+  cursor: pointer;
+  outline: none;
+}
+
 @font-face {
   font-family: "Bold";
   src: url("/fonts/GT-Walsheim-Pro-Bold.ttf");
