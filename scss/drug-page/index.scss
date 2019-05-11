@@ -5,6 +5,9 @@
 
 .drug-page {
   padding: 75px 0;
+  @include media(0, $media-md) {
+    padding: 40px 0;
+  }
 }
 .drug-page .comments {
   h2 {
