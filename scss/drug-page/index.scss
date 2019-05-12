@@ -16,6 +16,10 @@
 }
 
 .drug-page section.right {
+  position: relative;
+  .is-sticky .maintenance {
+    margin-top: 0;
+  }
   .maintenance {
     margin-top: 19px;
     background-color: #fff;
@@ -26,9 +30,16 @@
     li {
       list-style: none;
     }
+    &.bottom {
+      position: absolute;
+      bottom: 0;
+    }
   }
 }
-
+.drug-page .banner-big {
+  width: 100%;
+  margin-top: 40px;
+}
 .drug-page .second-block {
   padding-top: 42px;
 

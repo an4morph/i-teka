@@ -1,6 +1,7 @@
 const ScrollReveal = require("scrollreveal").default;
 const $ = require("jquery");
 const createDropdown = require('./dropdown');
+const stickyScroll = require('./stickyScroll');
 require("jquery-sticky");
 require("../scss/index.scss");
 require("./custom-selects");
@@ -26,9 +27,10 @@ $(document).ready(function () {
         })
     })
     
+    $(document).on("scroll", stickyScroll);
     $("header").sticky({ topSpacing: 0 });
     $("#drug-page__secondary-header").sticky({ topSpacing: 83, zIndex: 11 });
-    // $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
+    $("#drug-page__maintenance").sticky({ topSpacing: 128, zIndex: 12 });
 
     ///////////////////////////
     createDropdown('#burger1-icon', '#burger1-menu')
@@ -37,7 +39,7 @@ $(document).ready(function () {
     ///////////////////////
 
 
-    //$(document).on("scroll", onScroll);
+    
     
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
