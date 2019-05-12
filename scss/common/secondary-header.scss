@@ -10,16 +10,16 @@
   border-top: 9px solid #fbfbfb;
   padding: 10px 0;
   flex-wrap: wrap;
+
+  .menu-item {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  .menu-item:hover {
+    color: #713091;
+  }
 }
-.secondary-header__menu-item {
-  font-size: 18px;
-  padding: 0 15px;
-}
-.secondary-header__menu-item.active {
-  color: #713091;
-  font-family: Bold;
-}
+
 .secondary-header a {
-  text-decoration: none;
   color: #000;
 }
