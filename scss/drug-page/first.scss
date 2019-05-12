@@ -1,6 +1,21 @@
 @import '../vars.scss';
 
 .drug-page .first-block {
+  ul {
+    margin-top: 20px;
+    li {
+      list-style: none;
+    }
+    a {
+      color: #000;
+    }
+    a:hover {
+      color: $mainColor;
+    }
+  }
+  .top-menu .divider {
+    margin-top: 15px;
+  }
   h1 {
     margin-bottom: 22px;
   }
