@@ -29,6 +29,14 @@
     }
     li {
       list-style: none;
+      transition: 0.2s;
+    }
+    li.active {
+      color: $mainColor;
+      padding-top: 4px;
+      font-family: Medium;
+      border-bottom: 2px solid $mainColor;
+      margin-bottom: 10px;
     }
     &.bottom {
       position: absolute;
@@ -47,7 +55,7 @@
     margin-bottom: 18px;
   }
   p {
-    margin-bottom: 19px;
+    padding-bottom: 19px;
   }
 }
 

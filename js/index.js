@@ -1,7 +1,7 @@
 const ScrollReveal = require("scrollreveal").default;
 const $ = require("jquery");
 const createDropdown = require('./dropdown');
-const stickyScroll = require('./stickyScroll');
+const DrugPage = require('./drug-page');
 require("jquery-sticky");
 require("../scss/index.scss");
 require("./custom-selects");
@@ -18,25 +18,23 @@ $(document).ready(function () {
         opacity: 0
     })
 
-    const boxes = $('.main-page__content menu li .box')
-    boxes.each((i) => {
-        $(boxes[i]).hover((e) => {
-            $(e.target).addClass('active')
-        }, (e) => {
-            $(e.target).removeClass('active')
-        })
-    })
-    
-    $(document).on("scroll", stickyScroll);
     $("header").sticky({ topSpacing: 0 });
-    $("#drug-page__secondary-header").sticky({ topSpacing: 83, zIndex: 11 });
-    $("#drug-page__maintenance").sticky({ topSpacing: 128, zIndex: 12 });
-
-    ///////////////////////////
     createDropdown('#burger1-icon', '#burger1-menu')
     createDropdown('#burger2-icon', '#burger2-menu')
     createDropdown('#logout-icon', '#logout-menu')
-    ///////////////////////
+
+
+    // const boxes = $('.main-page__content menu li .box')
+    // boxes.each((i) => {
+    //     $(boxes[i]).hover((e) => {
+    //         $(e.target).addClass('active')
+    //     }, (e) => {
+    //         $(e.target).removeClass('active')
+    //     })
+    // })
+
+    DrugPage()
+
 
 
     
