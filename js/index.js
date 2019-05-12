@@ -27,7 +27,7 @@ $(document).ready(function () {
     })
     
     $("header").sticky({ topSpacing: 0 });
-    $("#drug-page__secondary-header").sticky({ topSpacing: 89, zIndex: 11 });
+    $("#drug-page__secondary-header").sticky({ topSpacing: 83, zIndex: 11 });
     // $("#maintenance").sticky({ topSpacing: 107, zIndex: 20 });
 
     ///////////////////////////
