@@ -1,13 +1,20 @@
+@import '../vars.scss';
+
 .secondary-header-wrapper {
   background-color: #fff;
   font-family: Medium;
+  box-shadow: $shadowHeader;
+}
+
+.is-sticky .secondary-header {
+  margin-top: 0;
 }
 .secondary-header {
   display: flex;
   box-sizing: content-box;
   justify-content: space-around;
   align-items: center;
-  border-top: 9px solid #fbfbfb;
+  margin-top: 9px;
   padding: 10px 0;
   flex-wrap: wrap;
 
