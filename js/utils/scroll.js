@@ -12,4 +12,4 @@ module.exports = {
 //   bottom_of_element,
 //   bottom_of_screen,
 //   top_of_screen,
-// } = require('./scrollUtils');
+// } = require('./utils/scroll');
