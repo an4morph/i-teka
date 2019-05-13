@@ -1,0 +1,25 @@
+@import './vars.scss';
+
+.development-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  img {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .text {
+    font-family: Bold;
+    font-size: 24px;
+    margin: 32px 0;
+  }
+  a {
+    color: $mainColor;
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 2px solid $mainColor;
+  }
+}

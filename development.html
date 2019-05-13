@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Главная</title>
+</head>
+
+<body>
+  <!----header------->
+  <header>
+      <div class="container">
+        <div class="row header">
+          <div class="col-3 col-lg-2 d-none d-md-flex">
+              <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
+          </div>
+          <div class="col-3 col-lg-2 d-flex d-md-none">
+              <a href="/"><div class="logo-min"><img src="img/logo.svg" alt="logo"></div></a>
+          </div>
+  
+          <div class="col-6 col-sm-4 col-lg-2 city-select-col">
+            <div class="city-select">
+              <i class="material-icons geo">location_on</i>
+              <div class="custom-select city-select">
+                <select>
+                  <option value="1">Алматы</option>
+                  <option value="2">Нур-Султан</option>
+                  <option value="3">Актау</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  
+          <menu class="inline col-7 d-none d-lg-flex">
+            <li>
+              <a href="#">Вызвать врача</a>
+            </li>
+            <li>
+              <a href="#">Записаться на прием</a>
+            </li>
+            <li>
+              <a href="#">Доставить лекарства</a>
+            </li>
+          </menu>
+  
+          <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
+            <i id="burger1-icon" class="material-icons">menu</i>
+            <div id="burger1-menu" class="modal">
+              <div>
+                <a href="#">Вызвать врача</a>
+              </div>
+              <div>
+                <a href="#">Записаться на прием</a>
+              </div>
+              <div>
+                <a href="#">Доставить лекарства</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="burger-menu col-3 col-sm-4 d-flex d-sm-none">
+            <i id="burger2-icon" class="material-icons">menu</i>
+            <div id="burger2-menu" class="modal">
+              <div>
+                <a href="#">Вызвать врача</a>
+              </div>
+              <div>
+                <a href="#">Записаться на прием</a>
+              </div>
+              <div>
+                <a href="#">Доставить лекарства</a>
+              </div>
+              <div>
+                <a href="#">Войти</a>
+              </div>
+              <div>
+                <a href="#">Избранные</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-1 logout d-sm-flex d-none">
+            <img id="logout-icon" src="img/icons/logout.svg" alt="logout icon">
+            <div id="logout-menu" class="modal">
+              <div>
+                <a href="#">Войти</a>
+              </div>
+              <div>
+                <a href="#">Избранные</a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </header>
+    <!----end of header------->
+
+    <div class="development-page">
+      <img src="/img/development.png" alt="development">
+      <div class="text">Данная страница находится в разработке</div>
+      <a href="/">Вернуться на главную страницу</a>
+    </div>
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
