@@ -1,7 +1,7 @@
 @import '../vars.scss';
 
 .about-page .second-block {
-  background: url(/img/office-bg.png) left no-repeat;
+  background: url(/img/bg/office.png) left no-repeat;
   background-size: cover;
   padding: 76px 0 81px 0;
   @include media(0, $media-md) {

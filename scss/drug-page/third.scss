@@ -28,12 +28,12 @@
     width: 52px;
     height: 53px;
     background-size: cover;
-    background-image: url(/img/drug-icon.svg);
+    background-image: url(/img/icons/drug-icon.svg);
     @include media(0, $media-sm) {
       margin-right: 15px;
     }
     &:hover {
-      background-image: url(/img/drug-icon-fill.svg);
+      background-image: url(/img/icons/drug-icon-fill.svg);
     }
   }
   .text {

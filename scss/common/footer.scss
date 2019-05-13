@@ -49,25 +49,25 @@ footer {
     cursor: pointer;
 
     &.facebook {
-      background-image: url(/img/social/facebook.svg);
+      background-image: url(/img/icons/social/facebook.svg);
       background-size: cover;
     }
     &.facebook:hover {
-      background-image: url(/img/social/facebook-hov.svg);
+      background-image: url(/img/icons/social/facebook-hov.svg);
     }
     &.instagram {
-      background-image: url(/img/social/instagram.svg);
+      background-image: url(/img/icons/social/instagram.svg);
       background-size: cover;
     }
     &.instagram:hover {
-      background-image: url(/img/social/instagram-hov.svg);
+      background-image: url(/img/icons/social/instagram-hov.svg);
     }
     &.vk {
-      background-image: url(/img/social/vk.svg);
+      background-image: url(/img/icons/social/vk.svg);
       background-size: cover;
     }
     &.vk:hover {
-      background-image: url(/img/social/vk-hov.svg);
+      background-image: url(/img/icons/social/vk-hov.svg);
     }
   }
 
