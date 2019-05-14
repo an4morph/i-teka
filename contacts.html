@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Главная</title>
+</head>
+
+<body>
+  <!----header------->
+  <header>
+    <div class="container">
+      <div class="row header">
+        <div class="col-3 col-lg-2 d-none d-md-flex">
+          <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        </div>
+        <div class="col-3 col-lg-2 d-flex d-md-none">
+          <a href="/">
+            <div class="logo-min"><img src="img/logo.svg" alt="logo"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 city-select-col">
+          <div class="city-select">
+            <i class="material-icons geo">location_on</i>
+            <div class="custom-select city-select">
+              <select>
+                <option value="1">Алматы</option>
+                <option value="2">Нур-Султан</option>
+                <option value="3">Актау</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <menu class="inline col-7 d-none d-lg-flex">
+          <li>
+            <a href="#">Вызвать врача</a>
+          </li>
+          <li>
+            <a href="#">Записаться на прием</a>
+          </li>
+          <li>
+            <a href="#">Доставить лекарства</a>
+          </li>
+        </menu>
+
+        <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
+          <i id="burger1-icon" class="material-icons">menu</i>
+          <div id="burger1-menu" class="modal">
+            <div>
+              <a href="#">Вызвать врача</a>
+            </div>
+            <div>
+              <a href="#">Записаться на прием</a>
+            </div>
+            <div>
+              <a href="#">Доставить лекарства</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="burger-menu col-3 col-sm-4 d-flex d-sm-none">
+          <i id="burger2-icon" class="material-icons">menu</i>
+          <div id="burger2-menu" class="modal">
+            <div>
+              <a href="#">Вызвать врача</a>
+            </div>
+            <div>
+              <a href="#">Записаться на прием</a>
+            </div>
+            <div>
+              <a href="#">Доставить лекарства</a>
+            </div>
+            <div>
+              <a href="#">Войти</a>
+            </div>
+            <div>
+              <a href="#">Избранные</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 logout d-sm-flex d-none">
+          <img id="logout-icon" src="img/icons/logout.svg" alt="logout icon">
+          <div id="logout-menu" class="modal">
+            <div>
+              <a href="#">Войти</a>
+            </div>
+            <div>
+              <a href="#">Избранные</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!----end of header------->
+
+  <div class="contacts-page">
+    <div class="container">
+      <h1>Телефонная справочная</h1>
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <p>Работает без перерыва и выходных c 9:00 до 21:00ч.</p>
+          <div class="contact-item">
+            <h2>г. Нур-Султан (Астана)</h2>
+            <p>+7 (7172) 919-919</p>
+          </div>
+          <div class="contact-item">
+            <h2>г. Алматы</h2>
+            <p>+7 (727) 33-11-911</p>
+          </div>
+          <div class="contact-item">
+            <h2>г. Караганда</h2>
+            <p>+7 (7212) 55-91-55</p>
+          </div>
+          <div class="contact-item">
+            <h2>г. Усть-Каменогорск</h2>
+            <p>+7 (7232) 56-09-90</p>
+          </div>c
+        </div>
+        <div class="col-12 col-lg-7">
+          <h2>Контактная форма</h2>
+          <form>
+            <div class="row">
+              <input type="text" class="col-6">
+              <input type="text" class="col-6">
+              <input type="text" class="col-12">
+              <textarea class="col-12"></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----footer------->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Информация</h3>
+          <ul>
+            <li><a href="/about">О проекте</a></li>
+            <li><a href="#">Вопросы ответы</a></li>
+            <li><a href="/terms-of-use">Пользовательское соглашение</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Служебное</h3>
+          <ul>
+            <li><a href="#">Присоединиться к нам</a></li>
+            <li><a href="#">Войти в личный кабинет</a></li>
+            <li><a href="#">Разместить рекламу</a></li>
+            <li><a href="#">Скачать мобильное приложение IOS</a></li>
+            <li><a href="#">Скачать мобильное приложение Android</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>Услуги</h3>
+          <ul>
+            <li><a href="#">Вызов врача</a></li>
+            <li><a href="#">Доставка лекарств</a></li>
+            <li><a href="#">Онлайн запись на прием</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 social-col">
+          <h3>Социальные сети</h3>
+          <div class="social-icons">
+            <i class="social facebook"></i>
+            <i class="social instagram"></i>
+            <i class="social vk"></i>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="copyright">
+        <i class="material-icons">copyright</i>
+        2019 I-teka.kz. Использование материалов разрешено только при наличии активной ссылки на источник
+      </div>
+    </div>
+  </footer>
+  <!----end of footer------->
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
