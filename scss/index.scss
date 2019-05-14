@@ -1,3 +1,4 @@
+@import './vars.scss';
 @import './common/index.scss';
 @import './drug-page/index.scss';
 @import './about-page/index.scss';
@@ -6,13 +7,6 @@
 @import './contacts-page/index.scss';
 @import './development-page.scss';
 
-a, button {
-  cursor: pointer;
-  outline: none;
-}
-a {
-  text-decoration: none;
-}
 
 @font-face {
   font-family: "Bold";

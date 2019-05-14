@@ -3,6 +3,8 @@
 @import './footer.scss';
 @import './custom-select.scss';
 
+
+// reset css
 body {
   background-color: #fbfbfb;
   font-family: 'Regular';
@@ -11,6 +13,29 @@ body,h1,h2,h3,h4,ul,li {
   margin: 0;
   padding: 0;
 }
+
+// behaviour css
+a {
+  text-decoration: none;
+}
+a, button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+button:active {
+  transform: scale(0.98);
+}
+input, textarea {
+  &:focus {
+    outline: none;
+    box-shadow: $shadowFocus;
+  }
+}
+
+
+// text markdown default
 h1 {
   font-family: 'UltraBold';
   font-size: 36px;
@@ -37,27 +62,3 @@ p {
   line-height: 26px;
   margin: 0;
 }
-
-
-/* icons */
-i.facebook {
-  background-image: url(/img/facebook.svg);
-  width: 30px;
-  height: 30px;
-}
-i.instagram {
-  background-image: url(/img/instagram.svg);
-  width: 30px;
-  height: 30px;
-}
-i.vkontakte {
-  background-image: url(/img/vk.svg);
-  width: 30px;
-  height: 30px;
-}
-i.copyright {
-  background-image: url(/img/copyright.svg);
-  width: 23px;
-  height: 23px;
-}
-/* end of icons */
