@@ -13,9 +13,34 @@
   }
 }
 
+.site-map-page .specialities {
+  h2 {
+    font-family: UltraBold;
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 45px;
+  }
+  .list {
+    margin-bottom: 70px;
+  }
+  a {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-family: Regular;
+    line-height: 36px;
+  }
+  a:hover {
+    color: $mainColor;
+  }
+}
+
 .site-map-page menu {
   margin-top: 60px;
   padding-inline-start: 0;
+  @include media(0, $media-md) {
+    margin-top: 30px;
+  }
   li {
     list-style: none;
   }
