@@ -1,0 +1,72 @@
+@import '../vars.scss';
+
+.site-map-page .breadcrumbs {
+  margin-top: 74px;
+  margin-bottom: -43px;
+
+  @include media(0, $media-md) {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  @include media(0, $media-sm) {
+    margin-top: 35px;
+  }
+}
+
+.site-map-page menu {
+  margin-top: 60px;
+  padding-inline-start: 0;
+  li {
+    list-style: none;
+  }
+  li .box {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #713091;
+    font-family: Bold;
+    padding: 10%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  li .box i {
+    width: 50%;
+    padding-bottom: 65%;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: contain;
+  }
+  li .box:hover {
+    background: linear-gradient(176.12deg, #AA5EC4 -104.96%, #713091 184.38%);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    color: #fff;
+  }
+  
+  li .box i.astana {
+    background-image: url(/img/icons/site-map/astana.svg);
+  }
+  li .box:hover i.astana {
+    background-image: url(/img/icons/site-map/astana-w.svg);
+  }
+  li .box i.medcenters {
+    background-image: url(/img/icons/site-map/medcenters.svg);
+  }
+  li .box:hover i.medcenters {
+    background-image: url(/img/icons/site-map/medcenters-w.svg);
+  }
+  li .box i.doctors {
+    background-image: url(/img/icons/site-map/doctors.svg);
+  }
+  li .box:hover i.doctors {
+    background-image: url(/img/icons/site-map/doctors-w.svg);
+  }
+  li .box i.services {
+    background-image: url(/img/icons/site-map/services.svg);
+  }
+  li .box:hover i.services {
+    background-image: url(/img/icons/site-map/services-w.svg);
+  }
+}

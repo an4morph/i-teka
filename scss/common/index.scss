@@ -62,3 +62,18 @@ p {
   line-height: 26px;
   margin: 0;
 }
+
+
+// breadcrumbs
+.breadcrumbs {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+  font-family: Regular;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: $mainColor;
+  }
+}
