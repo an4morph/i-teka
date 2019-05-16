@@ -1,15 +1,67 @@
 @import '../vars.scss';
 
 footer {
-  background-color: #E6E6E6;
-  padding: 55px 0 38px 0;
   font-family: Regular;
-  font-size: 18px;
-  overflow: hidden;
-  @include media(0, $media-lg) {
-    padding: 10px 0 38px 0;
+  
+  section.top {
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 55px 0 38px 0;
+    @include media(0, $media-lg) {
+      padding: 10px 0 38px 0;
+    }
   }
+  section.bottom {
+    background-color: #2D2D2D;
+    padding: 31px 0;
+    font-size: 16px;
+    color: #ffffff;
+    .copyright {
+      display: flex;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+}
 
+/// icons
+footer .social-icons {
+  display: flex;
+}
+footer i.social {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 14px;
+  cursor: pointer;
+
+  &.facebook {
+    background-image: url(/img/icons/social/facebook.svg);
+    background-size: cover;
+  }
+  &.facebook:hover {
+    background-image: url(/img/icons/social/facebook-hov.svg);
+  }
+  &.instagram {
+    background-image: url(/img/icons/social/instagram.svg);
+    background-size: cover;
+  }
+  &.instagram:hover {
+    background-image: url(/img/icons/social/instagram-hov.svg);
+  }
+  &.vk {
+    background-image: url(/img/icons/social/vk.svg);
+    background-size: cover;
+  }
+  &.vk:hover {
+    background-image: url(/img/icons/social/vk-hov.svg);
+  }
+}
+
+
+/// text-markdown
+footer {
   h3 {
     font-family: Bold;
     font-size: 24px;
@@ -18,12 +70,6 @@ footer {
     @include media(0, $media-lg) {
       margin-top: 35px;
     }
-  }
-  .divider {
-    background-color: #DCDCDC;
-    height: 2px;
-    width: 200%;
-    margin: 47px 0 27px -50%;
   }
   li {
     list-style: none;
@@ -35,46 +81,6 @@ footer {
     transition: all 0.3s;
     &:hover {
       color: $mainColor;
-    }
-  }
-
-  .social-icons {
-    display: flex;
-  }
-  i.social {
-    width: 30px;
-    height: 30px;
-    display: block;
-    margin-right: 14px;
-    cursor: pointer;
-
-    &.facebook {
-      background-image: url(/img/icons/social/facebook.svg);
-      background-size: cover;
-    }
-    &.facebook:hover {
-      background-image: url(/img/icons/social/facebook-hov.svg);
-    }
-    &.instagram {
-      background-image: url(/img/icons/social/instagram.svg);
-      background-size: cover;
-    }
-    &.instagram:hover {
-      background-image: url(/img/icons/social/instagram-hov.svg);
-    }
-    &.vk {
-      background-image: url(/img/icons/social/vk.svg);
-      background-size: cover;
-    }
-    &.vk:hover {
-      background-image: url(/img/icons/social/vk-hov.svg);
-    }
-  }
-
-  .copyright {
-    display: flex;
-    i {
-      margin-right: 10px;
     }
   }
 }
