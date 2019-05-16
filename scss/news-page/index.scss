@@ -14,19 +14,58 @@
     }
   }
   .main-box, .mini-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: calc(100% - 16px);
     background-size: cover;
     color: #fff;
-    padding: 41px 33% 53px 11%;
-    @include media(0, $media-md) {
-      padding: 30px 11%;
+
+    h2 {
+      flex: 1;
+      font-family: Regular;
+    }
+    .more {
+      font-family: Medium;
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+    &:hover .more {
+      color: #ccc;
+      border-bottom: 2px solid #ccc;
     }
   }
   .main-box {
     background-image: url(/img/bg/vaccine.png);
+    padding: 41px 33% 53px 11%;
+    @include media(0, $media-md) {
+      padding: 30px 11%;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 39px;
+      @include media(0, $media-sm) {
+        font-size: 28px;
+        line-height: 30px;
+      }
+    }
+    h3 {
+      font-size: 18px;
+      font-family: Light;
+      margin-bottom: 23px;
+    }
   }
   .mini-box {
     margin-bottom: 16px;
     background-image: url(/img/bg/office-girl.png);
+    padding: 41px 11% 53px 11%;
+    @include media(0, $media-md) {
+      padding: 30px 11%;
+    }
     &-col {
       padding-left: 8px;
       padding-right: 8px;
@@ -34,6 +73,40 @@
     &-row {
       margin-right: -8px;
       margin-left: -8px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 30px;
+      @include media(0, $media-sm) {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .title {
+    display: flex;
+    margin-top: 82px;
+    margin-bottom: 22px;
+    @include media(0, $media-sm) {
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: Medium;
+      font-size: 24px;
+      line-height: 40px;
+      @include media(0, $media-sm) {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+    p:first-child {
+      margin-right: 51px;
+      @include media(0, $media-sm) {
+        margin-right: 20px;
+      }
     }
   }
 }
@@ -44,22 +117,28 @@
   margin-bottom: 23px;
   font-size: 14px;
   font-family: Medium;
+  width: 100%;
   & > div {
     display: flex;
     align-items: center;
-    i {
-      margin-right: 10px;
-    }
   }
-  & > div:nth-child(2) {
+  .views {
     flex: 1;
     justify-content: flex-end;
+    padding-right: 30px;
   }
-  & > div:nth-child(3) {
-    justify-content: flex-end;
-    padding-left: 11%;
-    @include media(0, $media-sm) {
-      padding-left: 15px;
-    }
+  i {
+    margin-right: 10px;
   }
+}
+
+.news-page .btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.news-page button.show-more {
+  @extend %button;
+  border-radius: 5px!important;
+  padding: 15px 96px 11px 96px;
 }
