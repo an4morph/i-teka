@@ -1,5 +1,65 @@
 @import '../vars.scss';
 
 .news-page {
-  
+  padding: 32px 0;
+  .breadcrumbs {
+    @include media(0, $media-sm) {
+      text-align: left;
+    }
+  }
+  h1 {
+    margin-bottom: 48px;
+    @include media(0, $media-md) {
+      margin-bottom: 20px;
+    }
+  }
+  .main-box, .mini-box {
+    background-size: cover;
+    color: #fff;
+    padding: 41px 33% 53px 11%;
+    @include media(0, $media-md) {
+      padding: 30px 11%;
+    }
+  }
+  .main-box {
+    background-image: url(/img/bg/vaccine.png);
+  }
+  .mini-box {
+    margin-bottom: 16px;
+    background-image: url(/img/bg/office-girl.png);
+    &-col {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    &-row {
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+  }
+}
+
+.news-page .box-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  font-size: 14px;
+  font-family: Medium;
+  & > div {
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 10px;
+    }
+  }
+  & > div:nth-child(2) {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  & > div:nth-child(3) {
+    justify-content: flex-end;
+    padding-left: 11%;
+    @include media(0, $media-sm) {
+      padding-left: 15px;
+    }
+  }
 }
