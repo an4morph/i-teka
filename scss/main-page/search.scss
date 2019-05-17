@@ -10,23 +10,41 @@
   form {
     margin-bottom: 88px;
     position: relative;
+    @include media(0, $media-md) {
+      margin-bottom: 40px;
+    }
   }
   input {
-    padding: 15px 9%;
+    padding: 15px 80px;
     font-size: 24px;
     width: 100%;
     font-family: Regular;
     border: none;
     border-radius: 38.5px;
     box-shadow: $shadow1;
+    @include media(0, $media-lg) {
+      font-size: 18px;
+      padding: 15px 40px;
+    }
+    @include media(0, $media-md) {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
   }
   button {
     @extend %button;
     position: absolute;
     top: calc(50% - 22px);
-    width: 20%;
+    bottom: calc(50% - 22px);
+    padding: 0 80px;
     right: 10px;
-    padding-top: 5px;
-    height: calc(100% - 20px);
+    @include media(0, $media-lg) {
+      padding: 0 40px;
+    }
+    @include media(0, $media-md) {
+      padding: 0 13px 0 15px;
+      top: calc(50% - 20px);
+      bottom: calc(50% - 20px);
+    }
   }
 }
