@@ -68,7 +68,6 @@
   h2 {
     margin-bottom: 40px;
   }
-
   .news-box {
     height: calc(100% - 16px);
     margin-bottom: 16px;
@@ -90,6 +89,7 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 63px;
     @include media(0, $media-md) {
       padding-top: 10px;
     }
@@ -98,5 +98,8 @@
     @extend %button;
     border-radius: 5px!important;
     padding: 15px 49px 10px 49px;
+  }
+  img.reklama {
+    width: 100%;
   }
 }
