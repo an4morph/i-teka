@@ -1,15 +1,108 @@
 @import '../vars.scss';
 
 .news-item-page {
+  padding: 34px 0 77px 0;
+  @include media(0, $media-md) {
+    padding: 34px 0 34px 0;
+  }
   h1, h2 {
+    width: 80%;
     font-family: UltraBold;
     font-size: 36px;
     line-height: 51px;
     margin-bottom: 40px;
+    @include media(0, $media-sm) {
+      font-size: 30px;
+      line-height: 32px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .text {
+    padding-left: 50px;
+    @include media(0, $media-lg) {
+      padding-left: 0;
+    }
+  }
+  .breadcrumbs {
+    margin-bottom: -10px;
+    @include media(0, $media-sm) {
+      text-align: left;
+      margin-bottom: 5px;
+    }
+  }
+  p {
+    font-family: Medium;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+  h3 {
+    margin-bottom: 22px;
   }
 }
+
+.news-item-page .text-image {
+  &-left, &-right {
+    display: flex;
+    @include media(0, $media-lg) {
+      flex-direction: column;
+    }
+    img {
+      width: 35%;
+      height: 35%;
+      @include media(0, $media-lg) {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &-left img{
+    margin-right: 49px;
+    @include media(0, $media-lg) {
+      margin-right: 0;
+    }
+  }
+  &-right img{
+    margin-left: 49px;
+    @include media(0, $media-lg) {
+      margin-left: 0;
+    }
+  }
+}
+
+.news-item-page .info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 65px;
+  @include media(0, $media-lg) {
+    margin-bottom: 30px;
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+  i {
+    margin-right: 10px;
+  }
+  .views {
+    margin-right: 36px;
+    @include media(0, $media-sm) {
+      margin-right: 20px;
+    }
+  }
+  .comments {
+    margin-right: 62px;
+    @include media(0, $media-sm) {
+      margin-right: 40px;
+    }
+  }
+}
+
 .news-item-page .news-box {
-  height: 100%;
+  height: calc(100% - 16px);
+  margin-bottom: 16px;
   &-row {
     margin-right: -8px;
     margin-left: -8px;
