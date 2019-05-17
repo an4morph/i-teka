@@ -8,7 +8,9 @@
 }
 
 .main-page .second-block {
-  background-color: #5cf;
+  background-image: url(/img/bg/doctor.png);
+  background-size: cover;
+  background-position: center;
   padding: 42px 0 56px 0;
 
   .box {
@@ -25,6 +27,10 @@
   }
   h2 {
     margin-bottom: 42px;
+    color: #fff;
+  }
+  h3 {
+    word-break: break-word;
   }
   h3, p {
     margin-bottom: 10%;
