@@ -13,29 +13,16 @@
       margin-bottom: 20px;
     }
   }
-  .main-box, .mini-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .news-box {
+    margin-bottom: 16px;
     height: calc(100% - 16px);
-    background-size: cover;
-    color: #fff;
-
-    h2 {
-      flex: 1;
-      font-family: Regular;
+    &-row {
+      margin-right: -8px;
+      margin-left: -8px;
     }
-    .more {
-      font-family: Medium;
-      color: #fff;
-      font-size: 18px;
-      line-height: 26px;
-      border-bottom: 2px solid #fff;
-      padding-bottom: 5px;
-    }
-    &:hover .more {
-      color: #ccc;
-      border-bottom: 2px solid #ccc;
+    &-col {
+      padding-left: 8px;
+      padding-right: 8px;
     }
   }
   .main-box {
@@ -57,31 +44,6 @@
       font-size: 18px;
       font-family: Light;
       margin-bottom: 23px;
-    }
-  }
-  .mini-box {
-    margin-bottom: 16px;
-    background-image: url(/img/bg/office-girl.png);
-    padding: 41px 11% 53px 11%;
-    @include media(0, $media-md) {
-      padding: 30px 11%;
-    }
-    &-col {
-      padding-left: 8px;
-      padding-right: 8px;
-    }
-    &-row {
-      margin-right: -8px;
-      margin-left: -8px;
-    }
-    h2 {
-      font-size: 24px;
-      line-height: 26px;
-      margin-bottom: 30px;
-      @include media(0, $media-sm) {
-        font-size: 20px;
-        line-height: 22px;
-      }
     }
   }
 
@@ -108,27 +70,6 @@
         margin-right: 20px;
       }
     }
-  }
-}
-
-.news-page .box-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 23px;
-  font-size: 14px;
-  font-family: Medium;
-  width: 100%;
-  & > div {
-    display: flex;
-    align-items: center;
-  }
-  .views {
-    flex: 1;
-    justify-content: flex-end;
-    padding-right: 30px;
-  }
-  i {
-    margin-right: 10px;
   }
 }
 

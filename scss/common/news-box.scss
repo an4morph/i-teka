@@ -1,0 +1,60 @@
+@import '../vars.scss';
+
+.news-box-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  font-size: 14px;
+  font-family: Medium;
+  width: 100%;
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+  .views {
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+
+.news-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  background-image: url(/img/bg/office-girl.png);
+  background-size: cover;
+  padding: 41px 11% 53px 11%;
+
+  @include media(0, $media-md) {
+    padding: 30px 11%;
+  }
+  h2 {
+    flex: 1;
+    font-family: Regular;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    @include media(0, $media-sm) {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+  .more {
+    font-family: Medium;
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+  }
+  &:hover .more {
+    color: #ccc;
+    border-bottom: 2px solid #ccc;
+  }
+}
