@@ -19,19 +19,6 @@
   @include media(0, $media-md) {
     padding: 60px 0 40px 0;
   }
-
-  h2 {
-    margin-bottom: 28px;
-  }
-  .text {
-    padding: 0 6% 20px 6%;
-  }
-  p:first-child {
-    margin-bottom: 17px;
-  }
-  .image-col {
-    text-align: center;
-  }
 }
 
 

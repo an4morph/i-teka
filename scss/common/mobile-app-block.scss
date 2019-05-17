@@ -1,0 +1,48 @@
+@import '../vars.scss';
+
+.mobile-app-block {
+  h2 {
+    font-family: UltraBold;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 28px;
+  }
+  .text {
+    padding-left: 50px;
+    @include media (0, $media-lg) {
+      padding-left: 0;
+    }
+
+    p:first-child {
+      margin-bottom: 17px;
+    }
+    p:nth-child(2) {
+      margin-bottom: 38px;
+    }
+  }
+  .buttons-block {
+    display: flex;
+    & > a:first-child {
+      margin-right: 22px;
+    }
+  }
+  a.play-market, a.app-store {
+    height: 46px;
+    border-radius: 6px;
+    background-size: cover;
+    display: block;
+
+    &:hover {
+      box-shadow: $shadow1;
+      transition: 0.4s;
+    }
+  }
+  a.app-store {
+    width: 142px;
+    background-image: url(/img/appstore.png);
+  }
+  a.play-market {
+    width: 155px;
+    background-image: url(/img/storegoogle.png);
+  }
+}

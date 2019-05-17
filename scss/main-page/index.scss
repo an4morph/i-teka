@@ -6,23 +6,8 @@
 .main-page .first-block {
   padding: 55px 0 92px 0;
 }
-.main-page .second-block {
-  padding-bottom: 29px;
 
-  h2 {
-    margin-bottom: 42px;
-  }
-  .intresting {
-    padding: 0 6%;
-  }
-  .intresting-item {
-    margin-bottom: 20px;
-  }
-  img {
-    width: 100%;
-  }
-}
-.main-page .third-block {
+.main-page .second-block {
   background-color: #5cf;
   padding: 42px 0 56px 0;
 
@@ -54,19 +39,9 @@
   }
 }
 
-.main-page .forth-block {
+.main-page .third-block {
   padding: 106px 0 82px 0;
-
-  h2 {
-    margin-bottom: 28px;
-  }
-  .text {
-    padding: 0 6% 20px 6%;
-  }
-  p:first-child {
-    margin-bottom: 17px;
-  }
-  .image-col {
-    text-align: center;
+  @include media (0, $media-sm) {
+    padding: 50px 0;
   }
 }
