@@ -1,0 +1,51 @@
+@import './vars.scss';
+
+$blue: #005be3;
+
+.connect-page {
+  padding: 67px 0;
+  @include media(0, $media-sm) {
+    word-break: break-word;
+    padding: 30px 0;
+  }
+  .breadcrumbs {
+    margin-bottom: -42px;
+    a {
+      color: #000;
+    }
+    a:hover {
+      color: $mainColor;
+    }
+    @include media(0, $media-lg) {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+  h1 {
+    margin-bottom: 42px;
+    width: 80%;
+    @include media(0, $media-sm) {
+      width: 100%;
+      font-size: 30px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+  }
+  .text {
+    padding-left: 50px;
+    @include media(0, $media-lg) {
+      padding-left: 0;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+    a {
+      color: $blue;
+      font-family: Bold;
+    }
+    a:hover {
+      color: $mainColor;
+    }
+  }
+}
