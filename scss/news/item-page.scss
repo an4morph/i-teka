@@ -1,5 +1,21 @@
 @import '../vars.scss';
 
 .news-item-page {
-
+  h1, h2 {
+    font-family: UltraBold;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 40px;
+  }
+}
+.news-item-page .news-box {
+  height: 100%;
+  &-row {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  &-col {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }

@@ -34,7 +34,7 @@
   @include media(0, $media-md) {
     padding: 30px 11%;
   }
-  h2 {
+  &-title {
     flex: 1;
     font-family: Regular;
     font-size: 24px;
