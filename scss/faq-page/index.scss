@@ -3,6 +3,9 @@
 
 .faq-page {
   padding: 67px 0;
+  @include media(0, $media-md) {
+    padding: 40px 0;
+  }
   .content {
     padding-left: 50px;
     @include media(0, $media-lg) {

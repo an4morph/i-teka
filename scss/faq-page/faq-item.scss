@@ -9,6 +9,16 @@
 
   h2 {
     width: 90%;
+    font-size: 24px;
+    font-family: Medium;
+    cursor: pointer;
+    @include media(0, $media-sm) {
+      font-size: 22px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-family: Light;
   }
   .main {
     padding: 22px 51px;
