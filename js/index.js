@@ -1,6 +1,7 @@
 const $ = require("jquery");
 const ScrollReveal = require("scrollreveal").default;
 const DrugPage = require('./drug-page');
+const FAQPage = require('./faq');
 const Header = require('./header');
 require("../scss/index.scss");
 require("./utils/custom-selects");
@@ -24,6 +25,7 @@ $(document).ready(function () {
     
     Header()
     if ($('.drug-page').length) DrugPage()
+    if ($('.faq-page').length) FAQPage()
 });
 
 
