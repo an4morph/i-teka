@@ -1,5 +1,63 @@
 @import '../vars.scss';
 
 .signup-page {
-  
+  position: relative;
+  .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/img/bg/med-sister.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @include media(0, $media-lg) {
+    background: none;
+  }
+  .breadcrumbs {
+    text-align: right;
+    margin-top: 16px;
+  }
+  h1 {
+    margin-top: 26px;
+    text-align: center;
+    a {
+      color: #0f64e4;
+    }
+    a:hover {
+      color: $mainColor;
+    }
+  }
+  .reklama-col {
+    padding: 40px 80px 120px 40px;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    h2 {
+      font-family: UltraBold;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 50px;
+    }
+  }
+  .main-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-col {
+    background-color: #fbfbfb;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  form {
+    padding: 37px 0 55px 0;
+    @extend %auth-form;
+    button {
+      margin-bottom: 20px;
+    }
+  }
 }
