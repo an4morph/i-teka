@@ -28,6 +28,43 @@
   }
 }
 
+.faq-page .pagination {
+  display: flex;
+  justify-content: center;
+  .pag-item {
+    cursor: pointer;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media(0, $media-sm) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .pag-item.active {
+    background-color: $mainColor;
+    color: #fff;
+    box-shadow: none;
+  }
+  .pag-item:hover {
+    background-color: #dfdfdf;
+  }
+  .pag-item.active:hover {
+    background-color: $mainColor;
+  }
+  .d-arrow-right {
+    transform: rotate(180deg);
+  }
+}
+
 .faq-page .form-block {
   margin-top: 90px;
   .form-title {
