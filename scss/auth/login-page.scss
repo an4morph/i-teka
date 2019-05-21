@@ -1,5 +1,17 @@
 @import '../vars.scss';
 
 .login-page {
-  
+  .reklama-col {
+    padding: 20px 40px;
+    flex-direction: column;
+    background-image: url(/img/bg/med-sister.png);
+    background-size: cover;
+  }
+
+  form {
+    @extend %auth-form;
+    button {
+      margin-top: 52px;
+    }
+  }
 }

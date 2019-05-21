@@ -104,8 +104,30 @@
   <!----end of header------->
 
   <div class="login-page">
-    <div class="container">
-        Login
+    <div class="row">
+      <div class="reklama-col d-none d-lg-flex col-lg-7">
+        <h2>Разместить рекламу</h2>
+        <p>Единая справочная служба «i-teka» предлагает эффективные инструменты размещения рекламы.
+          Для размещения рекламы необходимо заполнить заявку на размещение рекламы и заключить договор 
+          с предоставлением рекламного материала. Формат размещаемого баннера: jpeg шириной 300 пикселей 
+          и высотой 180 пикселей.</p>
+      </div>
+      <div class="form-col col-12 col-lg-5">
+        <div class="breadcrumbs">
+          <a href="/">Главная</a> — Вход
+        </div>
+        <h1>Войти / <a href="/signup">Регистрация</a></h1>
+        <form>
+          <input name="username" type="text">
+          <input type="password" name="password">
+          <div class="checkbox-line">
+            <input type="checkbox" name="remember">
+            Запомнить меня на сайте
+          </div>
+          <button type="submit">Войти</button>
+          <a href="/forgot" class="forgot">Забыли пароль?</a>
+        </form>
+      </div>
     </div>
   </div>
 
