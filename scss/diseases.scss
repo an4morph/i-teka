@@ -1,0 +1,15 @@
+@import './vars.scss';
+
+.diseases-page {
+  padding: 48px 0;
+}
+
+.diseases-page .search {
+  margin-bottom: 72px;
+  h1 {
+    margin-bottom: 27px;
+  }
+  form {
+    @extend %search;
+  }
+}
