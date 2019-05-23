@@ -1,0 +1,67 @@
+@import '../vars.scss';
+
+$slideH: 366px;
+
+.main-page .slider-block {
+  position: relative;
+  button.slick-arrow {
+    z-index: 1;
+    width: 23px;
+    height: 15px;
+    background-image: url(/img/icons/arrow-down-w.svg);
+    background-size: cover;
+    &::before {
+      content: ''
+    }
+  }
+  button.slick-prev {
+    left: 15px;
+    transform: rotate(90deg);
+  }
+  button.slick-next {
+    right: 15px;
+    transform: rotate(-90deg);
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 16px;
+    li {
+      width: 10px;
+    }
+  }
+  .slick-dots button {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    &::before {
+      content: ''
+    }
+  }
+  .slick-dots .slick-active button {
+    background-color: #fff;
+  }
+}
+
+////slides images like background
+.main-page div[class^="slide-img"] {
+  width: 100%;
+  height: 366px;
+  background-size: cover;
+  background-position: center;
+}
+.main-page .slide-img {
+  &-1 {
+    background-image: url(/img/bg/doctor.png);
+  }
+  &-2 {
+    background-image: url(/img/bg/vaccine.png);
+  }
+  &-3 {
+    background-image: url(/img/bg/office-girl.png);
+  }
+  &-4 {
+    background-image: url(/img/bg/office.png);
+  }
+}

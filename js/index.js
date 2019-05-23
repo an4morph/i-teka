@@ -6,6 +6,9 @@ const Header = require('./header');
 require("../scss/index.scss");
 require("./utils/custom-selects");
 require('bootstrap-scss/bootstrap-grid.scss');
+require('slick-carousel');
+require('slick-carousel/slick/slick.scss');
+require('slick-carousel/slick/slick-theme.scss');
 
 const RevealGlobal = () => {
     window.sr = ScrollReveal({ reset: true })
@@ -21,7 +24,10 @@ const RevealGlobal = () => {
 
 
 $(document).ready(function () {
-    RevealGlobal()
+    RevealGlobal();
+    $(".slider").slick({
+        dots: true
+    });
     
     Header()
     if ($('.drug-page').length) DrugPage()

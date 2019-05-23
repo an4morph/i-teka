@@ -18,6 +18,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
+      { test: /\.(eot|woff|woff2|svg|ttf|gif)([\?]?.*)$/, loader: "file-loader" },
       {
         test: /\.scss$/,
         use: [
