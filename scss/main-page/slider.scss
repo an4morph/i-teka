@@ -2,8 +2,8 @@
 
 $slideH: 366px;
 
-.main-page .slider-block {
-  position: relative;
+.main-page .slider {
+  margin-bottom: 12px!important;
   button.slick-arrow {
     z-index: 1;
     width: 23px;
@@ -47,7 +47,7 @@ $slideH: 366px;
 ////slides images like background
 .main-page div[class^="slide-img"] {
   width: 100%;
-  height: 366px;
+  height: $slideH;
   background-size: cover;
   background-position: center;
 }

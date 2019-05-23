@@ -6,6 +6,55 @@
 
 .main-page .first-block {
   padding: 55px 0 92px 0;
+
+  .slider-block {
+    margin-top: 80px;
+    @include media(0, $media-lg) {
+      margin-top: 40px;
+    }
+    i {
+      display: block;
+      width: 77px;
+      height: 88px;
+      background-size: cover;
+    }
+    .text {
+      width: 131px;
+      word-break: break-word;
+      text-align: left;
+      margin-left: 50px;
+    }
+    i.menu-img-doctors {
+      background-image: url(/img/icons/main-menu/doctors-w.svg);
+    }
+    i.menu-img-ills {
+      background-image: url(/img/icons/main-menu/ills-w.svg);
+      width: 71px;
+      height: 88px;
+    }
+    .buttons {
+      padding-left: 0;
+      @include media(0, $media-lg) {
+        padding-left: 15px;
+      }
+    }
+    a.big-btn {
+      @extend %button;
+      font-size: 24px!important;
+      width: 100%;
+      border-radius: 0!important;
+      display: flex;
+      justify-content: center;
+      height: calc(50% - 17px);
+      align-items: center;
+      @include media(0, $media-lg) {
+        padding: 40px 10px;
+      }
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
 
 .main-page .second-block {
