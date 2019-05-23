@@ -13,3 +13,56 @@
     @extend %search;
   }
 }
+
+.diseases-page .intresting {
+  h2 {
+    font-family: UltraBold;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  &-item {
+    display: block;
+    color: #000;
+    background-color: #fff;
+    border-radius: 13px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .img-block {
+    height: 150px;
+    background-image: url(/img/bg/doctor.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .desc {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 18px;
+      font-family: Bold;
+      margin-bottom: 10px;
+    }
+    .address {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      
+      p {
+        font-size: 12px;
+      }
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #53994D;
+      margin-right: 7px;
+      border-radius: 100%;
+    }
+  }
+}
