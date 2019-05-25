@@ -1,7 +1,8 @@
 .drugs-page,
 .diseases-page,
 .med-services-page,
-.doctors-page {
+.doctors-page,
+.pharmacy-page {
   @extend %services-page-template;
 
   &-body .ui-autocomplete li {

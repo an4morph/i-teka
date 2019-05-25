@@ -50,6 +50,9 @@ $(document).ready(function () {
     if ($('.doctors-page').length) {
         createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
     }
+    if ($('.pharmacy-page').length) {
+        createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
+    }
 });
 
 
