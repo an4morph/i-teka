@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Вопросы - ответы</title>
+  <title>Заболевания</title>
 </head>
 
-<body class="about-page-body">
+<body class="diseases-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -109,7 +109,8 @@
       <div class="search">
         <h1>Поиск заболеваний</h1>
         <form>
-          <input type="text" placeholder="Введите название заболевания">
+          <input id="diseases-page__search" type="text" placeholder="Введите название заболевания">
+          <div id="diseases-page__search-vars"></div>
           <button class="d-none d-md-flex" type="submit">Найти</button>
           <button class="d-flex d-md-none" type="submit">
             <i class="material-icons">search</i>
@@ -120,7 +121,77 @@
 
       <!----list------->
       <div class="list">
-        list
+        <div class="row desktop-list d-none d-lg-flex">
+          <div class="col-lg-5 vars">
+            <h2>Заболевания в Алматы</h2>
+            <ul>
+              <li class="active">Грипп</li>
+              <li>Аллергия</li>
+              <li>Панкреотит</li>
+              <li>Простатит</li>
+              <li>Артрит</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 services">
+            <h2>Весь список услуг</h2>
+            <h3>Грипп</h3>
+            <ul>
+              <li><a href="#">Лечение1</a></li>
+              <li><a href="#">Лечение2</a></li>
+              <li><a href="#">Лечение3</a></li>
+              <li><a href="#">Лечение4</a></li>
+              <li><a href="#">Лечение5</a></li>
+              <li><a href="#">Лечение6</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-list d-block d-lg-none">
+          <div class="var open">
+            <div class="main">
+              <h2>Грипп</h2>
+              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
+              <ul class="inner services">
+                <li><a href="#">Лечение1</a></li>
+                <li><a href="#">Лечение2</a></li>
+                <li><a href="#">Лечение3</a></li>
+                <li><a href="#">Лечение4</a></li>
+                <li><a href="#">Лечение5</a></li>
+                <li><a href="#">Лечение6</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="var close">
+            <div class="main">
+              <h2>Аллергия</h2>
+              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
+              <ul class="inner services">
+                <li><a href="#">Лечение1</a></li>
+                <li><a href="#">Лечение2</a></li>
+                <li><a href="#">Лечение3</a></li>
+                <li><a href="#">Лечение4</a></li>
+                <li><a href="#">Лечение5</a></li>
+                <li><a href="#">Лечение6</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="var close">
+            <div class="main">
+              <h2>Артрит</h2>
+              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
+              <ul class="inner services">
+                <li><a href="#">Лечение1</a></li>
+                <li><a href="#">Лечение2</a></li>
+                <li><a href="#">Лечение3</a></li>
+                <li><a href="#">Лечение4</a></li>
+                <li><a href="#">Лечение5</a></li>
+                <li><a href="#">Лечение6</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <!----list------->
 

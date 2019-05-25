@@ -1,0 +1,77 @@
+@import '../vars.scss';
+
+%expand {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-bottom: 27px;
+
+  h2 {
+    width: 90%;
+    font-size: 24px;
+    font-family: Medium;
+    cursor: pointer;
+    @include media(0, $media-sm) {
+      font-size: 22px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-family: Light;
+  }
+  .main {
+    padding: 22px 51px;
+    @include media(0, $media-sm) {
+      padding: 22px 30px;
+    }
+  }
+  img.arrow {
+    position: absolute;
+    top: 33px;
+    right: 60px;
+    @include media(0, $media-sm) {
+      right: 40px;
+    }
+  }
+  .helpful {
+    padding: 12px 51px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    font-size: 14px;
+    font-family: Regular;
+
+    & > div:first-child {
+      flex: 1;
+      text-align: right;
+      padding-right: 54px;
+    }
+  }
+  .helpful button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  &.open {
+    h2 {
+      margin-bottom: 28px;
+    }
+    img.arrow {
+      transform: rotate(180deg);
+    }
+  }
+  
+  &.close {
+    .main .inner {
+      display: none;
+    }
+    .helpful {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,49 @@
+@import '../vars.scss';
+
+%services-menu {
+  h2 {
+    font-size: 36px;
+    line-height: 51px;
+    font-family: UltraBold;
+    color: #000;
+  }
+  h3 {
+    font-family: Medium;
+    font-size: 24px;
+    line-height: 51px;
+    margin-top: 14px;
+    margin-bottom: 28px;
+  }
+  .vars {
+    border-right: 1px solid #ccc;
+    ul {
+      margin-top: 28px;
+    }
+  }
+  .vars ul li {
+    cursor: pointer;
+    list-style: none;
+    font-size: 24px;
+    line-height: 51px;
+    color: #000;
+    font-family: Medium;
+    &.active {
+      color: $mainColor;
+    }
+    &:hover {
+      color: #555;
+    }
+  }
+  .services ul li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .services ul li a {
+    font-size: 18px;
+    color: #000;
+    font-family: Medium;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
