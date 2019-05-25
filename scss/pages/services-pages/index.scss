@@ -1,0 +1,10 @@
+.drugs-page,
+.diseases-page,
+.med-services-page {
+  @extend %services-page-template;
+
+  &-body .ui-autocomplete li {
+    background-color: red;
+  }
+}
+

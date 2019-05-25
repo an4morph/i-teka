@@ -41,6 +41,12 @@ $(document).ready(function () {
     if ($('.diseases-page').length) {
         createExpand('.diseases-page .list .var', '.diseases-page .list .var h2')
     }
+    if ($('.med-services-page').length) {
+        createExpand('.med-services-page .list .var', '.med-services-page .list .var h2')
+    }
+    if ($('.drugs-page').length) {
+        createExpand('.drugs-page .list .var', '.drugs-page .list .var h2')
+    }
 });
 
 
