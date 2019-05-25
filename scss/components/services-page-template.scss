@@ -1,0 +1,34 @@
+@import './vars.scss';
+
+%services-page-template {
+  padding: 48px 0;
+
+  .list {
+    @extend %services-list;
+  }
+
+  .search {
+    margin-bottom: 72px;
+    @include media(0, $media-lg) {
+      margin-bottom: 40px;
+    }
+    h1 {
+      margin-bottom: 27px;
+    }
+    form {
+      @extend %search;
+    }
+  }
+  
+  .intresting {
+    @extend %services-intresting;
+  }
+
+  .other-cities {
+    @extend %services-cities;
+    @include media(0, $media-lg) {
+      margin-top: 10px;
+    }
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,9 @@
+@import './vars.scss';
+
+.diseases-page {
+  @extend %services-page-template;
+}
+
+.diseases-page-body .ui-autocomplete li {
+  background-color: red;
+}

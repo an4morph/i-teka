@@ -1,58 +1,12 @@
-@import './vars.scss';
+@import '../vars.scss';
 
-.diseases-page {
-  padding: 48px 0;
-
-  .desktop-list {
-    @extend %services-menu;
-    margin-bottom: 70px;
-  }
-  .mobile-list {
-    margin-bottom: 50px;
-    .var {
-      width: 100%;
-      @extend %expand;
-      list-style: none;
-      margin-bottom: 20px;
-      .main { padding: 15px 30px!important; }
-      .arrow { top: 25px!important; }
-    }
-    a {
-      font-size: 18px;
-      color: #000;
-      font-family: Regular;
-      &:hover {
-        color: $mainColor;
-      }
-    }
-    .inner li {
-      margin-bottom: 8px;
-      list-style: none;
-      font-size: 18px;
-    }
-  }
-}
-
-.diseases-page .search {
-  margin-bottom: 72px;
-  @include media(0, $media-lg) {
-    margin-bottom: 40px;
-  }
-  h1 {
-    margin-bottom: 27px;
-  }
-  form {
-    @extend %search;
-  }
-}
-
-.diseases-page .intresting {
+%services-intresting {
   h2 {
     font-family: UltraBold;
     font-size: 36px;
     margin-bottom: 40px;
   }
-  &-item {
+  .intresting-item {
     display: block;
     color: #000;
     background-color: #fff;
@@ -97,8 +51,4 @@
       border-radius: 100%;
     }
   }
-}
-
-.diseases-page-body .ui-autocomplete li {
-  background-color: red;
 }

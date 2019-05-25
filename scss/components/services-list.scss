@@ -1,0 +1,79 @@
+@import '../vars.scss';
+
+%services-list {
+  /// desktop ///
+  .desktop-list {
+    h2 {
+      font-size: 36px;
+      line-height: 51px;
+      font-family: UltraBold;
+      color: #000;
+    }
+    h3 {
+      font-family: Medium;
+      font-size: 24px;
+      line-height: 51px;
+      margin-top: 14px;
+      margin-bottom: 28px;
+    }
+    .vars {
+      border-right: 1px solid #ccc;
+      ul {
+        margin-top: 28px;
+      }
+    }
+    .vars ul li {
+      cursor: pointer;
+      list-style: none;
+      font-size: 24px;
+      line-height: 51px;
+      color: #000;
+      font-family: Medium;
+      &.active {
+        color: $mainColor;
+      }
+      &:hover {
+        color: #555;
+      }
+    }
+    .services ul li {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    .services ul li a {
+      font-size: 18px;
+      color: #000;
+      font-family: Medium;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+    margin-bottom: 70px;
+  }
+
+  /// mobile ///
+  .mobile-list {
+    margin-bottom: 50px;
+    .var {
+      width: 100%;
+      @extend %expand;
+      list-style: none;
+      margin-bottom: 20px;
+      .main { padding: 15px 30px!important; }
+      .arrow { top: 25px!important; }
+    }
+    a {
+      font-size: 18px;
+      color: #000;
+      font-family: Regular;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+    .inner li {
+      margin-bottom: 8px;
+      list-style: none;
+      font-size: 18px;
+    }
+  }
+}

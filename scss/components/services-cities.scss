@@ -1,0 +1,21 @@
+@import '../vars.scss';
+
+%services-cities {
+  h2 {
+    @extend %main-title;
+    margin-bottom: 27px;
+  }
+  ul li {
+    cursor: pointer;
+    display: inline;
+    margin-right: 25px;
+    list-style: none;
+    font-family: Regular;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
