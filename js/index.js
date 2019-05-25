@@ -47,6 +47,9 @@ $(document).ready(function () {
     if ($('.drugs-page').length) {
         createExpand('.drugs-page .list .var', '.drugs-page .list .var h2')
     }
+    if ($('.doctors-page').length) {
+        createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
+    }
 });
 
 
