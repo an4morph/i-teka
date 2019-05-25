@@ -4,9 +4,5 @@
 .doctors-page,
 .pharmacy-page {
   @extend %services-page-template;
-
-  &-body .ui-autocomplete li {
-    background-color: red;
-  }
 }
 

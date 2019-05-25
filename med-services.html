@@ -109,12 +109,14 @@
       <div class="search">
         <h1>Поиск процедур</h1>
         <form>
-          <input id="med-services-page__search" type="text" placeholder="Введите название процедуры">
+          <div class="input-wrapper">
+            <input id="med-services-page__search" type="text" placeholder="Введите название процедуры">
+            <button class="d-none d-md-flex" type="submit">Найти</button>
+            <button class="d-flex d-md-none" type="submit">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
           <div id="med-services-page__search-vars"></div>
-          <button class="d-none d-md-flex" type="submit">Найти</button>
-          <button class="d-flex d-md-none" type="submit">
-            <i class="material-icons">search</i>
-          </button>
         </form>
       </div>
       <!----search------->
@@ -136,7 +138,8 @@
             <h2>Весь список услуг</h2>
             <h3>Рентген</h3>
             <ul>
-              <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
+              <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                  голоного мозга</a></li>
               <li><a href="#">Лечение2</a></li>
               <li><a href="#">Лечение3</a></li>
               <li><a href="#">Лечение4</a></li>
@@ -152,10 +155,13 @@
               <h2>Рентген</h2>
               <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
               <ul class="inner services">
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
                 <li><a href="#">Лечение3</a></li>
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
                 <li><a href="#">Лечение5</a></li>
                 <li><a href="#">Лечение6</a></li>
               </ul>
@@ -272,7 +278,7 @@
       <!----intresting------->
 
       <!----other-cities------->
-                                                       
+
       <div class="other-cities">
         <h2>Медицинские услуги в других городах</h2>
         <ul>

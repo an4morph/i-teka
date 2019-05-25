@@ -109,12 +109,14 @@
       <div class="search">
         <h1>Поиск аптек</h1>
         <form>
-          <input id="pharmacy-page__search" type="text" placeholder="Введите название аптеки">
+          <div class="input-wrapper">
+            <input id="pharmacy-page__search" type="text" placeholder="Введите название аптеки">
+            <button class="d-none d-md-flex" type="submit">Найти</button>
+            <button class="d-flex d-md-none" type="submit">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
           <div id="pharmacy-page__search-vars"></div>
-          <button class="d-none d-md-flex" type="submit">Найти</button>
-          <button class="d-flex d-md-none" type="submit">
-            <i class="material-icons">search</i>
-          </button>
         </form>
       </div>
       <!----search------->
@@ -152,10 +154,13 @@
               <h2>ФармаМир</h2>
               <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
               <ul class="inner services">
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
                 <li><a href="#">Лечение3</a></li>
-                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ голоного мозга</a></li>
+                <li><a href="#">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
+                    голоного мозга</a></li>
                 <li><a href="#">Лечение5</a></li>
                 <li><a href="#">Лечение6</a></li>
               </ul>
@@ -272,7 +277,7 @@
       <!----intresting------->
 
       <!----other-cities------->
-                                                       
+
       <div class="other-cities">
         <h2>Аптеки в других городах</h2>
         <ul>
