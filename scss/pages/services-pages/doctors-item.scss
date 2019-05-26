@@ -1,0 +1,10 @@
+@import '../../vars.scss';
+
+.doctors-item-page {
+  .intresting {
+    @extend %services-intresting;
+  }
+  .other-cities {
+    @extend %services-cities;
+  }
+}
