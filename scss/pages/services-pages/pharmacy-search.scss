@@ -1,0 +1,44 @@
+@import '../../vars.scss';
+
+.pharmacy-search-page .list-item {
+  a.title {
+    color: #000;
+    font-size: 28px;
+    font-family: Bold;
+    margin-bottom: 10px;
+  }
+  .tags {
+    display: flex;
+  }
+  .tag-item {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 3px 20px 5px 20px;
+    margin: 8px 13px 13px 0px;
+    &.green {
+      background-color: #34BE4A;
+      color: #fff;
+    }
+  }
+  .address {
+    font-size: 18px;
+    font-family: Light;
+  }
+  .status {
+    font-family: Light;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 12px;
+    .dot {
+      margin-right: 10px;
+      background-color: #34BE4A;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+    }
+  }
+}

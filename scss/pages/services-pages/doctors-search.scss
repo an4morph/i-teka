@@ -1,10 +1,6 @@
 @import '../../vars.scss';
 
 
-.doctors-search-page {
-  @extend %page-search-template;
-}
-
 .doctors-search-page .list-item {
   border-bottom: 1px solid #ccc;
   padding-bottom: 33px;
