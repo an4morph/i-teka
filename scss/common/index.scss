@@ -29,6 +29,10 @@ a, button {
 button:active {
   transform: scale(0.98);
 }
+button.icon {
+  border: none;
+  border-radius: 100%;
+}
 input, textarea {
   &:focus {
     outline: none;
