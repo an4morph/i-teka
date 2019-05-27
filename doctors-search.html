@@ -11,7 +11,7 @@
   <title>Доктор по имени так-то</title>
 </head>
 
-<body class="doctors-page-body">
+<body class="doctors-search-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,114 +103,91 @@
   </header>
   <!----end of header------->
 
-  <div class="doctors-item-page">
+  <div class="doctors-search-page">
     <div class="container">
+
       <div class="row">
-        <div class="col-md-7">
-          <h1>Александрова Дана Сергеевна</h1>
-          <h3>Педиатр</h3>
-
-          <div class="main-info">
-            <div class="first-row row">
-              <div class="col-12 col-md-6 address">Алматы, пр-т Абая fhdsjfdsfh fsdgh, д. 43</div>
-              <div class="col-12 col-md-6 btns">
-                <button class="icon"><i class="material-icons">phone</i></button>
-                <button class="icon"><i class="material-icons">swap_calls</i></button>
-                <button class="icon"><i class="material-icons">favorite</i></button>
-              </div>
-            </div>
-            <div class="status">
-              <div class="dot"></div>
-              До 23:00
-            </div>
+        <div class="col-12 col-md-6">
+          <h1>Все врачи города Алматы</h1>
+          <div class="search">
+            <!------------------search-->
           </div>
 
-          <div class="tabs">
-            <a href="/doctors-item" class="tab-item">Информация</a>
-            <div class="tab-item active">Услуги</div>
-            <a href="/doctors-item-gallery" class="tab-item">Галерея</a>
-          </div>
-
-          <div class="service-tab">
-            <div class="service-title">Ультразвуковая диагностика (УЗИ)</div>
-
-            <div class="service-block">
-              <div class="top">
-                <div class="name">УЗИ брюшной полости</div>
-                <div class="divider"></div>
-                <div class="price">5800 тг</div>
+          <div class="list">
+            <div class="top">
+              <div class="item sort">
+                <i class="material-icons">import_export</i>
+                (Сортировать)
               </div>
-              <div class="desc">
-                Печень и желчный пузырь без определения функции, поджелудочная железа, селезенка
+              <div class="item filter">
+                <i class="material-icons">filter_list</i>
+                (Фильтр)
               </div>
             </div>
 
-            <div class="service-block">
-              <div class="top">
-                <div class="name">УЗИ брюшной полости</div>
-                <div class="divider"></div>
-                <div class="price">5800 тг</div>
+            <div class="list-item">
+              <div class="doctor-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <h2>Александрова Дана Сергеевна</h2>
+                  <div class="bottom">
+                    <span class="speciality">Педиатр</span>
+                    <span class="expierence">Стаж: 8 лет</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="body">
+                <div class="clinic-name">Клиника Рахат</div>
+                <div class="clinic-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
+              </div>
+
+              <div class="btns">
+                <button>Записаться</button>
+                <button>Вызов на дом</button>
+                <button><i class="material-icons">phone</i></button>
+                <button><i class="material-icons">flag</i></button>
               </div>
             </div>
 
-            <div class="service-block">
-              <div class="top">
-                <div class="name">УЗИ брюшной полости</div>
-                <div class="divider"></div>
-                <div class="price">5800 тг</div>
+            <div class="list-item">
+              <div class="doctor-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <h2>Александрова Дана Сергеевна</h2>
+                  <div class="bottom">
+                    <span class="speciality">Педиатр</span>
+                    <span class="expierence">Стаж: 8 лет</span>
+                  </div>
+                </div>
               </div>
-              <div class="desc">
-                Печень и желчный пузырь без определения функции, поджелудочная железа, селезенка
+
+              <div class="body">
+                <div class="clinic-name">Клиника Рахат</div>
+                <div class="clinic-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
+              </div>
+
+              <div class="btns">
+                <button>Записаться</button>
+                <button>Вызов на дом</button>
+                <button><i class="material-icons">phone</i></button>
+                <button><i class="material-icons">flag</i></button>
               </div>
             </div>
-            
+
           </div>
         </div>
 
-
-        <div class="col-md-5">
-          <div class="doctor-photo"></div>
-
+        <div class="col-12 col-md-6">
           <div class="map">
             тут карта
           </div>
-
-          <form class="doctor-booking">
-            <div class="title">Запись к врачу</div>
-            <div class="inner">
-              <div class="row">
-                <div class="input-wrapper col-6">
-                  <label for="date">Дата приема</label>
-                  <input type="text" name="date" placeholder="01/01/2020">
-                </div>
-                <div class="input-wrapper col-6">
-                  <label for="time">Время приема</label>
-                  <input type="text" name="time" placeholder="15:00">
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-wrapper col-6">
-                  <label for="surname">Ваша фамилия</label>
-                  <input type="text" name="surname" placeholder="Фамилия">
-                </div>
-                <div class="input-wrapper col-6">
-                  <label for="name">Ваше имя</label>
-                  <input type="text" name="name" placeholder="Имя">
-                </div>
-              </div>
-              <div class="input-wrapper">
-                <label for="email">Ваш e-mail</label>
-                <input type="text" name="email" placeholder="@gmail.com">
-              </div>
-              <div class="input-wrapper">
-                <label for="phone">Номер телефона</label>
-                <input type="text" name="phone" placeholder="+7(___)___-__-__">
-              </div>
-            </div>
-            <div class="btn-container">
-              <button type="submit">Записаться</button>
-            </div>
-          </form>
         </div>
       </div>
 

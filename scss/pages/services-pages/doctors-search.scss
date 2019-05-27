@@ -1,0 +1,117 @@
+@import '../../vars.scss';
+
+
+.doctors-search-page .list .top {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: Medium;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 20px;
+
+  i {
+    margin-right: 10px;
+  }
+  .item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}
+.doctors-search-page .list-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 33px;
+  padding-top: 34px;
+
+  .doctor-header {
+    display: flex;
+    .avatar {
+      min-width: 110px;
+      height: 110px;
+      border-radius: 100%;
+      background-image: url(/img/bg/doctor-photo.png);
+      background-size: cover;
+      background-position: center;
+      margin-right: 40px;
+      @include media(0, $media-sm) {
+        min-width: 80px;
+        height: 80px;
+        margin-right: 20px;
+      }
+    }
+    h2 {
+      font-family: UltraBold;
+      font-size: 24px;
+      line-height: 34px;
+    }
+    .bottom {
+      display: flex;
+    }
+    span.speciality, span.expierence {
+      font-family: Regular;
+      font-size: 18px;
+    }
+    span.speciality {
+      color: #A835DD;
+      margin-right: 30px;
+      @include media(0, $media-sm) {
+        margin-right: 20px;
+      }
+    }
+    span.expierence {
+      color: #53994D;
+    }
+  }
+  .body {
+    padding-top: 10px;
+    .clinic-name {
+      font-size: 18px;
+      font-family: Bold;
+    }
+    .clinic-address {
+      font-family: Light;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-family: Light;
+      margin-top: 5px;
+      .dot {
+        background: #34BE4A;
+        border-radius: 100%;
+        width: 6px;
+        height: 6px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    margin-top: 15px;
+    button {
+      @extend %button;
+      margin-right: 14px;
+      font-size: 12px;
+      max-height: 32px;
+      min-height: 32px;
+      @include media(0, $media-sm) {
+        margin-right: 8px;
+      }
+      i {
+        padding-top: 4px;
+        font-size: 15px;
+      }
+      &:nth-child(1), &:nth-child(2) {
+        padding: 0 28px;
+        @include media(0, $media-sm) {
+          padding: 0 10px;
+        }
+      }
+      &:nth-child(4), &:nth-child(3) {
+        min-width: 32px;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import './doctors-item.scss';
+@import './doctors-search.scss';
 
 .drugs-page,
 .diseases-page,
@@ -6,5 +7,15 @@
 .doctors-page,
 .pharmacy-page {
   @extend %services-page-template;
+}
+
+.doctors-item-page,
+.doctors-search-page {
+  .intresting {
+    @extend %services-intresting;
+  }
+  .other-cities {
+    @extend %services-cities;
+  }
 }
 

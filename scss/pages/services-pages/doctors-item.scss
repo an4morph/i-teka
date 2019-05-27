@@ -42,10 +42,6 @@
   }
   .intresting {
     margin-top: 30px;
-    @extend %services-intresting;
-  }
-  .other-cities {
-    @extend %services-cities;
   }
 }
 
