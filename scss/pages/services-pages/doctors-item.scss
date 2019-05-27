@@ -97,6 +97,9 @@
   display: flex;
   border-bottom: 1px solid #CCCCCC;
   margin-top: 23px;
+  a {
+    color: #000;
+  }
   .tab-item {
     cursor: pointer;
     margin-right: 80px;
@@ -111,32 +114,64 @@
   }
 }
 
-.doctors-item-page .about {
-  font-family: Regular;
-  font-size: 18px;
-  padding: 43px 0 18px 0;
-  border-bottom: 1px solid #CCCCCC;
-}
-
-.doctors-item-page .second-info {
-  padding: 22px 0 18px 0;
-  border-bottom: 1px solid #CCCCCC;
-
-  .schedule {
-    margin-top: 31px;
-    display: flex;
-    justify-content: space-between;
-    @include media(0, $media-sm) {
-      flex-direction: column;
-      margin-top: 10px;
+.doctors-item-page  .main-tab {
+  .about {
+    font-family: Regular;
+    font-size: 18px;
+    padding: 43px 0 18px 0;
+    border-bottom: 1px solid #CCCCCC;
+  }
+  
+  .second-info {
+    padding: 22px 0 18px 0;
+    border-bottom: 1px solid #CCCCCC;
+  
+    .schedule {
+      margin-top: 31px;
+      display: flex;
+      justify-content: space-between;
+      @include media(0, $media-sm) {
+        flex-direction: column;
+        margin-top: 10px;
+      }
     }
+  }
+  
+  .delivery {
+    padding: 21px 0 17px 0;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 35px;
   }
 }
 
-.doctors-item-page .delivery {
-  padding: 21px 0 17px 0;
-  border-bottom: 1px solid #CCCCCC;
-  margin-bottom: 35px;
+.doctors-item-page  .service-tab {
+  padding-top: 32px;
+  .service-title {
+    font-size: 24px;
+    margin-bottom: 21px;
+    font-family: Bold;
+  }
+  .service-block {
+    padding: 12px 0;
+    .top {
+      display: flex;
+      align-items: center;
+    }
+    .name, .price {
+      font-family: Regular;
+      font-size: 18px;
+    }
+    .divider {
+      background-color: #000;
+      height: 1px;
+      flex: 1;
+      margin: 0 20px;
+    }
+    .desc {
+      font-size: 14px;
+      width: 80%;
+    }
+  }
 }
 
 .doctors-item-page .doctor-photo {
