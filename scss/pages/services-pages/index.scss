@@ -18,7 +18,8 @@
     @extend %services-cities;
   }
 }
-.doctors-search-page {
+.doctors-search-page,
+.pharmacy-search-page {
   @extend %page-search-template;
 }
 

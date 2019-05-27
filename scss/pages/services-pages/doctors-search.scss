@@ -5,25 +5,6 @@
   @extend %page-search-template;
 }
 
-.doctors-search-page .list .top {
-  display: flex;
-  margin-top: 50px;
-  justify-content: space-between;
-  font-size: 18px;
-  font-family: Medium;
-  border-bottom: 1px solid #CCCCCC;
-  padding-bottom: 20px;
-
-  i {
-    margin-right: 10px;
-  }
-  .item {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-}
-
 .doctors-search-page .list-item {
   border-bottom: 1px solid #ccc;
   padding-bottom: 33px;
