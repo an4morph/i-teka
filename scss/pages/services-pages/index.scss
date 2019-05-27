@@ -10,13 +10,15 @@
   @extend %services-page-template;
 }
 
-.doctors-item-page,
-.doctors-search-page {
+.doctors-item-page {
   .intresting {
     @extend %services-intresting;
   }
   .other-cities {
     @extend %services-cities;
   }
+}
+.doctors-search-page {
+  @extend %page-search-template;
 }
 
