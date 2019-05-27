@@ -5,7 +5,8 @@
 .diseases-page,
 .med-services-page,
 .doctors-page,
-.pharmacy-page {
+.pharmacy-page,
+.med-centers-page {
   @extend %services-page-template;
 }
 

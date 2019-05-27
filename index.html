@@ -114,11 +114,13 @@
           <h1>Единый портал записи к врачу, поиска клиник, лекарств и медицинских услуг</h1>
           <h2>Найдите из 31 430 препаратов в 438 аптеках Алматы</h2>
           <form>
-            <input type="text" placeholder="Введите название лекарства, аптек и находите врачей">
-            <button class="d-none d-md-flex" type="submit">Найти</button>
-            <button class="d-flex d-md-none" type="submit">
-              <i class="material-icons">search</i>
-            </button>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Введите название лекарства, аптек и находите врачей">
+              <button class="d-none d-md-flex" type="submit">Найти</button>
+              <button class="d-flex d-md-none" type="submit">
+                <i class="material-icons">search</i>
+              </button>
+            </div>
           </form>
         </div>
         <!----search----->
@@ -126,40 +128,40 @@
         <!----menu----->
         <menu class="row">
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/pharmacy" class="box">
               <i class="menu-img-apteki"></i>
               <div class="text">Аптеки</div>
-            </div>
+            </a>
           </li>
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/drugs" class="box">
               <i class="menu-img-drugs"></i>
               <div class="text">Лекарства</div>
-            </div>
+            </a>
           </li>
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/med-centers" class="box">
               <i class="menu-img-medcenters"></i>
               <div class="text">Медцентры</div>
-            </div>
+            </a>
           </li>
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/doctors" class="box">
               <i class="menu-img-doctors"></i>
               <div class="text">Врачи</div>
-            </div>
+            </a>
           </li>
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/med-services" class="box">
               <i class="menu-img-services"></i>
               <div class="text">Медуслуги</div>
-            </div>
+            </a>
           </li>
           <li class="col-6 col-md-4 col-lg-2">
-            <div class="box">
+            <a href="/diseases" class="box">
               <i class="menu-img-ills"></i>
               <div class="text">Заболевания</div>
-            </div>
+            </a>
           </li>
         </menu>
         <!----menu----->
@@ -183,13 +185,13 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="buttons col-12 col-lg-4">
               <a href="#" class="big-btn">
                 <i class="menu-img-doctors"></i>
                 <div class="text">Вызвать врача на дом</div>
               </a>
-  
+
               <a href="#" class="big-btn">
                 <i class="menu-img-ills"></i>
                 <div class="text">Записаться на прием онлайн</div>

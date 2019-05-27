@@ -57,6 +57,10 @@ $(document).ready(function () {
         searchAutocomplete('#pharmacy-page__search', searchSource)
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
     }
+    if ($('.med-centers-page').length) {
+        searchAutocomplete('#med-center-page__search', searchSource)
+        createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
+    }
 });
 
 
