@@ -9,8 +9,6 @@
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
-    font-size: 18px;
-    font-family: Medium;
     border-bottom: 1px solid #CCCCCC;
     padding-bottom: 20px;
   
@@ -18,6 +16,8 @@
       margin-right: 10px;
     }
     .item {
+      font-size: 18px;
+      font-family: Medium;
       cursor: pointer;
       display: flex;
       align-items: center;

@@ -59,9 +59,15 @@ $(document).ready(function () {
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
     }
     if ($('.pharmacy-search-page').length) {
-        // $('#pharmacy-search__date').selectmenu({
-        //     appendTo: '.sidebar'
-        // });
+        $('#pharmacy-search__sort-btn').on('click', () => {
+            $('.pharmacy-search-page-body .sidebar').addClass('open')
+        });
+        $('.pharmacy-search-page-body .sidebar-overlay').on('click', () => {
+            $('.pharmacy-search-page-body .sidebar').removeClass('open')
+        })
+        $('.pharmacy-search-page-body .cross').on('click', () => {
+            $('.pharmacy-search-page-body .sidebar').removeClass('open')
+        })
     }
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)

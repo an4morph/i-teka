@@ -119,14 +119,14 @@
 
           <div class="list">
             <div class="top-settings">
-              <div class="item sort">
+              <button id="pharmacy-search__sort-btn" class="icon item sort">
                 <i class="material-icons">import_export</i>
                 (Сортировать)
-              </div>
-              <div class="item filter">
+              </button>
+              <button id="pharmacy-search__filter-btn" class="icon item filter">
                 <i class="material-icons">filter_list</i>
                 (Фильтр)
-              </div>
+              </button>
             </div>
 
             <div class="list-item">
@@ -368,76 +368,80 @@
       </div>
     </section>
   </footer>
+  <!----end of footer------->
 
   <div class="sidebar">
-    <div class="title">Все фильтры</div>
-    <button class="icon cross"><i class="material-icons">clear</i></button>
-    <div class="content">
-      <label class="for-select" for="date">Выберите время</label>
-      <div class="custom-select">
-        <select name="date" id="pharmacy-search__date">
-          <option value="0">Не выбрано</option>
-          <option value="1">1 option</option>
-          <option value="2">2 option</option>
-          <option value="3">3 option</option>
-        </select>
-      </div>
-      <label class="for-select" for="district">Район</label>
-      <div class="custom-select">
-        <select name="district" id="pharmacy-search__district">
-          <option value="0">Не выбрано</option>
-          <option value="1">1 option</option>
-          <option value="2">2 option</option>
-          <option value="3">3 option</option>
-        </select>
-      </div>
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+      <div class="title">Все фильтры</div>
+      <button class="icon cross"><i class="material-icons">clear</i></button>
+      <div class="content">
+        <label class="for-select" for="date">Выберите время</label>
+        <div class="custom-select">
+          <select name="date" id="pharmacy-search__date">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+        <label class="for-select" for="district">Район</label>
+        <div class="custom-select">
+          <select name="district" id="pharmacy-search__district">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
 
-      <label class="for-select" for="microdistrict">Микрорайон</label>
-      <div class="custom-select">
-        <select name="microdistrict" id="pharmacy-search__microdistrict">
-          <option value="0">Не выбрано</option>
-          <option value="1">1 option</option>
-          <option value="2">2 option</option>
-          <option value="3">3 option</option>
-        </select>
-      </div>
+        <label class="for-select" for="microdistrict">Микрорайон</label>
+        <div class="custom-select">
+          <select name="microdistrict" id="pharmacy-search__microdistrict">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
 
-      <div class="checkboxes-title">Прием врачей</div>
-      <div class="check-row">
-        <input type="checkbox" name="c1">
-        <label for="c1">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c2">
-        <label for="c2">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c3">
-        <label for="c3">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c4">
-        <label for="c4">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c5">
-        <label for="c5">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c6">
-        <label for="c6">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c7">
-        <label for="c7">Аллерголог</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" name="c8">
-        <label for="c8">Аллерголог</label>
+        <div class="checkboxes-title">Прием врачей</div>
+        <div class="check-row">
+          <input type="checkbox" name="c1">
+          <label for="c1">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c2">
+          <label for="c2">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c3">
+          <label for="c3">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c4">
+          <label for="c4">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c5">
+          <label for="c5">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c6">
+          <label for="c6">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c7">
+          <label for="c7">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c8">
+          <label for="c8">Аллерголог</label>
+        </div>
       </div>
     </div>
   </div>
-  <!----end of footer------->
+
   <script src="dist/main.js"></script>
 </body>
 
