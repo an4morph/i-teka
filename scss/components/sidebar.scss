@@ -1,7 +1,6 @@
 @import '../vars.scss';
 
 .sidebar {
-  padding: 0 50px;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -23,7 +22,18 @@
     top: 48px;
     right: 20px;
   }
+  .content {
+    padding: 35px 50px;
+    overflow: auto;
+    max-height: calc(100vh - 116px);
+  }
+  label.for-select, .checkboxes-title {
+    margin-bottom: 13px;
+    font-size: 18px;
+    display: block;
+  }
   .custom-select {
+    margin-bottom: 22px;
     border: 1px solid #ccc;
     font-size: 14px;
     font-family: Regular;
@@ -41,8 +51,16 @@
       width: calc(100% + 2px);
       left: -1px;
     }
-    .select-items > div {
-      
+  }
+  label.for-checkbox {
+    font-size: 18px;
+    display: block;
+  }
+  .check-row {
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 10px;
     }
   }
 }
