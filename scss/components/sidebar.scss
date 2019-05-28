@@ -1,0 +1,48 @@
+@import '../vars.scss';
+
+.sidebar {
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 390px;
+  z-index: 200;
+  background-color: #fff;
+
+  .title {
+    border-bottom: 1px solid #ccc;
+    font-family: UltraBold;
+    font-size: 24px;
+    line-height: 19px;
+    padding: 48px 0;
+    text-align: center;
+  }
+  .cross {
+    position: absolute;
+    top: 48px;
+    right: 20px;
+  }
+  .custom-select {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Regular;
+    width: 100%;
+    .select-selected {
+      padding: 10px 25px;
+      &::after {
+        top: 18px;
+        right: 20px;
+      }
+    }
+    .select-items {
+      box-shadow: $shadow1;
+      border: 1px solid #ccc;
+      width: calc(100% + 2px);
+      left: -1px;
+    }
+    .select-items > div {
+      
+    }
+  }
+}

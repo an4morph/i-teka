@@ -11,6 +11,7 @@ require('slick-carousel');
 require('slick-carousel/slick/slick.scss');
 require('slick-carousel/slick/slick-theme.scss');
 require('jquery-ui-dist/jquery-ui');
+require('jquery-ui-dist/jquery-ui.css');
 
 const RevealGlobal = () => {
     window.sr = ScrollReveal({ reset: true })
@@ -56,6 +57,11 @@ $(document).ready(function () {
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
+    }
+    if ($('.pharmacy-search-page').length) {
+        // $('#pharmacy-search__date').selectmenu({
+        //     appendTo: '.sidebar'
+        // });
     }
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)
