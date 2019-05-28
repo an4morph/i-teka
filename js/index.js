@@ -30,9 +30,7 @@ const RevealGlobal = () => {
 $(document).ready(function () {
     const searchSource = ['abc', 'aaaaa', 'aaaaa1', 'aaaaa2', 'aaaaa3', 'cde', 'efg', 'ghi', 'ikl']
     RevealGlobal();
-    $(".slider").slick({
-        dots: true
-    });
+    $(".slider").slick({ dots: true });
     
     Header()
     if ($('.drug-page').length) DrugPage()
@@ -54,6 +52,10 @@ $(document).ready(function () {
     if ($('.doctors-page').length) {
         searchAutocomplete('#doctors-page__search', searchSource)
         createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
+    }
+    if ($('.doctors-search-page').length) {
+        createSidebar('.doctors-search-page-body .sort-sidebar', '#doctors-search__sort-btn')
+        createSidebar('.doctors-search-page-body .filter-sidebar', '#doctors-search__filter-btn')
     }
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)
