@@ -3,6 +3,7 @@ const ScrollReveal = require("scrollreveal").default;
 const DrugPage = require('./drug-page');
 const Header = require('./header');
 const createExpand = require("./utils/expand");
+const createSidebar = require("./utils/sidebar");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
 require("./utils/custom-selects");
@@ -59,15 +60,8 @@ $(document).ready(function () {
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
     }
     if ($('.pharmacy-search-page').length) {
-        $('#pharmacy-search__sort-btn').on('click', () => {
-            $('.pharmacy-search-page-body .sidebar').addClass('open')
-        });
-        $('.pharmacy-search-page-body .sidebar-overlay').on('click', () => {
-            $('.pharmacy-search-page-body .sidebar').removeClass('open')
-        })
-        $('.pharmacy-search-page-body .cross').on('click', () => {
-            $('.pharmacy-search-page-body .sidebar').removeClass('open')
-        })
+        createSidebar('.pharmacy-search-page-body .sort-sidebar', '#pharmacy-search__sort-btn')
+        createSidebar('.pharmacy-search-page-body .filter-sidebar', '#pharmacy-search__filter-btn')
     }
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)
