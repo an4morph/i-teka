@@ -1,5 +1,12 @@
 @import '../../vars.scss';
 @import './doctors-item.scss';
+@import './med-centers-item.scss';
+@import './services-page-template.scss';
+@import './services-list.scss';
+@import './services-cities.scss';
+@import './services-intresting.scss';
+@import './page-search-list-item.scss';
+@import './page-search-template.scss';
 
 .drugs-page,
 .diseases-page,
@@ -24,7 +31,8 @@
   }
 }
 
-.doctors-item-page {
+.doctors-item-page,
+.med-centers-item-page {
   .intresting {
     @extend %services-intresting;
   }
