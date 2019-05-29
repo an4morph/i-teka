@@ -150,7 +150,7 @@
               </div>
 
               <div class="btns">
-                <button>Записаться</button>
+                <button class="booking-btn">Записаться</button>
                 <button>Вызов на дом</button>
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
                 <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
@@ -178,7 +178,7 @@
               </div>
 
               <div class="btns">
-                <button>Записаться</button>
+                <button class="booking-btn">Записаться</button>
                 <button>Вызов на дом</button>
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
                 <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
@@ -555,6 +555,47 @@
         </div>
       </form>
     </div>
+  </div>
+
+
+  <div class="modal booking-modal">
+    <div class="overlay"></div>
+    <form class="content doctor-booking">
+      <div class="title">Запись к врачу</div>
+      <div class="inner">
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="date">Дата приема</label>
+            <input type="text" name="date" placeholder="01/01/2020">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="time">Время приема</label>
+            <input type="text" name="time" placeholder="15:00">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="surname">Ваша фамилия</label>
+            <input type="text" name="surname" placeholder="Фамилия">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" placeholder="Имя">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Ваш e-mail</label>
+          <input type="text" name="email" placeholder="@gmail.com">
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Номер телефона</label>
+          <input type="text" name="phone" placeholder="+7(___)___-__-__">
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit">Записаться</button>
+      </div>
+    </form>
   </div>
 
   <script src="dist/main.js"></script>

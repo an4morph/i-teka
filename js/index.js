@@ -62,6 +62,7 @@ $(document).ready(function () {
         createSidebar('.doctors-search-page-body .sort-sidebar', '#doctors-search__sort-btn')
         createSidebar('.doctors-search-page-body .filter-sidebar', '#doctors-search__filter-btn')
         modal('.doctors-search-page-body', '.report-modal', '.report-btn')
+        modal('.doctors-search-page-body', '.booking-modal', '.booking-btn')
     }
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)

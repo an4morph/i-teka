@@ -2,7 +2,6 @@ const $ = require("jquery");
 
 module.exports = (page, modal, buttons) => {
   $(buttons).each((index, btn) => {
-    console.log(page, modal, buttons)
     $(btn).on('click', () => {
       $(modal).addClass('open')
     })
