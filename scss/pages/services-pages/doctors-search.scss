@@ -6,8 +6,20 @@
   padding-bottom: 33px;
   padding-top: 34px;
 
-  .doctor-header {
+  .item-header {
     display: flex;
+    position: relative;
+    .crown {
+      background-image: url(/img/icons/crown.svg);
+      background-size: 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 100%;
+      position: absolute;
+      background-color: #fff;
+    }
     .avatar {
       min-width: 110px;
       height: 110px;
