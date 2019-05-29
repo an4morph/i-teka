@@ -1,0 +1,71 @@
+@import '../vars.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 300;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  &.open {
+    display: flex;
+  }
+  & > .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000088;
+    z-index: 1;
+  }
+  & > .content {
+    z-index: 2;
+    background-color: #fff;
+  }
+}
+
+.report-modal .content {
+  max-width: 572px;
+  padding: 13px 0;
+  margin: 15px;
+  max-height: calc(100vh - 30px);
+  overflow: auto;
+  h2 {
+    padding: 13px 70px;
+  }
+  ul {
+    padding: 13px 70px 20px 70px;
+    border-bottom: 1px solid #dcdcdc;
+    @include media(0, $media-md) {
+      padding: 13px 30px 20px 30px;
+    }
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
+  input {
+    margin-right: 20px;
+  }
+  .btns {
+    float: right;
+    padding: 0 70px;
+    button {
+      font-size: 18px;
+      font-family: Bold;
+      border: none;
+      color: #aaa;
+      padding: 12px 0 5px;
+      background-color: transparent;
+      &:first-child {
+        margin-right: 40px;
+        color: #555;
+      }
+    }
+  }
+}

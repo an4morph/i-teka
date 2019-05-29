@@ -150,7 +150,7 @@
 
               <div class="btns">
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
-                <button class="circle-btn"><i class="material-icons">flag</i></button>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
               </div>
             </div>
 
@@ -174,7 +174,7 @@
 
               <div class="btns">
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
-                <button class="circle-btn"><i class="material-icons">flag</i></button>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
               </div>
             </div>
 
@@ -511,6 +511,41 @@
           <label for="c8">Аллерголог</label>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="modal report-modal">
+    <div class="overlay"></div>
+    <div class="content">
+      <form>
+        <h2>Причина жалобы</h2>
+        <ul>
+          <li>
+            <input name="report" id="sex" type="radio">
+            <label for="sex">Материалы сексуального характера</label>
+          </li>
+          <li>
+            <input name="report" id="cruelty" type="radio">
+            <label for="cruelty">Жестокие и отталкиевающие сцены</label>
+          </li>
+          <li>
+            <input name="report" id="abuse" type="radio">
+            <label for="abuse">Оскорбление и проявление нетерпимости</label>
+          </li>
+          <li>
+            <input name="report" id="danger" type="radio">
+            <label for="danger">Вредные и опасные действия</label>
+          </li>
+          <li>
+            <input name="report" id="spam" type="radio">
+            <label for="spam">Спам и введение в заблуждение</label>
+          </li>
+        </ul>
+        <div class="btns">
+          <button class="close-modal">Отмена</button>
+          <button type="submit">Сообщить</button>
+        </div>
+      </form>
     </div>
   </div>
 

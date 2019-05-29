@@ -4,6 +4,7 @@ const DrugPage = require('./drug-page');
 const Header = require('./header');
 const createExpand = require("./utils/expand");
 const createSidebar = require("./utils/sidebar");
+const modal = require("./utils/modal");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
 require("./utils/custom-selects");
@@ -60,6 +61,7 @@ $(document).ready(function () {
     if ($('.doctors-search-page').length) {
         createSidebar('.doctors-search-page-body .sort-sidebar', '#doctors-search__sort-btn')
         createSidebar('.doctors-search-page-body .filter-sidebar', '#doctors-search__filter-btn')
+        modal('.doctors-search-page-body', '.report-modal', '.report-btn')
     }
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)
@@ -68,14 +70,16 @@ $(document).ready(function () {
     if ($('.pharmacy-search-page').length) {
         createSidebar('.pharmacy-search-page-body .sort-sidebar', '#pharmacy-search__sort-btn')
         createSidebar('.pharmacy-search-page-body .filter-sidebar', '#pharmacy-search__filter-btn')
+        modal('.pharmacy-search-page-body', '.report-modal', '.report-btn')
     }
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
     }
-    if ($('.med-centers-seacrh-page').length) {
+    if ($('.med-centers-search-page').length) {
         createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
         createSidebar('.med-centers-search-page-body .filter-sidebar', '#med-centers-search__filter-btn')
+        modal('.med-centers-search-page-body', '.report-modal', '.report-btn')
     }
 });
 

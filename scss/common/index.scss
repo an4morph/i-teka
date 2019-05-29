@@ -33,7 +33,7 @@ button.icon {
   border: none;
   border-radius: 100%;
 }
-input, textarea {
+input[type="text"], textarea {
   &:focus {
     outline: none;
     box-shadow: $shadowFocus;
