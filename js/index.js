@@ -49,6 +49,10 @@ $(document).ready(function () {
         searchAutocomplete('#drugs-page__search', searchSource)
         createExpand('.drugs-page .list .var', '.drugs-page .list .var h2')
     }
+    // if ($('.drugs-search-page').length) {
+    //     createSidebar('.drugs-search-page-body .sort-sidebar', '#drugs-search__sort-btn')
+    //     createSidebar('.drugs-search-page-body .filter-sidebar', '#drugs-search__filter-btn')
+    // }
     if ($('.doctors-page').length) {
         searchAutocomplete('#doctors-page__search', searchSource)
         createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
@@ -68,6 +72,10 @@ $(document).ready(function () {
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
+    }
+    if ($('.med-centers-seacrh-page').length) {
+        createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
+        createSidebar('.med-centers-search-page-body .filter-sidebar', '#med-centers-search__filter-btn')
     }
 });
 

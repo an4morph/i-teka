@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Поиск по апткеам</title>
+  <title>Поиск по клиникам</title>
 </head>
 
-<body class="pharmacy-search-page-body">
+<body class="med-centers-search-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,36 +103,36 @@
   </header>
   <!----end of header------->
 
-  <div class="pharmacy-search-page">
+  <div class="med-centers-search-page">
     <div class="container">
 
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h1>Все аптеки города Алматы</h1>
+          <h1>Все мед.центры города Алматы</h1>
           <div class="search">
             <form>
               <div class="input-wrapper">
-                <input type="text" placeholder="Аптеки">
+                <input type="text" placeholder="Клиники">
               </div>
             </form>
           </div>
 
           <div class="list">
             <div class="top-settings">
-              <button id="pharmacy-search__sort-btn" class="icon item sort">
+              <button id="med-centers-search__sort-btn" class="icon item sort">
                 <i class="material-icons">import_export</i>
                 (Сортировать)
               </button>
-              <button id="pharmacy-search__filter-btn" class="icon item filter">
+              <button id="med-centers-search__filter-btn" class="icon item filter">
                 <i class="material-icons">filter_list</i>
                 (Фильтр)
               </button>
             </div>
 
             <div class="list-item">
-              <a href="/pharmacy-item" class="title">
+              <a href="/med-centers-item" class="title">
                 <i class="crown"></i>
-                Добрая аптека №8
+                Добрая клиника №8
               </a>
 
               <div class="tags">
@@ -149,6 +149,7 @@
               </div>
 
               <div class="btns">
+                <button>Записаться</button>
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
                 <button class="circle-btn"><i class="material-icons">flag</i></button>
               </div>
@@ -157,7 +158,7 @@
             <div class="big-banner"></div>
 
             <div class="list-item">
-              <a href="/pharmacy-item" class="title">Добрая аптека №8</a>
+              <a href="/med-centers-item" class="title">Добрая клиника №8</a>
 
               <div class="tags">
                 <div class="tag-item green">Новое</div>
@@ -165,7 +166,7 @@
                 <div class="tag-item">Скидки</div>
               </div>
 
-              <div class="address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
+              <div class="body-address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
 
               <div class="status">
                 <div class="dot"></div>
@@ -173,6 +174,7 @@
               </div>
 
               <div class="btns">
+                <button>Записаться</button>
                 <button class="circle-btn"><i class="material-icons">phone</i></button>
                 <button class="circle-btn"><i class="material-icons">flag</i></button>
               </div>
@@ -378,7 +380,7 @@
       <div class="content">
         <label class="for-select" for="date">Выберите время</label>
         <div class="custom-select">
-          <select name="date" id="pharmacy-search__date">
+          <select name="date" id="med-centers-search__date">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -387,7 +389,7 @@
         </div>
         <label class="for-select" for="district">Район</label>
         <div class="custom-select">
-          <select name="district" id="pharmacy-search__district">
+          <select name="district" id="med-centers-search__district">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -397,7 +399,7 @@
 
         <label class="for-select" for="microdistrict">Микрорайон</label>
         <div class="custom-select">
-          <select name="microdistrict" id="pharmacy-search__microdistrict">
+          <select name="microdistrict" id="med-centers-search__microdistrict">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -450,7 +452,7 @@
       <div class="content">
         <label class="for-select" for="date">Выберите время</label>
         <div class="custom-select">
-          <select name="date" id="pharmacy-search__date">
+          <select name="date" id="med-centers-search__date">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -459,7 +461,7 @@
         </div>
         <label class="for-select" for="district">Район</label>
         <div class="custom-select">
-          <select name="district" id="pharmacy-search__district">
+          <select name="district" id="med-centers-search__district">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -469,7 +471,7 @@
 
         <label class="for-select" for="microdistrict">Микрорайон</label>
         <div class="custom-select">
-          <select name="microdistrict" id="pharmacy-search__microdistrict">
+          <select name="microdistrict" id="med-centers-search__microdistrict">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>

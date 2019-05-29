@@ -23,6 +23,9 @@
       align-items: center;
     }
   }
+  .list-item {
+    @extend %page-search-list-item;
+  }
   .banner, .big-banner {
     width: 100%;
     background-size: cover;

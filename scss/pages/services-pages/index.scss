@@ -1,6 +1,6 @@
 @import './doctors-item.scss';
-@import './doctors-search.scss';
-@import './pharmacy-search.scss';
+//@import './doctors-search.scss';
+//@import './pharmacy-search.scss';
 
 .drugs-page,
 .diseases-page,
@@ -11,6 +11,14 @@
   @extend %services-page-template;
 }
 
+.doctors-search-page,
+.pharmacy-search-page,
+.med-centers-search-page {
+  @extend %page-search-template;
+  .big-banner { background-image: url(/img/reklama/oyca.png); }
+  .banner { background-image: url(/img/reklama/village.png); }
+}
+
 .doctors-item-page {
   .intresting {
     @extend %services-intresting;
@@ -18,9 +26,5 @@
   .other-cities {
     @extend %services-cities;
   }
-}
-.doctors-search-page,
-.pharmacy-search-page {
-  @extend %page-search-template;
 }
 
