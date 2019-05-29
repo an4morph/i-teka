@@ -81,6 +81,7 @@ $(document).ready(function () {
         createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
         createSidebar('.med-centers-search-page-body .filter-sidebar', '#med-centers-search__filter-btn')
         modal('.med-centers-search-page-body', '.report-modal', '.report-btn')
+        modal('.med-centers-search-page-body', '.booking-modal', '.booking-btn')
     }
 });
 
