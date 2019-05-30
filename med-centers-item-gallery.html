@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Название клиники</title>
+</head>
+
+<body class="med-centers-page-body">
+  <!----header------->
+  <header>
+    <div class="container">
+      <div class="row header">
+        <div class="col-3 col-lg-2 d-none d-md-flex">
+          <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        </div>
+        <div class="col-3 col-lg-2 d-flex d-md-none">
+          <a href="/">
+            <div class="logo-min"><img src="img/logo.svg" alt="logo"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 city-select-col">
+          <div class="city-select">
+            <i class="material-icons geo">location_on</i>
+            <div class="custom-select city-select">
+              <select>
+                <option value="1">Алматы</option>
+                <option value="2">Нур-Султан</option>
+                <option value="3">Актау</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <menu class="inline col-7 d-none d-lg-flex">
+          <li>
+            <a href="#">Вызвать врача</a>
+          </li>
+          <li>
+            <a href="#">Записаться на прием</a>
+          </li>
+          <li>
+            <a href="#">Доставить лекарства</a>
+          </li>
+        </menu>
+
+        <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
+          <i id="burger1-icon" class="material-icons">menu</i>
+          <div id="burger1-menu" class="modal">
+            <div>
+              <a href="#">Вызвать врача</a>
+            </div>
+            <div>
+              <a href="#">Записаться на прием</a>
+            </div>
+            <div>
+              <a href="#">Доставить лекарства</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="burger-menu col-3 col-sm-4 d-flex d-sm-none">
+          <i id="burger2-icon" class="material-icons">menu</i>
+          <div id="burger2-menu" class="modal">
+            <div>
+              <a href="#">Вызвать врача</a>
+            </div>
+            <div>
+              <a href="#">Записаться на прием</a>
+            </div>
+            <div>
+              <a href="#">Доставить лекарства</a>
+            </div>
+            <div>
+              <a href="#">Войти</a>
+            </div>
+            <div>
+              <a href="#">Избранные</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-1 logout d-sm-flex d-none">
+          <img id="logout-icon" src="img/icons/logout.svg" alt="logout icon">
+          <div id="logout-menu" class="modal">
+            <div>
+              <a href="#">Войти</a>
+            </div>
+            <div>
+              <a href="#">Избранные</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!----end of header------->
+
+  <div class="med-centers-item-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>Добрая клиника</h1>
+
+          <div class="main-info">
+            <div class="first-row row">
+              <div class="col-12 col-md-6 address">Алматы, пр-т Абая fhdsjfdsfh fsdgh, д. 43</div>
+              <div class="col-12 col-md-6 btns">
+                <button class="icon"><i class="material-icons">phone</i></button>
+                <button class="icon"><i class="material-icons">swap_calls</i></button>
+                <button class="icon"><i class="material-icons">favorite</i></button>
+              </div>
+            </div>
+            <div class="status">
+              <div class="dot"></div>
+              До 23:00
+            </div>
+          </div>
+
+          <div class="tabs">
+            <a href="/med-centers-item" class="tab-item">Информация</a>
+            <a class="tab-item" href="/med-centers-item-services">Услуги</a>
+            <a href="/med-centers-item-doctors" class="tab-item">Врачи</a>
+            <div class="tab-item active">Галерея</div>
+          </div>
+
+          <div class="gallery-tab">
+            <div class="gallery">
+              <div class="slide"><img src="/img/bg/office-girl.png"></div>
+              <div class="slide"><img src="/img/bg/med-sister.png"></div>
+              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
+              <div class="slide"><img src="/img/bg/vaccine.png"></div>
+              <div class="slide"><img src="/img/bg/vaccine.png"></div>
+              <button class="slide more"></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-5">
+          <div class="doctor-photo"></div>
+
+          <div class="map"></div>
+
+          <form class="doctor-booking">
+            <div class="title">Запись к врачу</div>
+            <div class="inner">
+              <div class="row">
+                <div class="input-wrapper col-6">
+                  <label for="date">Дата приема</label>
+                  <input type="text" name="date" placeholder="01/01/2020">
+                </div>
+                <div class="input-wrapper col-6">
+                  <label for="time">Время приема</label>
+                  <input type="text" name="time" placeholder="15:00">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-wrapper col-6">
+                  <label for="surname">Ваша фамилия</label>
+                  <input type="text" name="surname" placeholder="Фамилия">
+                </div>
+                <div class="input-wrapper col-6">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" placeholder="Имя">
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="email">Ваш e-mail</label>
+                <input type="text" name="email" placeholder="@gmail.com">
+              </div>
+              <div class="input-wrapper">
+                <label for="phone">Номер телефона</label>
+                <input type="text" name="phone" placeholder="+7(___)___-__-__">
+              </div>
+            </div>
+            <div class="btn-container">
+              <button type="submit">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!----intresting------->
+      <div class="intresting">
+        <h2>Вас так же заинтересует</h2>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" class="intresting-item">
+              <div class="img-block"></div>
+              <div class="desc">
+                <h3>Фортуна</h3>
+                <p class="address">
+                  г. Нур-Султан, <br />
+                  ул. Кенесары, 63
+                </p>
+                <div class="status">
+                  <div class="status-dot"></div>
+                  <p>Открыто</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" class="intresting-item">
+              <div class="img-block"></div>
+              <div class="desc">
+                <h3>Фортуна</h3>
+                <p class="address">
+                  г. Нур-Султан, <br />
+                  ул. Кенесары, 63
+                </p>
+                <div class="status">
+                  <div class="status-dot"></div>
+                  <p>Открыто</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" class="intresting-item">
+              <div class="img-block"></div>
+              <div class="desc">
+                <h3>Фортуна</h3>
+                <p class="address">
+                  г. Нур-Султан, <br />
+                  ул. Кенесары, 63
+                </p>
+                <div class="status">
+                  <div class="status-dot"></div>
+                  <p>Открыто</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <a href="#" class="intresting-item">
+              <div class="img-block"></div>
+              <div class="desc">
+                <h3>Фортуна</h3>
+                <p class="address">
+                  г. Нур-Султан, <br />
+                  ул. Кенесары, 63
+                </p>
+                <div class="status">
+                  <div class="status-dot"></div>
+                  <p>Открыто</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!----intresting------->
+
+      <!----other-cities------->
+
+      <div class="other-cities">
+        <h2>Врачи в других городах</h2>
+        <ul>
+          <li>Нур-Султан (Астана) </li>
+          <li>Абай</li>
+          <li>Актау</li>
+          <li>Актобе</li>
+          <li>Алматы</li>
+          <li>Атырау</li>
+          <li>Балхаш</li>
+          <li>Жезказган</li>
+          <li>Жетысай</li>
+          <li>Караганда</li>
+          <li>Кокшетау</li>
+          <li>Костанай</li>
+          <li>Кызылорда</li>
+          <li>Павлодар</li>
+          <li>Петропавловск</li>
+          <li>Сарань</li>
+          <li>Семей</li>
+          <li>Талдыкорган</li>
+          <li>Тараз</li>
+          <li>Темиртау</li>
+          <li>Туркестан</li>
+          <li>Уральск</li>
+          <li>Усть-Каменогорск</li>
+          <li>Шымкент</li>
+          <li>Экибастуз</li>
+        </ul>
+      </div>
+      <!----other-cities------->
+    </div>
+  </div>
+
+  <!----footer------->
+  <footer>
+    <section class="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Информация</h3>
+            <ul>
+              <li><a href="/about">О проекте</a></li>
+              <li><a href="#">Вопросы ответы</a></li>
+              <li><a href="/terms-of-use">Пользовательское соглашение</a></li>
+              <li><a href="/contacts">Контакты</a></li>
+              <li><a href="/site-map">Карта сайта</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Служебное</h3>
+            <ul>
+              <li><a href="#">Присоединиться к нам</a></li>
+              <li><a href="#">Войти в личный кабинет</a></li>
+              <li><a href="#">Разместить рекламу</a></li>
+              <li><a href="#">Скачать мобильное приложение IOS</a></li>
+              <li><a href="#">Скачать мобильное приложение Android</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3>Услуги</h3>
+            <ul>
+              <li><a href="#">Вызов врача</a></li>
+              <li><a href="#">Доставка лекарств</a></li>
+              <li><a href="#">Онлайн запись на прием</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 social-col">
+            <h3>Социальные сети</h3>
+            <div class="social-icons">
+              <i class="social facebook"></i>
+              <i class="social instagram"></i>
+              <i class="social vk"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bottom">
+      <div class="container copyright">
+        <i class="material-icons">copyright</i>
+        2019 I-teka.kz. Использование материалов разрешено только при наличии активной ссылки на источник
+      </div>
+    </section>
+  </footer>
+  <!----end of footer------->
+  <script src="dist/main.js"></script>
+</body>
+
+</html>

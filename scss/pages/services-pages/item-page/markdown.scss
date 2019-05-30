@@ -1,0 +1,33 @@
+@import '../../../vars.scss';
+
+
+%page-item-markdown {
+  h1 {
+    margin-bottom: 17px;
+    word-break: break-word;
+    @include media(0, $media-sm) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  h3 {
+    @include media(0, $media-sm) {
+      font-size: 23px;
+      line-height: 26px;
+    }
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: Light;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Bold;
+    margin-top: 5px;
+    @include media(0, $media-sm) {
+      margin-bottom: 13px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ const Header = require('./header');
 const createExpand = require("./utils/expand");
 const createSidebar = require("./utils/sidebar");
 const modal = require("./utils/modal");
+const gallery = require("./utils/gallery");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
 require("./utils/custom-selects");
@@ -95,7 +96,7 @@ $(document).ready(function () {
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
     }
     if ($('.med-centers-item-page').length) {
-        // no js
+        gallery('.med-centers-item-page .gallery')
     }
     if ($('.med-centers-search-page').length) {
         createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
