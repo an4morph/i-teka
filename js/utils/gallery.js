@@ -3,7 +3,7 @@ const $ = require("jquery");
 module.exports = (gallery) => {
   const count = 4
   const children = $(gallery).children()
-  const remain = children.length - count - 1
+  const remain = children.length - count
   const moreBtn = $(`${gallery} .more`)
 
   const hideChildren = () => {
