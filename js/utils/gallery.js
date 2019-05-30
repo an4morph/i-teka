@@ -1,4 +1,5 @@
 const $ = require("jquery");
+const modal = require('./modal');
 
 module.exports = (gallery) => {
   const count = 4
@@ -18,6 +19,13 @@ module.exports = (gallery) => {
       if (i > count - 2 && i !== last) $(value).show()
     })
   }
+
+  children.each((i, value) => {
+    const last = children.length - 1
+    if (i !== last) {
+      modal('', '.image-modal', value, { append: $(value).children().first() })
+    }
+  })
 
 
   if (children.length > count + 1) {
