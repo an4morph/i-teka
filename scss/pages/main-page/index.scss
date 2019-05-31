@@ -160,3 +160,11 @@
     width: 100%;
   }
 }
+
+.main-page .other-cities {
+  @extend %other-cities;
+  margin-top: 64px;
+  @include media(0, $media-md) {
+    margin-top: 50px;
+  }
+}
