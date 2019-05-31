@@ -2,7 +2,7 @@ const $ = require("jquery");
 const modal = require('./modal');
 
 module.exports = (gallery) => {
-  const count = 4
+  const count = 7
   const children = $(gallery).children()
   const remain = children.length - count
   const moreBtn = $(`${gallery} .more`)

@@ -30,24 +30,25 @@ $(document).ready(function () {
         opacity: 0,
         reset: false
     })
-    $(".slider").slick({ dots: true });
-    
     Header()
+
+
+    //=========== Modals GLOBAL ============//
+    modal('.report-modal', '.report-btn')
+    modal('.booking-modal', '.booking-btn')
+    modal('.house-call-modal', '.house-call-btn')
+    //=========== Gallery GLOBAL ============//
+    gallery('.gallery')
+    //=========== Slider GLOBAL ============//
+    $(".slider").slick({ dots: true });
+
+
+
+
     if ($('.drug-page').length) DrugPage()
     if ($('.faq-page').length) {
         createExpand('.faq-item', '.faq-item h2')
     }
-
-    //=========================================== MODALS GLOBAL ===========================================//
-    modal('.report-modal', '.report-btn')
-    modal('.booking-modal', '.booking-btn')
-    modal('.house-call-modal', '.house-call-btn')
-
-
-
-
-
-
 
     //=========================================== DISEASES (Заболевания) ===========================================//
     if ($('.diseases-page').length) {
@@ -104,7 +105,7 @@ $(document).ready(function () {
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
     }
     if ($('.med-centers-item-page').length) {
-        gallery('.med-centers-item-page .gallery')
+        //
     }
     if ($('.med-centers-search-page').length) {
         createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
