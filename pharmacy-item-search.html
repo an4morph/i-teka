@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Название клиники</title>
+  <title>Название аптеки</title>
 </head>
 
-<body class="med-centers-page-body">
+<body class="pharmacy-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,11 +103,11 @@
   </header>
   <!----end of header------->
 
-  <div class="med-centers-item-page">
+  <div class="pharmacy-item-page">
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <h1>Добрая клиника</h1>
+          <h1>Добрая аптека</h1>
 
           <div class="main-info">
             <div class="first-row row">
@@ -125,29 +125,22 @@
           </div>
 
           <div class="tabs">
-            <a href="/med-centers-item" class="tab-item">Информация</a>
-            <a class="tab-item" href="/med-centers-item-services">Услуги</a>
-            <a href="/med-centers-item-doctors" class="tab-item">Врачи</a>
-            <div class="tab-item active">Галерея</div>
+            <div class="tab-item">Информация</div>
+            <a href="/pharmacy-item-gallery" class="tab-item">Галерея</a>
+            <a href="/pharmacy-item-search" class="tab-item active">Искать в этой аптеке</a>
           </div>
 
-          <div class="gallery-tab">
-            <div class="gallery">
-              <div class="slide"><img src="/img/bg/office-girl.png"></div>
-              <div class="slide"><img src="/img/bg/med-sister.png"></div>
-              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
-              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
-              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
-              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
-              <div class="slide"><img src="/img/bg/doctor-photo.png"></div>
-              <div class="slide"><img src="/img/bg/vaccine.png"></div>
-              <div class="slide"><img src="/img/bg/vaccine.png"></div>
-              <button class="slide more"></button>
+          <div class="search-tab">
+            <div class="search">
+              <h3>Найти в этой аптеке</h3>
+              <form>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Искать в этой аптеке">
+                </div>
+              </form>
             </div>
           </div>
         </div>
-
-
         <div class="col-md-5">
           <div class="doctor-photo"></div>
 
@@ -437,10 +430,6 @@
     </form>
   </div>
 
-  <div class="image-modal modal">
-    <div class="overlay"></div>
-    <div class="content"></div>
-  </div>
   <script src="dist/main.js"></script>
 </body>
 
