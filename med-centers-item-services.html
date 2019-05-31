@@ -163,7 +163,7 @@
                 Печень и желчный пузырь без определения функции, поджелудочная железа, селезенка
               </div>
             </div>
-            
+
           </div>
         </div>
 
@@ -335,7 +335,7 @@
             <h3>Информация</h3>
             <ul>
               <li><a href="/about">О проекте</a></li>
-              <li><a href="#">Вопросы ответы</a></li>
+              <li><a href="/faq">Вопросы ответы</a></li>
               <li><a href="/terms-of-use">Пользовательское соглашение</a></li>
               <li><a href="/contacts">Контакты</a></li>
               <li><a href="/site-map">Карта сайта</a></li>
@@ -354,9 +354,9 @@
           <div class="col-12 col-md-6 col-lg-3">
             <h3>Услуги</h3>
             <ul>
-              <li><a href="#">Вызов врача</a></li>
+              <li><a class="house-call-btn" type="button">Вызов врача</a></li>
               <li><a href="#">Доставка лекарств</a></li>
-              <li><a href="#">Онлайн запись на прием</a></li>
+              <li><a class="booking-btn" type="button">Онлайн запись на прием</a></li>
             </ul>
           </div>
           <div class="col-12 col-md-6 col-lg-3 social-col">
@@ -378,6 +378,86 @@
     </section>
   </footer>
   <!----end of footer------->
+
+  <div class="modal booking-modal">
+    <div class="overlay"></div>
+    <form class="content doctor-booking">
+      <div class="title">Запись к врачу</div>
+      <div class="inner">
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="date">Дата приема</label>
+            <input type="text" name="date" placeholder="01/01/2020">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="time">Время приема</label>
+            <input type="text" name="time" placeholder="15:00">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="surname">Ваша фамилия</label>
+            <input type="text" name="surname" placeholder="Фамилия">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" placeholder="Имя">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Ваш e-mail</label>
+          <input type="text" name="email" placeholder="@gmail.com">
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Номер телефона</label>
+          <input type="text" name="phone" placeholder="+7(___)___-__-__">
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit">Записаться</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal house-call-modal">
+    <div class="overlay"></div>
+    <form class="content doctor-booking">
+      <div class="title">Вызов на дом</div>
+      <div class="inner">
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="date">Дата вызова</label>
+            <input type="text" name="date" placeholder="01/01/2020">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="time">Время вызова</label>
+            <input type="text" name="time" placeholder="15:00">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-wrapper col-6">
+            <label for="surname">Ваша фамилия</label>
+            <input type="text" name="surname" placeholder="Фамилия">
+          </div>
+          <div class="input-wrapper col-6">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" placeholder="Имя">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Ваш e-mail</label>
+          <input type="text" name="email" placeholder="@gmail.com">
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">Номер телефона</label>
+          <input type="text" name="phone" placeholder="+7(___)___-__-__">
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit">Записаться</button>
+      </div>
+    </form>
+  </div>
   <script src="dist/main.js"></script>
 </body>
 

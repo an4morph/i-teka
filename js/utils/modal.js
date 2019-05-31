@@ -1,6 +1,6 @@
 const $ = require("jquery");
 
-module.exports = (page, modal, buttons, options = {}) => {
+module.exports = (modal, buttons, options = {}) => {
   const removeEl = () => {
     if (options.append) {
       $(`${modal} .modal-slide`).remove()
@@ -15,11 +15,11 @@ module.exports = (page, modal, buttons, options = {}) => {
     })
   })
 
-  $(`${page} ${modal} .overlay`).on('click', () => {
+  $(`${modal} .overlay`).on('click', () => {
     $(modal).removeClass('open')
     removeEl()
   })
-  $(`${page} ${modal} .close-modal`).on('click', (e) => {
+  $(`${modal} .close-modal`).on('click', (e) => {
     e.preventDefault()
     $(modal).removeClass('open')
     removeEl()

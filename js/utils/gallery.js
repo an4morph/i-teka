@@ -23,7 +23,7 @@ module.exports = (gallery) => {
   children.each((i, value) => {
     const last = children.length - 1
     if (i !== last) {
-      modal('', '.image-modal', value, { append: $(value).children().first() })
+      modal('.image-modal', value, { append: $(value).children().first() })
     }
   })
 
