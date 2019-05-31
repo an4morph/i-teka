@@ -41,56 +41,40 @@ header .city-select {
   }
 }
 
-%menu-item {
-  color: #000;
-  font-size: 18px;
-  font-family: Medium;
-  text-decoration: none;
 
-  &:hover {
-    cursor: pointer;
-    color: $mainColor;
-  }
-}
-header menu {
-  justify-content: space-between;
-  li {
-    list-style: none;
-    border-bottom: 2px solid transparent;
-  }
-  li a {
-    @extend %menu-item;
-    margin-top: 2px;
-  }
-  li:hover {
-    border-bottom: 2px solid $mainColor;
-  }
-}
-header .burger-menu {
-  position: relative;
-  justify-content: flex-end;
-  i {
-    font-size: 33px;
-    cursor: pointer;
-  }
-}
-header .modal {
-  display: none;
-  position: absolute;
-  top: 100%;
-  background-color: #fff;
-  box-shadow: $shadow1;
-  padding: 8px 16px;
-  font-family: Light;
-  font-size: 18px;
-
-  div a {
-    font-family: Light;
-    @extend %menu-item;
-  }
-}
 header .logout {
   cursor: pointer;
   justify-content: flex-end;
 }
 
+
+////// menu
+
+header menu {
+  justify-content: space-between;
+  align-items: center;
+  li {
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    &:not(:last-child) {
+      @include media(0, $media-xl) {
+        max-width: 85px;
+      }
+    }
+  }
+  li a {
+    color: #000;
+    margin-top: 2px;
+    font-family: Medium;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  li:hover {
+    border-bottom: 2px solid $mainColor;
+    a {
+      color: $mainColor;
+    }
+  }
+}
