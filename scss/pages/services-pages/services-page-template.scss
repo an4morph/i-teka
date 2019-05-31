@@ -25,7 +25,7 @@
   }
 
   .other-cities {
-    @extend %services-cities;
+    @extend %other-cities;
     @include media(0, $media-lg) {
       margin-top: 10px;
     }

@@ -3,7 +3,6 @@
 @import './item-page/index.scss';
 @import './services-page-template.scss';
 @import './services-list.scss';
-@import './services-cities.scss';
 @import './services-intresting.scss';
 
 .drugs-page,
@@ -30,7 +29,7 @@
     @extend %services-intresting;
   }
   .other-cities {
-    @extend %services-cities;
+    @extend %other-cities;
   }
 }
 
