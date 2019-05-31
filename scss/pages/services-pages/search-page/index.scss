@@ -71,6 +71,16 @@
       }
     }
   }
+
+  .map {
+    width: 100%;
+    height: 611px;
+    background-image: url(/img/map.png);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+
+
   .intresting {
     @extend %services-intresting;
   }
