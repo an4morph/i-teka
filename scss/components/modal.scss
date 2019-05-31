@@ -78,3 +78,12 @@
     width: 100%;
   }
 }
+
+.booking-modal, .house-call-modal {
+  form {
+    @extend %booking-form;
+    @include media(0, $media-md) {
+      margin: 15px;
+    }
+  }
+}

@@ -72,6 +72,7 @@ $(document).ready(function () {
         createSidebar('.doctors-search-page-body .filter-sidebar', '#doctors-search__filter-btn')
         modal('.doctors-search-page-body', '.report-modal', '.report-btn')
         modal('.doctors-search-page-body', '.booking-modal', '.booking-btn')
+        modal('.doctors-search-page-body', '.house-call-modal', '.house-call-btn')
     }
     
 
@@ -97,12 +98,15 @@ $(document).ready(function () {
     }
     if ($('.med-centers-item-page').length) {
         gallery('.med-centers-item-page .gallery')
+        modal('.med-centers-item-page-body', '.house-call-modal', '.house-call-btn')
+        modal('.med-centers-item-page-body', '.booking-modal', '.booking-btn')
+        modal('.med-centers-item-page-body', '.report-modal', '.report-btn')
     }
     if ($('.med-centers-search-page').length) {
         createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
         createSidebar('.med-centers-search-page-body .filter-sidebar', '#med-centers-search__filter-btn')
-        modal('.med-centers-search-page-body', '.report-modal', '.report-btn')
         modal('.med-centers-search-page-body', '.booking-modal', '.booking-btn')
+        modal('.med-centers-search-page-body', '.report-modal', '.report-btn')
     }
 });
 

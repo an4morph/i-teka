@@ -11,7 +11,7 @@
   <title>Название клиники</title>
 </head>
 
-<body class="med-centers-page-body">
+<body class="med-centers-item-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -132,7 +132,88 @@
           </div>
 
           <div class="doctors-tab">
-            врачи
+            <div class="doctor-item">
+              <a href="/doctors-item" class="item-avatar-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <div class="title">Александрова Дана Сергеевна</div>
+                  <div class="bottom">
+                    <span class="purple">Педиатр</span>
+                    <span class="green">Стаж: 8 лет</span>
+                  </div>
+                </div>
+              </a>
+
+              <div class="body">
+                <div class="body-name">Клиника Рахат</div>
+                <div class="body-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
+              </div>
+
+              <div class="btns">
+                <button class="booking-btn">Записаться</button>
+                <button class="house-call-btn">Вызов на дом</button>
+                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
+              </div>
+            </div>
+            <div class="doctor-item">
+              <a href="/doctors-item" class="item-avatar-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <div class="title">Александрова Дана Сергеевна</div>
+                  <div class="bottom">
+                    <span class="purple">Педиатр</span>
+                    <span class="green">Стаж: 8 лет</span>
+                  </div>
+                </div>
+              </a>
+
+              <div class="body">
+                <div class="body-name">Клиника Рахат</div>
+                <div class="body-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
+              </div>
+
+              <div class="btns">
+                <button class="booking-btn">Записаться</button>
+                <button class="house-call-btn">Вызов на дом</button>
+                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
+              </div>
+            </div>
+
+            <div class="doctor-item">
+              <a href="/doctors-item" class="item-avatar-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <div class="title">Александрова Дана Сергеевна</div>
+                  <div class="bottom">
+                    <span class="purple">Педиатр</span>
+                    <span class="green">Стаж: 8 лет</span>
+                  </div>
+                </div>
+              </a>
+
+              <div class="body">
+                <div class="body-name">Клиника Рахат</div>
+                <div class="body-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
+              </div>
+
+              <div class="btns">
+                <button class="booking-btn">Записаться</button>
+                <button class="house-call-btn">Вызов на дом</button>
+                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -347,6 +428,123 @@
     </section>
   </footer>
   <!----end of footer------->
+
+  <div class="modal report-modal">
+      <div class="overlay"></div>
+      <div class="content">
+        <form>
+          <h2>Причина жалобы</h2>
+          <ul>
+            <li>
+              <input name="report" id="sex" type="radio">
+              <label for="sex">Материалы сексуального характера</label>
+            </li>
+            <li>
+              <input name="report" id="cruelty" type="radio">
+              <label for="cruelty">Жестокие и отталкиевающие сцены</label>
+            </li>
+            <li>
+              <input name="report" id="abuse" type="radio">
+              <label for="abuse">Оскорбление и проявление нетерпимости</label>
+            </li>
+            <li>
+              <input name="report" id="danger" type="radio">
+              <label for="danger">Вредные и опасные действия</label>
+            </li>
+            <li>
+              <input name="report" id="spam" type="radio">
+              <label for="spam">Спам и введение в заблуждение</label>
+            </li>
+          </ul>
+          <div class="btns">
+            <button class="close-modal">Отмена</button>
+            <button type="submit">Сообщить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <div class="modal booking-modal">
+      <div class="overlay"></div>
+      <form class="content doctor-booking">
+        <div class="title">Запись к врачу</div>
+        <div class="inner">
+          <div class="row">
+            <div class="input-wrapper col-6">
+              <label for="date">Дата приема</label>
+              <input type="text" name="date" placeholder="01/01/2020">
+            </div>
+            <div class="input-wrapper col-6">
+              <label for="time">Время приема</label>
+              <input type="text" name="time" placeholder="15:00">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-wrapper col-6">
+              <label for="surname">Ваша фамилия</label>
+              <input type="text" name="surname" placeholder="Фамилия">
+            </div>
+            <div class="input-wrapper col-6">
+              <label for="name">Ваше имя</label>
+              <input type="text" name="name" placeholder="Имя">
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="email">Ваш e-mail</label>
+            <input type="text" name="email" placeholder="@gmail.com">
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Номер телефона</label>
+            <input type="text" name="phone" placeholder="+7(___)___-__-__">
+          </div>
+        </div>
+        <div class="btn-container">
+          <button type="submit">Записаться</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal house-call-modal">
+        <div class="overlay"></div>
+        <form class="content doctor-booking">
+          <div class="title">Вызов</div>
+          <div class="inner">
+            <div class="row">
+              <div class="input-wrapper col-6">
+                <label for="date">Дата вызова</label>
+                <input type="text" name="date" placeholder="01/01/2020">
+              </div>
+              <div class="input-wrapper col-6">
+                <label for="time">Время вызова</label>
+                <input type="text" name="time" placeholder="15:00">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-wrapper col-6">
+                <label for="surname">Ваша фамилия</label>
+                <input type="text" name="surname" placeholder="Фамилия">
+              </div>
+              <div class="input-wrapper col-6">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" placeholder="Имя">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Ваш e-mail</label>
+              <input type="text" name="email" placeholder="@gmail.com">
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Номер телефона</label>
+              <input type="text" name="phone" placeholder="+7(___)___-__-__">
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit">Записаться</button>
+          </div>
+        </form>
+      </div>
+
+
   <script src="dist/main.js"></script>
 </body>
 

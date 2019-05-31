@@ -113,8 +113,11 @@
   .btns {
     display: flex;
     margin-top: 15px;
-    button {
+    button, a[type="button"] {
       @extend %button;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-right: 14px;
       font-size: 12px!important;
       max-height: 32px;
@@ -125,7 +128,6 @@
         padding: 0 10px;
       }
       i {
-        padding-top: 4px;
         font-size: 15px;
       }
       &.circle-btn {

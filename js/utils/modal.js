@@ -3,10 +3,10 @@ const $ = require("jquery");
 module.exports = (page, modal, buttons, options = {}) => {
   const removeEl = () => {
     if (options.append) {
-      //console.log($(modal).find(options.append))
       $(`${modal} .modal-slide`).remove()
     }
   }
+  
   $(buttons).each((index, btn) => {
     $(btn).on('click', (e) => {
       e.stopPropagation()

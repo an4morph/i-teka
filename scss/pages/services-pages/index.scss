@@ -21,12 +21,6 @@
   @extend %page-search-template;
   .big-banner { background-image: url(/img/reklama/oyca.png); }
   .banner { background-image: url(/img/reklama/village.png); }
-  &-body .booking-modal form {
-    @extend %booking-form;
-    @include media(0, $media-md) {
-      margin: 15px;
-    }
-  }
 }
 
 .doctors-item-page,

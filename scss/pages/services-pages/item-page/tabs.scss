@@ -1,4 +1,5 @@
 @import '../../../vars.scss';
+@import '../search-page/page-search-list-item.scss';
 
 %page-item-tabs {
   .tabs {
@@ -144,5 +145,11 @@
   }
   .slide:last-child {
     margin-right: 0;
+  }
+}
+
+%page-item-tabs .doctors-tab {
+  .doctor-item {
+    @extend %page-search-list-item;
   }
 }
