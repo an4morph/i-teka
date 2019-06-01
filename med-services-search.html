@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Медицинские услуги</title>
+  <title>Поиск по процедурам</title>
 </head>
 
-<body class="med-services-page-body">
+<body class="med-services-search-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,103 +103,118 @@
   </header>
   <!----end of header------->
 
-  <div class="med-services-page">
+  <div class="med-services-search-page">
     <div class="container">
-      <!----search------->
-      <div class="search">
-        <h1>Поиск процедур</h1>
-        <form>
-          <div class="input-wrapper">
-            <input id="med-services-page__search" type="text" placeholder="Введите название процедуры">
-            <button class="d-none d-md-flex" type="submit">Найти</button>
-            <button class="d-flex d-md-none" type="submit">
-              <i class="material-icons">search</i>
-            </button>
-          </div>
-          <div id="med-services-page__search-vars"></div>
-        </form>
-      </div>
-      <!----search------->
 
-      <!----list------->
-      <div class="list">
-        <div class="row desktop-list d-none d-lg-flex">
-          <div class="col-lg-5 vars">
-            <h2>Медицинские услуги в Алматы</h2>
-            <ul>
-              <li class="active">Рентген</li>
-              <li>УЗИ</li>
-              <li>Функциональная диагностика</li>
-              <li>Эндоскопия</li>
-              <li>УЗИ</li>
-            </ul>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="alt-title">
+            <div class="search">
+              <form>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Процедуры">
+                </div>
+              </form>
+            </div>
+            <a href="/med-services" class="back-btn">
+              <i class="material-icons">arrow_right_alt</i>
+              Формы и аналоги
+            </a>
+            <div class="title-row">
+              <h1>МРТ в Алматы</h1>
+              <button class="heart">
+                <i class="material-icons">favorite</i>
+              </button>
+            </div>
+            <a href="#" class="details">Подробнее</a>
           </div>
-          <div class="col-lg-7 services">
-            <h2>Весь список услуг</h2>
-            <h3>Рентген</h3>
-            <ul>
-              <li><a href="/med-services-search">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
-                  голоного мозга</a></li>
-              <li><a href="/med-services-search">Лечение2</a></li>
-              <li><a href="/med-services-search">Лечение3</a></li>
-              <li><a href="/med-services-search">Лечение4</a></li>
-              <li><a href="/med-services-search">Лечение5</a></li>
-              <li><a href="/med-services-search">Лечение6</a></li>
-            </ul>
+
+          <div class="list">
+            <div class="top-settings">
+              <button id="med-services-search__sort-btn" class="icon item sort">
+                <i class="material-icons">import_export</i>
+                (Сортировать)
+              </button>
+              <button id="med-services-search__filter-btn" class="icon item filter">
+                <i class="material-icons">filter_list</i>
+                (Фильтр)
+              </button>
+            </div>
+
+            <div class="list-item">
+              <a href="/med-services-item" class="title">
+                <i class="crown"></i>
+                Добрая клиника №8
+              </a>
+
+              <div class="tags">
+                <div class="tag-item green">Новое</div>
+                <div class="tag-item">Доставка</div>
+                <div class="tag-item">Скидки</div>
+              </div>
+
+              <div class="address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
+
+              <div class="status">
+                <div class="dot"></div>
+                Сейчас открыто
+              </div>
+
+              <div class="btns">
+                <button class="booking-btn">Записаться</button>
+                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
+              </div>
+            </div>
+
+            <div class="big-banner"></div>
+
+            <div class="list-item">
+              <a href="/med-services-item" class="title">Добрая клиника №8</a>
+
+              <div class="tags">
+                <div class="tag-item">Доставка</div>
+                <div class="tag-item">Скидки</div>
+              </div>
+
+              <div class="body-address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
+
+              <div class="status">
+                <div class="dot"></div>
+                Сейчас открыто
+              </div>
+
+              <div class="btns">
+                <button class="booking-btn">Записаться</button>
+                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
+                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pagination">
+            <div class="text">Показано с 1-10 из 49</div>
+            <div class="block">
+              <div class="pag-item arrow">
+                <img class="d-arrow-left" src="/img/icons/double-arrow-left.svg" alt="pagination left">
+              </div>
+
+              <div class="pag-item page">1</div>
+              <div class="pag-item page active">2</div>
+              <div class="pag-item page">3</div>
+
+              <div class="pag-item arrow">
+                <img class="d-arrow-right" src="/img/icons/double-arrow-left.svg" alt="pagination right">
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="mobile-list d-block d-lg-none">
-          <div class="var open">
-            <div class="main">
-              <h2>Рентген</h2>
-              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
-              <ul class="inner services">
-                <li><a href="/med-services-search">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
-                    голоного мозга</a></li>
-                <li><a href="/med-services-search">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
-                    голоного мозга</a></li>
-                <li><a href="/med-services-search">Лечение3</a></li>
-                <li><a href="/med-services-search">Транскриниальная ультрасонография (ТУС) / ТРУЗИ / УЗИ брюшной полости / УЗИ глаз / УЗИ
-                    голоного мозга</a></li>
-                <li><a href="/med-services-search">Лечение5</a></li>
-                <li><a href="/med-services-search">Лечение6</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="var close">
-            <div class="main">
-              <h2>Функциональная диагностика</h2>
-              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
-              <ul class="inner services">
-                <li><a href="/med-services-search">Лечение1</a></li>
-                <li><a href="/med-services-search">Лечение2</a></li>
-                <li><a href="/med-services-search">Лечение3</a></li>
-                <li><a href="/med-services-search">Лечение4</a></li>
-                <li><a href="/med-services-search">Лечение5</a></li>
-                <li><a href="/med-services-search">Лечение6</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="var close">
-            <div class="main">
-              <h2>УЗИ</h2>
-              <img class="arrow" src="/img/icons/arrow-down.svg" alt="arrow-down">
-              <ul class="inner services">
-                <li><a href="/med-services-search">Лечение1</a></li>
-                <li><a href="/med-services-search">Лечение2</a></li>
-                <li><a href="/med-services-search">Лечение3</a></li>
-                <li><a href="/med-services-search">Лечение4</a></li>
-                <li><a href="/med-services-search">Лечение5</a></li>
-                <li><a href="/med-services-search">Лечение6</a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-12 col-lg-6">
+          <div class="map"></div>
         </div>
       </div>
-      <!----list------->
 
       <!----intresting------->
       <div class="intresting">
@@ -280,7 +295,7 @@
       <!----other-cities------->
 
       <div class="other-cities">
-        <h2>Медицинские услуги в других городах</h2>
+        <h2>Врачи в других городах</h2>
         <ul>
           <li>Нур-Султан (Астана) </li>
           <li>Абай</li>
@@ -441,10 +456,190 @@
         </div>
       </div>
       <div class="btn-container">
-        <button type="submit">Вызвать</button>
+        <button type="submit">Вызывать</button>
       </div>
     </form>
   </div>
+
+  <div class="sidebar filter-sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+      <div class="title">Все фильтры</div>
+      <button class="icon cross"><i class="material-icons">clear</i></button>
+      <div class="content">
+        <label class="for-select" for="date">Выберите время</label>
+        <div class="custom-select">
+          <select name="date" id="med-services-search__date">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+        <label class="for-select" for="district">Район</label>
+        <div class="custom-select">
+          <select name="district" id="med-services-search__district">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+
+        <label class="for-select" for="microdistrict">Микрорайон</label>
+        <div class="custom-select">
+          <select name="microdistrict" id="med-services-search__microdistrict">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+
+        <div class="checkboxes-title">Прием врачей</div>
+        <div class="check-row">
+          <input type="checkbox" name="c1">
+          <label for="c1">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c2">
+          <label for="c2">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c3">
+          <label for="c3">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c4">
+          <label for="c4">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c5">
+          <label for="c5">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c6">
+          <label for="c6">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c7">
+          <label for="c7">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c8">
+          <label for="c8">Аллерголог</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar sort-sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+      <div class="title">Сортировка</div>
+      <button class="icon cross"><i class="material-icons">clear</i></button>
+      <div class="content">
+        <label class="for-select" for="date">Выберите время</label>
+        <div class="custom-select">
+          <select name="date" id="med-services-search__date">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+        <label class="for-select" for="district">Район</label>
+        <div class="custom-select">
+          <select name="district" id="med-services-search__district">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+
+        <label class="for-select" for="microdistrict">Микрорайон</label>
+        <div class="custom-select">
+          <select name="microdistrict" id="med-services-search__microdistrict">
+            <option value="0">Не выбрано</option>
+            <option value="1">1 option</option>
+            <option value="2">2 option</option>
+            <option value="3">3 option</option>
+          </select>
+        </div>
+
+        <div class="checkboxes-title">Прием врачей</div>
+        <div class="check-row">
+          <input type="checkbox" name="c1">
+          <label for="c1">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c2">
+          <label for="c2">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c3">
+          <label for="c3">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c4">
+          <label for="c4">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c5">
+          <label for="c5">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c6">
+          <label for="c6">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c7">
+          <label for="c7">Аллерголог</label>
+        </div>
+        <div class="check-row">
+          <input type="checkbox" name="c8">
+          <label for="c8">Аллерголог</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal report-modal">
+    <div class="overlay"></div>
+    <div class="content">
+      <form>
+        <h2>Причина жалобы</h2>
+        <ul>
+          <li>
+            <input name="report" id="sex" type="radio">
+            <label for="sex">Материалы сексуального характера</label>
+          </li>
+          <li>
+            <input name="report" id="cruelty" type="radio">
+            <label for="cruelty">Жестокие и отталкиевающие сцены</label>
+          </li>
+          <li>
+            <input name="report" id="abuse" type="radio">
+            <label for="abuse">Оскорбление и проявление нетерпимости</label>
+          </li>
+          <li>
+            <input name="report" id="danger" type="radio">
+            <label for="danger">Вредные и опасные действия</label>
+          </li>
+          <li>
+            <input name="report" id="spam" type="radio">
+            <label for="spam">Спам и введение в заблуждение</label>
+          </li>
+        </ul>
+        <div class="btns">
+          <button class="close-modal">Отмена</button>
+          <button type="submit">Сообщить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="dist/main.js"></script>
 </body>
 

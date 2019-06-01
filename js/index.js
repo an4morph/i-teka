@@ -41,75 +41,47 @@ $(document).ready(function () {
     gallery('.gallery')
     //=========== Slider GLOBAL ============//
     $(".slider").slick({ dots: true });
+    //=========== Sidebars GLOBAL ============//
+    createSidebar('.sort-sidebar', '.sort-btn')
+    createSidebar('.filter-sidebar', '.filter-btn')
 
 
 
 
     if ($('.drug-page').length) DrugPage()
+
     if ($('.faq-page').length) {
         createExpand('.faq-item', '.faq-item h2')
     }
 
-    //=========================================== DISEASES (Заболевания) ===========================================//
     if ($('.diseases-page').length) {
         searchAutocomplete('#diseases-page__search', searchSource)
         createExpand('.diseases-page .list .var', '.diseases-page .list .var h2')
     }
 
-
-    //=========================================== MED SERVICES (Процедуры) ===========================================//
     if ($('.med-services-page').length) {
         searchAutocomplete('#med-services-page__search', searchSource)
         createExpand('.med-services-page .list .var', '.med-services-page .list .var h2')
     }
 
-
-    //=========================================== DRUGS (Лекарства) ===========================================//
     if ($('.drugs-page').length) {
         searchAutocomplete('#drugs-page__search', searchSource)
         createExpand('.drugs-page .list .var', '.drugs-page .list .var h2')
     }
 
-
-    //=========================================== DOCTORS (Врачи) ===========================================//
     if ($('.doctors-page').length) {
         searchAutocomplete('#doctors-page__search', searchSource)
         createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
     }
-    if ($('.doctors-item-page').length) {
-        // no js
-    }
-    if ($('.doctors-search-page').length) {
-        createSidebar('.doctors-search-page-body .sort-sidebar', '#doctors-search__sort-btn')
-        createSidebar('.doctors-search-page-body .filter-sidebar', '#doctors-search__filter-btn')
-    }
     
-
-    //=========================================== PHARMACY (Аптеки) ===========================================//
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
     }
-    if ($('.pharmacy-item-page').length) {
-        // no js
-    }
-    if ($('.pharmacy-search-page').length) {
-        createSidebar('.pharmacy-search-page-body .sort-sidebar', '#pharmacy-search__sort-btn')
-        createSidebar('.pharmacy-search-page-body .filter-sidebar', '#pharmacy-search__filter-btn')
-    }
 
-
-    //=========================================== MED CENTERS (Клиники) ===========================================//
     if ($('.med-centers-page').length) {
         searchAutocomplete('#med-center-page__search', searchSource)
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
-    }
-    if ($('.med-centers-item-page').length) {
-        //
-    }
-    if ($('.med-centers-search-page').length) {
-        createSidebar('.med-centers-search-page-body .sort-sidebar', '#med-centers-search__sort-btn')
-        createSidebar('.med-centers-search-page-body .filter-sidebar', '#med-centers-search__filter-btn')
     }
 });
 

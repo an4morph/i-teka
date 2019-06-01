@@ -14,17 +14,13 @@
   @extend %services-page-template;
 }
 
-.doctors-search-page,
-.pharmacy-search-page,
-.med-centers-search-page {
+div[class$="-search-page"] {
   @extend %page-search-template;
   .big-banner { background-image: url(/img/reklama/oyca.png); }
   .banner { background-image: url(/img/reklama/village.png); }
 }
 
-.doctors-item-page,
-.pharmacy-item-page,
-.med-centers-item-page {
+div[class$="-item-page"] {
   @extend %page-item-template;
   .intresting {
     @extend %services-intresting;
