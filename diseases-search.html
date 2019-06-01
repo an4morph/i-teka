@@ -8,10 +8,10 @@
 
   <link rel="stylesheet" href="dist/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Поиск по клиникам</title>
+  <title>Поиск по заболеваниям</title>
 </head>
 
-<body class="med-centers-search-page-body">
+<body class="diseases-search-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,18 +103,30 @@
   </header>
   <!----end of header------->
 
-  <div class="med-centers-search-page">
+  <div class="diseases-search-page">
     <div class="container">
 
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h1>Все мед.центры города Алматы</h1>
-          <div class="search">
-            <form>
-              <div class="input-wrapper">
-                <input type="text" placeholder="Клиники">
-              </div>
-            </form>
+          <div class="alt-title">
+            <div class="search">
+              <form>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Процедуры">
+                </div>
+              </form>
+            </div>
+            <a href="/med-services" class="back-btn">
+              <i class="material-icons">arrow_right_alt</i>
+              Формы и аналоги
+            </a>
+            <div class="title-row">
+              <h1>Лечение ОРВИ в Алматы</h1>
+              <button class="heart">
+                <i class="material-icons">favorite</i>
+              </button>
+            </div>
+            <a href="#" class="details">Подробнее</a>
           </div>
 
           <div class="list">
@@ -130,56 +142,64 @@
             </div>
 
             <div class="list-item">
-              <a href="/med-centers-item" class="title">
+              <a href="/doctors-item" class="item-avatar-header">
                 <i class="crown"></i>
-                Добрая клиника №8
+                <div class="avatar"></div>
+                <div class="info">
+                  <div class="title">Александрова Дана Сергеевна</div>
+                  <div class="bottom">
+                    <span class="purple">Педиатр</span>
+                    <span class="green">Стаж: 8 лет</span>
+                  </div>
+                </div>
               </a>
 
-              <div class="tags">
-                <div class="tag-item green">Новое</div>
-                <div class="tag-item">Доставка</div>
-                <div class="tag-item">Скидки</div>
-              </div>
-
-              <div class="address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
-
-              <div class="status">
-                <div class="dot"></div>
-                Сейчас открыто
+              <div class="body">
+                <div class="body-name">Клиника Рахат</div>
+                <div class="body-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
               </div>
 
               <div class="btns">
                 <button class="booking-btn">Записаться</button>
+                <button class="house-call-btn">Вызов на дом</button>
                 <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
                 <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
               </div>
             </div>
 
-            <div class="big-banner"></div>
-
             <div class="list-item">
-              <a href="/med-centers-item" class="title">Добрая клиника №8</a>
+              <a href="/doctors-item" class="item-avatar-header">
+                <div class="avatar"></div>
+                <div class="info">
+                  <div class="title">Александрова Дана Сергеевна</div>
+                  <div class="bottom">
+                    <span class="purple">Педиатр</span>
+                    <span class="green">Стаж: 8 лет</span>
+                  </div>
+                </div>
+              </a>
 
-              <div class="tags">
-                <div class="tag-item">Доставка</div>
-                <div class="tag-item">Скидки</div>
-              </div>
-
-              <div class="body-address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
-
-              <div class="status">
-                <div class="dot"></div>
-                Сейчас открыто
+              <div class="body">
+                <div class="body-name">Клиника Рахат</div>
+                <div class="body-address">Алматы, пр-т Абая, д. 60</div>
+                <div class="status">
+                  <div class="dot"></div>Сейчас открыто
+                </div>
               </div>
 
               <div class="btns">
                 <button class="booking-btn">Записаться</button>
+                <button class="house-call-btn">Вызов на дом</button>
                 <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
                 <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
               </div>
             </div>
 
           </div>
+          <div class="banner"></div>
 
           <div class="pagination">
             <div class="text">Показано с 1-10 из 49</div>
@@ -283,7 +303,7 @@
       <!----other-cities------->
 
       <div class="other-cities">
-        <h2>Врачи в других городах</h2>
+        <h2>Заболевания в других городах</h2>
         <ul>
           <li>Нур-Султан (Астана) </li>
           <li>Абай</li>
@@ -444,7 +464,7 @@
         </div>
       </div>
       <div class="btn-container">
-        <button type="submit">Вызывать</button>
+        <button type="submit">Вызвать</button>
       </div>
     </form>
   </div>
@@ -457,7 +477,7 @@
       <div class="content">
         <label class="for-select" for="date">Выберите время</label>
         <div class="custom-select">
-          <select name="date" id="med-centers-search__date">
+          <select name="date" id="pharmacy-search__date">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -466,7 +486,7 @@
         </div>
         <label class="for-select" for="district">Район</label>
         <div class="custom-select">
-          <select name="district" id="med-centers-search__district">
+          <select name="district" id="pharmacy-search__district">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -476,7 +496,7 @@
 
         <label class="for-select" for="microdistrict">Микрорайон</label>
         <div class="custom-select">
-          <select name="microdistrict" id="med-centers-search__microdistrict">
+          <select name="microdistrict" id="pharmacy-search__microdistrict">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -529,7 +549,7 @@
       <div class="content">
         <label class="for-select" for="date">Выберите время</label>
         <div class="custom-select">
-          <select name="date" id="med-centers-search__date">
+          <select name="date" id="pharmacy-search__date">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -538,7 +558,7 @@
         </div>
         <label class="for-select" for="district">Район</label>
         <div class="custom-select">
-          <select name="district" id="med-centers-search__district">
+          <select name="district" id="pharmacy-search__district">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
@@ -548,7 +568,7 @@
 
         <label class="for-select" for="microdistrict">Микрорайон</label>
         <div class="custom-select">
-          <select name="microdistrict" id="med-centers-search__microdistrict">
+          <select name="microdistrict" id="pharmacy-search__microdistrict">
             <option value="0">Не выбрано</option>
             <option value="1">1 option</option>
             <option value="2">2 option</option>
