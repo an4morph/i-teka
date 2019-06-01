@@ -3,13 +3,16 @@
 
 %page-search-template {
   padding: 60px 0;
+
   @include media(0, $media-md) {
     padding: 30px 0;
   }
+
   .alt-title {
     .search {
       margin-bottom: 31px;
     }
+
     a.back-btn {
       display: flex;
       align-items: center;
@@ -21,15 +24,55 @@
         margin-right: 14px;
       }
     }
+
     .title-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 20px;
     }
+
+    .alt-title-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      &-drugs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+        h1 {
+          width: 80%;
+        }
+
+        @include media(0, $media-sm) {
+          flex-direction: column;
+        }
+
+        img {
+          width: 200px;
+
+          @include media(0, $media-sm) {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .green {
+        color: #53994D;
+        margin-right: 30px;
+      }
+
+      .bold {
+        font-family: Bold;
+      }
+    }
+
     h1 {
       width: 80%;
     }
+
     button.heart {
       width: 52px;
       height: 52px;
@@ -38,14 +81,17 @@
       border: none;
       text-align: center;
       color: #F26060;
+
       &:hover {
         background-color: #f1f1f1;
       }
+
       i {
         padding-top: 5px;
         font-size: 24px;
       }
     }
+
     a.details {
       color: #000;
       font-size: 14px;
@@ -54,16 +100,18 @@
       border-radius: 10px;
     }
   }
+
   .top-settings {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
     border-bottom: 1px solid #CCCCCC;
     padding-bottom: 20px;
-  
+
     i {
       margin-right: 10px;
     }
+
     .item {
       font-size: 18px;
       font-family: Medium;
@@ -72,48 +120,61 @@
       align-items: center;
     }
   }
+
   .list-item {
     @extend %page-search-list-item;
   }
-  .banner, .big-banner {
+
+  .banner,
+  .big-banner {
     width: 100%;
     background-size: cover;
     background-position: center;
   }
+
   .banner {
     height: 109px;
     background-color: #bbb;
   }
+
   .big-banner {
     height: 260px;
     background-color: #bbb;
   }
+
   .search form {
     @extend %search;
     margin-bottom: 60px;
     margin-top: 29px;
+
     input {
       padding: 15px 40px;
     }
   }
+
   .pagination {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @include media(0, $media-sm) {
       flex-direction: column;
       margin: 30px 0;
     }
+
     @include media($media-lg, 1200px) {
       flex-direction: column;
       margin: 30px 0 60px 0;
     }
+
     .block {
       @extend %pagination;
+
       @include media(0, $media-sm) {
         margin-top: 20px;
       }
+
       @include media($media-lg, 1200px) {
         margin-top: 20px;
       }
@@ -132,6 +193,7 @@
   .intresting {
     @extend %services-intresting;
   }
+
   .other-cities {
     @extend %other-cities;
   }
