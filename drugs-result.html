@@ -11,7 +11,7 @@
   <title>Поиск по лекарствам</title>
 </head>
 
-<body class="drugs-search-page-body">
+<body class="drugs-result-page-body">
   <!----header------->
   <header>
     <div class="container">
@@ -103,122 +103,127 @@
   </header>
   <!----end of header------->
 
-  <div class="drugs-search-page">
+  <div class="drugs-result-page">
     <div class="container">
 
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="alt-title">
-            <div class="search">
-              <form>
-                <div class="input-wrapper">
-                  <input type="text" placeholder="Лекарства">
-                </div>
-              </form>
+      <div class="tabs">
+        <h1>Ново-пассит в Алматы</h1>
+        <div class="btns">
+          <button class="active">Все</button>
+          <button>Раствор</button>
+          <button>Таблетки</button>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="finded">Найдено 49</div>
+
+
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="green">Без рецепта</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
             </div>
-            <a href="/drugs" class="back-btn">
-              <i class="material-icons">arrow_right_alt</i>
-              Формы и аналоги
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</a>
+            <a href="/drugs-search" class="d-block d-sm-none where-icon">
+              <img src="/img/icons/arrow-down.svg" alt="arrow button">
             </a>
-            <div class="alt-title-row-drugs">
-              <h1>Ново-пассит раствор</h1>
-              <img src="/img/drug-photo.png" alt="drug name">
-            </div>
-            <div class="alt-title-row">
-                <div class="green">Без рецепта</div>
-                <div class="bold">Раствор 1х, Айвэкс, Чехия</div>
-              </div>
-              <div class="alt-title-row">
-                <a href="#" class="details">Инструкция</a>
-                <a href="#" class="details">Аналоги (32)</a>
-              </div>
           </div>
+        </div>
 
-          <div class="list">
-            <div class="top-settings">
-              <button class="icon item sort sort-btn">
-                <i class="material-icons">import_export</i>
-                (Сортировать)
-              </button>
-              <button class="icon item filter filter-btn">
-                <i class="material-icons">filter_list</i>
-                (Фильтр)
-              </button>
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="red">По рецепту</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
             </div>
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</a>
+            <a href="/drugs-search" class="d-block d-sm-none where-icon">
+              <img src="/img/icons/arrow-down.svg" alt="arrow button">
+            </a>
+          </div>
+        </div>
 
-            <div class="list-item">
-              <a href="/pharmacy-item" class="title">
-                <i class="crown"></i>
-                Добрая аптека №8
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="green">Без рецепта</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
+            </div>
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</a>
+            <a href="/drugs-search" class="d-block d-sm-none where-icon">
+              <img src="/img/icons/arrow-down.svg" alt="arrow button">
+            </a>
+          </div>
+        </div>
+
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="green">Без рецепта</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
+            </div>
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</button>
+              <a href="/drugs-search" class="d-block d-sm-none where-icon">
+                <img src="/img/icons/arrow-down.svg" alt="arrow button">
               </a>
-
-              <div class="tags">
-                <div class="tag-item green">Новое</div>
-                <div class="tag-item">Доставка</div>
-                <div class="tag-item">Скидки</div>
-              </div>
-
-              <div class="address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
-
-              <div class="status">
-                <div class="dot"></div>
-                Сейчас открыто
-              </div>
-
-              <div class="btns">
-                <button class="booking-btn">Записаться</button>
-                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
-                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
-              </div>
-            </div>
-
-            <div class="big-banner"></div>
-
-            <div class="list-item">
-              <a href="/pharmacy-item" class="title">Добрая аптека №8</a>
-
-              <div class="tags">
-                <div class="tag-item">Доставка</div>
-                <div class="tag-item">Скидки</div>
-              </div>
-
-              <div class="body-address">Алматы, ул Рихарда Зорге, д. 5 ул Рихарда Зорге, д. 5</div>
-
-              <div class="status">
-                <div class="dot"></div>
-                Сейчас открыто
-              </div>
-
-              <div class="btns">
-                <button class="booking-btn">Записаться</button>
-                <a type="button" href="tel:+1234567890" class="circle-btn"><i class="material-icons">phone</i></a>
-                <button class="circle-btn report-btn"><i class="material-icons">flag</i></button>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="pagination">
-            <div class="text">Показано с 1-10 из 49</div>
-            <div class="block">
-              <div class="pag-item arrow">
-                <img class="d-arrow-left" src="/img/icons/double-arrow-left.svg" alt="pagination left">
-              </div>
-
-              <div class="pag-item page">1</div>
-              <div class="pag-item page active">2</div>
-              <div class="pag-item page">3</div>
-
-              <div class="pag-item arrow">
-                <img class="d-arrow-right" src="/img/icons/double-arrow-left.svg" alt="pagination right">
-              </div>
-            </div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="map"></div>
+        <div class="banner"></div>
+
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="green">Без рецепта</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
+            </div>
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</button>
+              <a href="/drugs-search" class="d-block d-sm-none where-icon">
+                <img src="/img/icons/arrow-down.svg" alt="arrow button">
+              </a>
+          </div>
         </div>
+
+        <div class="list-item">
+          <button class="drug-icon"></button>
+          <div class="info">
+            <h2>Ново-пассит раствор х1</h2>
+            <div class="info-row">
+              <div class="green">Без рецепта</div>
+              <div class="bold">Цена: <span class="violet">от 2 200 тг</span></div>
+            </div>
+          </div>
+          <div class="btn-col">
+            <a href="/drugs-search" class="d-none d-sm-block where">Где купить</button>
+              <a href="/drugs-search" class="d-block d-sm-none where-icon">
+                <img src="/img/icons/arrow-down.svg" alt="arrow button">
+              </a>
+          </div>
+        </div>
+
+
       </div>
 
       <!----intresting------->

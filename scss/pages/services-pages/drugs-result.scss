@@ -1,0 +1,132 @@
+@import '../../vars.scss';
+
+.drugs-result-page {
+  padding: 55px 0;
+  .intresting {
+    @extend %services-intresting;
+  }
+  .other-cities {
+    @extend %other-cities;
+  }
+  .banner {
+    height: 100px;
+    background-image: url(/img/reklama/advert-min.png);
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 35px;
+    background-position: center;
+  }
+}
+
+.drugs-result-page .tabs {
+  margin-bottom: 55px;
+  h1 {
+    margin-bottom: 29px;
+    font-size: 28px;
+    font-family: Bold;
+  }
+  .btns {
+    display: flex;
+    @include media(0, $media-sm) {
+      flex-direction: column;
+    }
+  }
+  button {
+    @extend %button;
+    padding: 14px 48px;
+    margin-right: 15px;
+    font-size: 16px!important;
+    border: 1px solid $mainColor;
+    @include media(0, $media-sm) {
+      margin-bottom: 15px;
+    }
+    &:not(.active) {
+      background: transparent;
+      color: $mainColor;
+      font-size: 16px;
+      border: 1px solid $mainColor;
+    }
+  }
+}
+
+.drugs-result-page .list {
+  margin-bottom: 5px;
+  .finded {
+    font-size: 18px;
+    font-family: Medium;
+    margin-bottom: 31px;
+  }
+}
+
+.drugs-result-page .list-item {
+  display: flex;
+  padding-bottom: 22px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #ccc;
+  button.drug-icon {
+    margin-right: 33px;
+    border: none;
+    width: 52px;
+    height: 53px;
+    background-image: url(/img/icons/drug-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    @include media(0, $media-sm) {
+      margin-right: 15px;
+    }
+  }
+  button.drug-icon:hover {
+    background-image: url(/img/icons/drug-icon-fill.svg);
+  }
+  a.where {
+    @extend %button;
+    border: 1px solid $mainColor;
+    font-size: 16px !important;
+    padding: 16px 49px;
+    &:not(:hover) {
+      padding: 15px 48px;
+      background: transparent;
+      border: 1px solid $mainColor;
+      color: $mainColor;
+    }
+  }
+  a.where-icon {
+    border: none;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    width: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    flex: 1;
+    h2 {
+      font-size: 28px;
+      font-family: Medium;
+      margin-bottom: 13px;
+    }
+    .info-row {
+      display: flex;
+      & > div {
+        margin-right: 60px;
+      }
+      .green {
+        color: #53994D;
+      }
+      .red {
+        color: #F26060;
+      }
+      .violet {
+        color: $mainColor;
+      }
+      .bold {
+        font-family: Bold;
+      }
+    }
+  }
+  .btn-col {
+
+  }
+}
