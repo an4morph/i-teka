@@ -21,6 +21,9 @@
     display: block;
     .sidebar-inner {
       transform: translateX(-390px);
+      @include media(0, $media-sm) {
+        transform: translateX(-100%);
+      }
     }
     .sidebar-overlay {
       display: block;
@@ -28,12 +31,18 @@
   }
 }
 .sidebar-inner {
+  height: 100%;
   position: fixed;
   width: 390px;
   top: 0;
   right: -390px;
   background-color: #fff;
   transition: 0.4s;
+
+  @include media(0, $media-sm) {
+    width: 100%;
+    right: -100%;
+  }
 
   .title {
     border-bottom: 1px solid #ccc;
