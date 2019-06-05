@@ -5,76 +5,152 @@ header {
   font-family: Meduim;
   box-shadow: $shadowHeader;
   z-index: 100!important;
+  position: relative;
 }
-.header {
+
+header .header {
   align-items: center;
   height: 80px;
 }
-header .logo {
-  height: 34px;
+
+header img.logo {
+  max-width: 110px;
+  min-width: 110px;
 }
-header .logo-min {
-  width: 34px;
-  height: 34px;
-  overflow: hidden;
-
-  img {
-    height: 100%;
-  }
-}
-header .city-select {
-  font-size: 18px;
-  display: flex;
-  width: auto;
-
-  i.geo {
-    color: $mainColor;
-    font-size: 21px;
-    padding-top: 5px;
-  }
-  .select-selected {
-    padding-right: 62px;
-    padding-left: 8px;
-  }
-  .select-selected:after {
-    right: 40px;
-  }
-}
-
-
-header .logout {
-  cursor: pointer;
-  justify-content: flex-end;
-}
-
-
-////// menu
 
 header menu {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+
   li {
-    cursor: pointer;
     list-style: none;
-    text-align: center;
-    border-bottom: 2px solid transparent;
-    &:not(:last-child) {
-      @include media(0, $media-xl) {
-        max-width: 85px;
-      }
+    &.drugs .onhover {
+      left: -232px;
+    }
+    &.med-centers .onhover {
+      left: -225px;
+    }
+    &.doctors .onhover {
+      left: -248px;
+    }
+    &.med-services .onhover {
+      left: -350px;
+      .corner {left: 150px;}
+    }
+    &.diseases .onhover {
+      left: -487px;
+      .corner {left: 291px;}
     }
   }
-  li a {
-    color: #000;
-    margin-top: 2px;
-    font-family: Medium;
-    font-size: 18px;
-    line-height: 16px;
+  li.menu-item {
+    position: relative;
   }
-  li:hover {
+  li.menu-item:hover {
+    margin-bottom: -2px;
+    cursor: pointer;
     border-bottom: 2px solid $mainColor;
-    a {
+    a.menu-item {
       color: $mainColor;
     }
+  }
+  li.menu-item a.menu-item {
+    color: #000;
+    font-family: Medium;
+    font-size: 18px;
+  }
+}
+
+header .burger-col {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background-color: transparent;
+    border: none;
+    
+    i { font-size: 18px; }
+  }
+}
+
+
+//////// всплывашки
+
+.onhover {
+  display: none;
+  position: absolute;
+  top: calc(100% + 33px);
+  background-color: #fff;
+  border: 1px solid #bbb;
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.2);
+
+  .left-menu {
+    padding: 69px 0;
+    min-width: 232px;
+    background-color: #F9F9F9;
+    li {
+      padding: 6px 46px;
+    }
+    li:hover {
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+  .title {
+    padding-bottom: 22px;
+    padding-left: 40px;
+    font-family: UltraBold;
+    font-size: 18px;
+  }
+  .content {
+    position: relative;
+    .corner {
+      position: absolute;
+      border-left: 1px solid #bbb;
+      border-top: 1px solid #bbb;
+      top: -17px;
+      left: 26px;
+      background-color: #fff;
+      width: 34px;
+      height: 34px;
+      transform: rotate(45deg);
+    }
+    padding: 33px 0;
+    padding-right: 30px;
+
+    a.col-link {
+      display: block;
+      font-size: 18px;
+      line-height: 31px;
+      color: #000;
+    }
+    a:hover {
+      color: $mainColor;
+    }
+  }
+  .cols {
+    display: flex;
+    & > div {
+      padding: 0 40px;
+    }
+  }
+  a.watch-all {
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+    font-family: Bold;
+    font-size: 14px;
+    color: $mainColor;
+    display: flex;
+    align-items: center;
+    i {margin-left: 10px;}
+  }
+  .btn-container {
+    padding-left: 40px;
+  }
+  a[type="button"] {
+    @extend %button;
+    padding: 15px 42px;
+    width: 217px;
+    font-size: 14px!important;
   }
 }
