@@ -8,9 +8,10 @@ module.exports = () => {
   $("header menu li.menu-item").each((index, item) => {
     $(item).hover(() => {
       $(item).find('.onhover').css('display', 'flex')
+      $(item).find('.transparent').css('display', 'flex')
     }, () => {
-      //console.log($(item).find('.onhover')[0])
+      $(item).find('.onhover').css('display', 'none')
+      $(item).find('.transparent').css('display', 'none')
     })
-
   })
 }

@@ -24,6 +24,10 @@ header menu {
 
   li {
     list-style: none;
+    &.pharmacy .onhover {
+      left: -114px;
+      .corner {left: 126px;}
+    }
     &.drugs .onhover {
       left: -232px;
     }
@@ -74,7 +78,11 @@ header .burger-col {
 
 
 //////// всплывашки
-
+.transparent {
+  position: absolute;
+  width: 100%;
+  height: 36px;
+}
 .onhover {
   display: none;
   position: absolute;
@@ -102,6 +110,7 @@ header .burger-col {
     font-size: 18px;
   }
   .content {
+    min-width: 300px;
     position: relative;
     .corner {
       position: absolute;
@@ -152,5 +161,8 @@ header .burger-col {
     padding: 15px 42px;
     width: 217px;
     font-size: 14px!important;
+    &:hover {
+      color: #fff;
+    }
   }
 }
