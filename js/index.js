@@ -17,9 +17,6 @@ require('jquery-ui-dist/jquery-ui');
 require('jquery-ui-dist/jquery-ui.css');
 
 
-// вся логика разделена постранично, чтобы на каждой 
-// странице генерились уникальные события
-
 $(document).ready(function () {
     const searchSource = ['abc', 'aaaaa', 'aaaaa1', 'aaaaa2', 'aaaaa3', 'cde', 'efg', 'ghi', 'ikl']
     ScrollReveal().reveal('.reveal', {
