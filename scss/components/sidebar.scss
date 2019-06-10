@@ -98,4 +98,34 @@
       margin-right: 10px;
     }
   }
+
+  .second-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-family: Medium;
+  }
+
+  a[type=button] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-family: Medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    margin-bottom: 15px;
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+      i {
+        color: #fff;
+      }
+    }
+    i {
+      color: #6B6B6B;
+      font-size: 18px;
+    }
+  }
 }

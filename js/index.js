@@ -44,6 +44,7 @@ $(document).ready(function () {
     //=========== Sidebars GLOBAL ============//
     createSidebar('.sort-sidebar', '.sort-btn')
     createSidebar('.filter-sidebar', '.filter-btn')
+    createSidebar('.header-sidebar', '#header-burger')
 
 
 
