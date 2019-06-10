@@ -14,90 +14,480 @@
 <body class="med-centers-page-body">
   <!----header------->
   <header>
-    <div class="container">
-      <div class="row header">
-        <div class="col-3 col-lg-2 d-none d-md-flex">
-          <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
-        </div>
-        <div class="col-3 col-lg-2 d-flex d-md-none">
-          <a href="/">
-            <div class="logo-min"><img src="img/logo.svg" alt="logo"></div>
-          </a>
-        </div>
-
-        <div class="col-6 col-sm-4 col-lg-2 city-select-col">
-          <div class="city-select">
-            <i class="material-icons geo">location_on</i>
-            <div class="custom-select city-select">
-              <select>
-                <option value="1">Алматы</option>
-                <option value="2">Нур-Султан</option>
-                <option value="3">Актау</option>
-              </select>
-            </div>
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="row header">
+          <div class="col-6 col-lg-2">
+            <a href="/"><img src="img/logo.svg" alt="logo" class="logo"></a>
           </div>
-        </div>
 
-        <menu class="inline col-7 d-none d-lg-flex">
-          <li>
-            <a href="#">Вызвать врача</a>
-          </li>
-          <li>
-            <a href="#">Записаться на прием</a>
-          </li>
-          <li>
-            <a href="#">Доставить лекарства</a>
-          </li>
-        </menu>
+          <menu class="d-none d-lg-flex col-lg-9">
+            <li class="menu-item pharmacy">
+              <a class="menu-item" href="/pharmacy">Аптеки</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Виды аптек</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
 
-        <div class="burger-menu col-5 col-sm-4 d-none d-sm-flex d-lg-none">
-          <i id="burger1-icon" class="material-icons">menu</i>
-          <div id="burger1-menu" class="modal">
-            <div>
-              <a href="#">Вызвать врача</a>
-            </div>
-            <div>
-              <a href="#">Записаться на прием</a>
-            </div>
-            <div>
-              <a href="#">Доставить лекарства</a>
-            </div>
+                  <a href="#" class="watch-all">
+                    Смотреть все аптеки
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item drugs">
+              <a class="menu-item" href="/drugs">Лекарства</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <ul class="left-menu">
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                </ul>
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Список</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                    <div class="second-col">
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
+
+                  <a href="#" class="watch-all">
+                    Смотреть весь список заболеваний
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item med-centers">
+              <a class="menu-item" href="/med-centers">Мед. центры</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <ul class="left-menu">
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                </ul>
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Список</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                    <div class="second-col">
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
+
+                  <a href="#" class="watch-all">
+                    Смотреть весь список заболеваний
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item doctors">
+              <a class="menu-item" href="/doctors">Врачи</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <ul class="left-menu">
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                </ul>
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Список</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                    <div class="second-col">
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
+
+                  <a href="#" class="watch-all">
+                    Смотреть весь список заболеваний
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item med-services">
+              <a class="menu-item" href="/med-services">Мед. услуги</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <ul class="left-menu">
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                </ul>
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Список</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                    <div class="second-col">
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
+
+                  <a href="#" class="watch-all">
+                    Смотреть весь список заболеваний
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item diseases">
+              <a class="menu-item" href="/diseases">Заболевания</a>
+              <div class="transparent"></div>
+              <div class="onhover">
+                <ul class="left-menu">
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                  <li>Частные клиники</li>
+                </ul>
+                <div class="content">
+                  <div class="corner"></div>
+                  <div class="title">Список</div>
+                  <div class="cols">
+                    <div class="first-col">
+                      <a href="#" class="col-link">Детская стоматология</a>
+                      <a href="#" class="col-link">Гинекология</a>
+                      <a href="#" class="col-link">Ветеринария</a>
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                    <div class="second-col">
+                      <a href="#" class="col-link">ЭКО</a>
+                      <a href="#" class="col-link">Лечение зрения</a>
+                      <a href="#" class="col-link">Кардиология</a>
+                      <a href="#" class="col-link">Онкология</a>
+                      <a href="#" class="col-link">Аллергология</a>
+                      <a href="#" class="col-link">Наркология</a>
+                      <a href="#" class="col-link">Психиатрия</a>
+                      <a href="#" class="col-link">Нейрохирургия</a>
+                    </div>
+                  </div>
+
+                  <a href="#" class="watch-all">
+                    Смотреть весь список заболеваний
+                    <i class="material-icons">arrow_right_alt</i>
+                  </a>
+                  <div class="btn-container">
+                    <a href="#" type="button">Смотреть на карте</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </menu>
+
+          <div class="col-6 col-lg-1 burger-col">
+            <button id="header-burger">
+              <i class="material-icons">menu</i>
+            </button>
           </div>
-        </div>
 
-        <div class="burger-menu col-3 col-sm-4 d-flex d-sm-none">
-          <i id="burger2-icon" class="material-icons">menu</i>
-          <div id="burger2-menu" class="modal">
-            <div>
-              <a href="#">Вызвать врача</a>
-            </div>
-            <div>
-              <a href="#">Записаться на прием</a>
-            </div>
-            <div>
-              <a href="#">Доставить лекарства</a>
-            </div>
-            <div>
-              <a href="#">Войти</a>
-            </div>
-            <div>
-              <a href="#">Избранные</a>
-            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="header-swiper container d-block d-lg-none">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide pharmacy">
+            Аптеки
           </div>
-        </div>
+          <div class="swiper-slide drugs">Лекарства</div>
+          <div class="swiper-slide med-centers">Мед.центры</div>
+          <div class="swiper-slide doctors">Врачи</div>
+          <div class="swiper-slide med-services">Мед.услуги</div>
+          <div class="swiper-slide diseases">Заболевания</div>
 
-        <div class="col-1 logout d-sm-flex d-none">
-          <img id="logout-icon" src="img/icons/logout.svg" alt="logout icon">
-          <div id="logout-menu" class="modal">
-            <div>
-              <a href="#">Войти</a>
-            </div>
-            <div>
-              <a href="#">Избранные</a>
-            </div>
-          </div>
         </div>
-
+      </div>
+    </div>
+    <div class="add-menu pharmacy">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Аптека1</a>
+          <a href="#">Аптека2</a>
+          <a href="#">Аптека3</a>
+          <a href="#">Аптека4</a>
+          <a href="#">Аптека5</a>
+          <a href="#">Аптека6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Аптека1</a>
+          <a href="#">Аптека2</a>
+          <a href="#">Аптека3</a>
+          <a href="#">Аптека4</a>
+          <a href="#">Аптека5</a>
+          <a href="#">Аптека6</a>
+        </div>
+      </div>
+    </div>
+    <div class="add-menu drugs">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Лекарство 1</a>
+          <a href="#">Лекарство 2</a>
+          <a href="#">Лекарство 3</a>
+          <a href="#">Лекарство 4</a>
+          <a href="#">Лекарство 5</a>
+          <a href="#">Лекарство 6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Лекарство 1</a>
+          <a href="#">Лекарство 2</a>
+          <a href="#">Лекарство 3</a>
+          <a href="#">Лекарство 4</a>
+          <a href="#">Лекарство 5</a>
+          <a href="#">Лекарство 6</a>
+        </div>
+      </div>
+    </div>
+    <div class="add-menu med-centers">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Мед центр 1</a>
+          <a href="#">Мед центр 2</a>
+          <a href="#">Мед центр 3</a>
+          <a href="#">Мед центр 4</a>
+          <a href="#">Мед центр 5</a>
+          <a href="#">Мед центр 6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Мед центр 1</a>
+          <a href="#">Мед центр 2</a>
+          <a href="#">Мед центр 3</a>
+          <a href="#">Мед центр 4</a>
+          <a href="#">Мед центр 5</a>
+          <a href="#">Мед центр 6</a>
+        </div>
+      </div>
+    </div>
+    <div class="add-menu doctors">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Врач 1</a>
+          <a href="#">Врач 2</a>
+          <a href="#">Врач 3</a>
+          <a href="#">Врач 4</a>
+          <a href="#">Врач 5</a>
+          <a href="#">Врач 6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Врач 1</a>
+          <a href="#">Врач 2</a>
+          <a href="#">Врач 3</a>
+          <a href="#">Врач 4</a>
+          <a href="#">Врач 5</a>
+          <a href="#">Врач 6</a>
+        </div>
+      </div>
+    </div>
+    <div class="add-menu med-services">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Процедура 1</a>
+          <a href="#">Процедура 2</a>
+          <a href="#">Процедура 3</a>
+          <a href="#">Процедура 4</a>
+          <a href="#">Процедура 5</a>
+          <a href="#">Процедура 6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Процедура 1</a>
+          <a href="#">Процедура 2</a>
+          <a href="#">Процедура 3</a>
+          <a href="#">Процедура 4</a>
+          <a href="#">Процедура 5</a>
+          <a href="#">Процедура 6</a>
+        </div>
+      </div>
+    </div>
+    <div class="add-menu diseases">
+      <div class="close">
+        <i class="material-icons">clear</i>
+      </div>
+      <div class="add-menu-container">
+        <div class="container">
+          <div class="title">Городские аптеки</div>
+          <a href="#">Заболевание 1</a>
+          <a href="#">Заболевание 2</a>
+          <a href="#">Заболевание 3</a>
+          <a href="#">Заболевание 4</a>
+          <a href="#">Заболевание 5</a>
+          <a href="#">Заболевание 6</a>
+        </div>
+        <div class="divider"></div>
+        <div class="container">
+          <div class="title">Гомеопатические аптеки</div>
+          <a href="#">Заболевание 1</a>
+          <a href="#">Заболевание 2</a>
+          <a href="#">Заболевание 3</a>
+          <a href="#">Заболевание 4</a>
+          <a href="#">Заболевание 5</a>
+          <a href="#">Заболевание 6</a>
+        </div>
       </div>
     </div>
   </header>
@@ -445,6 +835,37 @@
         <button type="submit">Вызвать</button>
       </div>
     </form>
+  </div>
+
+  <div class="sidebar header-sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+      <div class="title">Меню</div>
+      <button class="icon cross"><i class="material-icons">clear</i></button>
+      <div class="content">
+
+        <div class="second-title">Выберите город</div>
+        <div class="custom-select">
+          <select name="date" id="drugs-search__date">
+            <option value="0">Павлодар</option>
+            <option value="1">Алматы</option>
+            <option value="2">Атырау</option>
+            <option value="3">Костанай</option>
+          </select>
+        </div>
+
+        <div class="second-title">Войти / Зарегистрироваться</div>
+
+        <a href="/login" type="button">
+          Войти
+          <i class="material-icons">arrow_right_alt</i>
+        </a>
+        <a href="/signup" type="button">
+          Зарегистрироваться
+          <i class="material-icons">arrow_right_alt</i>
+        </a>
+      </div>
+    </div>
   </div>
   <script src="dist/main.js"></script>
 </body>
