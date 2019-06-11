@@ -10,7 +10,7 @@
     z-index: 40;
     .badge {
       position: absolute;
-      right: 11px;
+      right: 27px;
       top: 0;
       background-color: red;
       color: #fff;
@@ -21,6 +21,10 @@
       justify-content: center;
       align-items: center;
       font-size: 15px;
+
+      @include media(0, $media-sm) {
+        right: 11px;
+      }
     }
   }
 
