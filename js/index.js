@@ -35,6 +35,8 @@ $(document).ready(function () {
     modal('.report-modal', '.report-btn')
     modal('.booking-modal', '.booking-btn')
     modal('.basket-modal', '.basket-btn')
+    modal('.schedule-modal', '.schedule-btn')
+    modal('.phones-modal', '.phones-btn')
     modal('.house-call-modal', '.house-call-btn')
     //=========== Gallery GLOBAL ============//
     gallery('.gallery')

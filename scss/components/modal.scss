@@ -210,3 +210,95 @@
     }
   }
 }
+
+.phones-modal {
+  .content {
+    position: relative;
+  }
+  .title {
+    padding: 26px 70px 16px 70px;
+    border-bottom: 1px solid #ccc;
+    .name {
+      font-size: 24px;
+      font-family: Bold;
+    }
+    .address {
+      font-size: 18px;
+    }
+    .close-modal {
+      cursor: pointer;
+      position: absolute;
+      top: 33px;
+      right: 32px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 0;
+    .item {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+  }
+
+  button {
+    width: 100%;
+    background-color: #8F48AB;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+.schedule-modal {
+  .content {
+    position: relative;
+  }
+  .title {
+    padding: 26px 70px 16px 70px;
+    border-bottom: 1px solid #ccc;
+    .name {
+      font-size: 24px;
+      font-family: Bold;
+    }
+    .address {
+      font-size: 18px;
+    }
+    .close-modal {
+      cursor: pointer;
+      position: absolute;
+      top: 33px;
+      right: 32px;
+    }
+  }
+
+  table {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    td {
+      padding-right: 15px;
+    }
+  }
+
+  button {
+    width: 100%;
+    background-color: #8F48AB;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+    &:active {
+      transform: none;
+    }
+  }
+}
