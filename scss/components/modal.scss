@@ -87,3 +87,123 @@
     }
   }
 }
+
+.basket-modal {
+  .content {
+    border-radius: 16px 16px 0 0;
+    width: 396px;
+  }
+  .title {
+    padding: 28px;
+    font-family: Bold;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 14px 28px;
+    border-bottom: 1px solid #C6C6C6;
+    .info {
+      flex: 1;
+    }
+    .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .icons i {
+      font-size: 18px;
+      cursor: pointer;
+      &:last-child {
+        margin-top: 10px;
+        transform: rotate(180deg);
+      }
+    }
+    .custom-checkbox {
+      margin-right: 24px;
+    }
+    .name {
+      font-size: 18px;
+      font-family: Bold;
+    }
+    .violet {
+      color: $mainColor;
+    }
+    .green {
+      color: #53994D;
+    }
+    .red {
+      color: #F26060;
+    }
+    .bold {
+      font-family: Bold;
+    }
+    .bottom-row {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-top: 7px;
+    }
+    .receipt {
+      margin-right: 15px;
+    }
+  }
+  .custom-checkbox {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid #C1C1C1;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    .fill {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: #53994D;
+      i {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .result {
+    button {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 75px;
+      color: #fff;
+      width: 100%;
+      border: none;
+      text-align: center;
+    }
+    button.active {
+      display: none;
+      background-color: #8D47AA;
+
+      .text {
+        font-size: 18px;
+        font-family: Medium;
+      }
+      .subtext {
+        margin-bottom: 7px;
+        font-size: 14px;
+        font-family: Light;
+      }
+    }
+    button.disabled {
+      display: flex;
+      background-color: #484848;
+      font-size: 18px;
+    }
+    button:active {
+      transform: scale(1);
+    }
+  }
+}

@@ -2,6 +2,28 @@
 
 .drugs-result-page {
   padding: 55px 0;
+
+  .basket {
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 40;
+    .badge {
+      position: absolute;
+      right: 11px;
+      top: 0;
+      background-color: red;
+      color: #fff;
+      width: 23px;
+      height: 23px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+
   .intresting {
     @extend %services-intresting;
   }
@@ -58,27 +80,37 @@
   }
 }
 
+.drug-icon {
+  margin-right: 33px;
+  border: none;
+  width: 52px;
+  height: 53px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  @include media(0, $media-sm) {
+    margin-right: 15px;
+  }
+}
+.drug-icon-fill {
+  @extend .drug-icon;
+  background-image: url(/img/icons/drug-icon-fill.svg);
+}
+
 .drugs-result-page .list-item {
   display: flex;
   padding-bottom: 22px;
   margin-bottom: 36px;
   border-bottom: 1px solid #ccc;
+
   button.drug-icon {
-    margin-right: 33px;
-    border: none;
-    width: 52px;
-    height: 53px;
+    @extend .drug-icon;
     background-image: url(/img/icons/drug-icon.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    @include media(0, $media-sm) {
-      margin-right: 15px;
-    }
   }
   button.drug-icon:hover {
     background-image: url(/img/icons/drug-icon-fill.svg);
   }
+  
   a.where {
     @extend %button;
     border: 1px solid $mainColor;

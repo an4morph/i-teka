@@ -5,6 +5,7 @@ const Header = require('./header');
 const createExpand = require("./utils/expand");
 const createSidebar = require("./utils/sidebar");
 const modal = require("./utils/modal");
+const basket = require("./basket");
 const gallery = require("./utils/gallery");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
@@ -33,6 +34,8 @@ $(document).ready(function () {
     //=========== Modals GLOBAL ============//
     modal('.report-modal', '.report-btn')
     modal('.booking-modal', '.booking-btn')
+    //modal('.basket-modal', '.basket-btn')
+    $('.basket-modal').css('display', 'flex')
     modal('.house-call-modal', '.house-call-btn')
     //=========== Gallery GLOBAL ============//
     gallery('.gallery')
@@ -42,6 +45,8 @@ $(document).ready(function () {
     createSidebar('.sort-sidebar', '.sort-btn')
     createSidebar('.filter-sidebar', '.filter-btn')
     createSidebar('.header-sidebar', '#header-burger')
+
+    basket()
 
 
 
