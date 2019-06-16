@@ -12,7 +12,14 @@ body {
   background-color: #fbfbfb;
   font-family: 'Regular';
 }
-body,h1,h2,h3,h4,ul,li {
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -21,21 +28,28 @@ body,h1,h2,h3,h4,ul,li {
 a {
   text-decoration: none;
 }
-a, button {
+
+a,
+button {
   cursor: pointer;
+
   &:focus {
     outline: none;
   }
 }
+
 button:active {
   transform: scale(0.98);
 }
+
 button.icon {
   border: none;
   background-color: transparent;
   border-radius: 100%;
 }
-input[type="text"], textarea {
+
+input[type="text"],
+textarea {
   &:focus {
     outline: none;
     box-shadow: $shadowFocus;
@@ -49,21 +63,25 @@ h1 {
   font-size: 36px;
   line-height: 51px;
 }
+
 h2 {
   font-family: Medium;
   font-size: 28px;
   line-height: 28px;
 }
+
 h3 {
   font-family: Bold;
   font-size: 24px;
   line-height: 26px;
 }
+
 h4 {
   font-family: Bold;
   font-size: 18px;
   line-height: 26px;
 }
+
 p {
   font-family: Light;
   font-size: 18px;
@@ -78,10 +96,22 @@ p {
   text-align: right;
   font-size: 18px;
   font-family: Regular;
+
   a {
     color: #000;
   }
+
   a:hover {
     color: $mainColor;
   }
+}
+
+%user-select-none {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }

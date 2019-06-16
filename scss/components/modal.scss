@@ -78,6 +78,44 @@
     width: 100%;
   }
 }
+.image-modal {
+  .gallery-arrows {
+    z-index: 200;
+    position: absolute;
+    bottom: 30px;
+    background-color: #00000033;
+    padding: 10px 22px;
+    border-radius: 14px;
+
+    img {
+      cursor: pointer;
+      width: 34px;
+      padding-top: 10px;
+      @extend %user-select-none;
+    }
+
+    .left {
+      transform: rotate(90deg);
+      padding-left: 6px;
+      &:hover {
+        transform:  scale(1.08) rotate(90deg);
+      }
+      &:active {
+        transform:  scale(1.01) rotate(90deg);
+      }
+    }
+    .right {
+      transform: rotate(-90deg);
+      padding-right: 6px;
+      &:hover {
+        transform:  scale(1.08) rotate(-90deg);
+      }
+      &:active {
+        transform:  scale(1.01) rotate(-90deg);
+      }
+    }
+  }
+}
 
 .booking-modal, .house-call-modal {
   form {

@@ -3,7 +3,7 @@ const $ = require("jquery");
 module.exports = (modal, buttons, options = {}) => {
   const removeEl = () => {
     if (options.append) {
-      $(`${modal} .modal-slide`).remove()
+      $(`${modal} img[class^='modal-slide-']`).remove()
     }
   }
   
@@ -11,11 +11,10 @@ module.exports = (modal, buttons, options = {}) => {
     $(btn).on('click', (e) => {
       e.stopPropagation()
       $(modal).addClass('open')
-      if (options.append) $(options.append).clone().addClass('modal-slide').appendTo(`${modal} .content`)
+      if (options.append) $(options.append).clone().appendTo(`${modal} .content`)
     })
   })
 
-  // $(`${modal} .title`).append('<div class="close-modal">×</div>')
 
   $(`${modal} .overlay`).on('click', () => {
     $(modal).removeClass('open')
