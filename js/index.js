@@ -32,6 +32,8 @@ $(document).ready(function () {
 
 
     //=========== Modals GLOBAL ============//
+    $(`.booking-modal .title`).append('<div class="close-modal">×</div>')
+    $(`.house-call-modal .title`).append('<div class="close-modal">×</div>')
     modal('.report-modal', '.report-btn')
     modal('.booking-modal', '.booking-btn')
     modal('.basket-modal', '.basket-btn')

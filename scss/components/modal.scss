@@ -81,9 +81,20 @@
 
 .booking-modal, .house-call-modal {
   form {
+    position: relative;
     @extend %booking-form;
     @include media(0, $media-md) {
       margin: 15px;
+    }
+
+    .close-modal {
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 33px;
+      color: #787878d6;
+      font-size: 33px;
+      font-family: Regular;
     }
   }
 }

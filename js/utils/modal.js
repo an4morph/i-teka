@@ -15,6 +15,8 @@ module.exports = (modal, buttons, options = {}) => {
     })
   })
 
+  // $(`${modal} .title`).append('<div class="close-modal">×</div>')
+
   $(`${modal} .overlay`).on('click', () => {
     $(modal).removeClass('open')
     removeEl()
