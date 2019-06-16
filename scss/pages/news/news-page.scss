@@ -25,6 +25,23 @@
       padding-right: 8px;
     }
   }
+  .news-box-main-title {
+    margin-bottom: 22px;
+    display: flex;
+    margin-top: 80px;
+    @include media(0, $media-sm) {
+      margin-top: 40px;
+    }
+    p {
+      margin-right: 51px;
+      font-family: Medium;
+      font-size: 24px;
+      @include media(0, $media-sm) {
+        font-size: 18px;
+        margin-right: 20px;
+      }
+    }
+  }
   .main-box {
     background-image: url(/img/bg/vaccine.png);
     padding: 41px 33% 53px 11%;
