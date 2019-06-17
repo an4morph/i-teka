@@ -45,4 +45,16 @@
     width: 155px;
     background-image: url(/img/storegoogle.png);
   }
+  .phones-wrapper {
+    text-align: center;
+    @include media(0, $media-md) {
+      order: 1;
+      margin-bottom: 20px;
+    }
+  }
+  .text-wrapper {
+    @include media(0, $media-md) {
+      order: 2;
+    }
+  }
 }
