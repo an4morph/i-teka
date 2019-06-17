@@ -145,6 +145,9 @@
     }
     .info-row {
       display: flex;
+      @include media(0, $media-md) {
+        flex-direction: column;
+      }
       & > div {
         margin-right: 60px;
       }
