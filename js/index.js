@@ -9,6 +9,7 @@ const basket = require("./basket");
 const gallery = require("./utils/gallery");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
+require("../lib/mask-plugin/dist/jquery.mask");
 require("./utils/custom-selects");
 require('bootstrap-scss/bootstrap-grid.scss');
 require('slick-carousel');
@@ -50,6 +51,11 @@ $(document).ready(function () {
     createSidebar('.header-sidebar', '#header-burger')
 
     basket()
+
+    /////// masks //////
+    $('input[name="date"]').mask('00/00/0000')
+    $('input[name="time"]').mask('00:00')
+    $('input[name="phone"]').mask('+7(000)000-00-00')
 
 
 
