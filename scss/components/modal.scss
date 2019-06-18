@@ -289,8 +289,12 @@
     align-items: center;
     padding: 33px 0;
     .item {
+      color: #000;
       margin-bottom: 15px;
       font-size: 24px;
+      &:hover {
+        color: $mainColor;
+      }
     }
   }
 
