@@ -57,6 +57,13 @@ $(document).ready(function () {
     $('input[name="time"]').mask('00:00')
     $('input[name="phone"]').mask('+7(000)000-00-00')
 
+    const reportBtn = $('.report-modal button:nth-child(2)')
+    reportBtn.prop('disabled', true)
+    $('input[name=report]').on('click', () => {
+        reportBtn.css('color', '#555555')
+        reportBtn.prop('disabled', false)
+    })
+
 
 
 
