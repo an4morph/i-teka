@@ -1,7 +1,19 @@
 @import '../vars.scss';
 
 .map {
-  position: relative;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  background-image: url(/img/map.png);
+  background-size: cover;
+  margin-bottom: 20px;
+
+  &.non-fix {
+    position: unset;
+    width: 100%;
+  }
 
   .geo-point {
     position: absolute;
@@ -25,7 +37,8 @@
     }
   }
 }
-.map .map-block {
+
+.map-block {
   background-color: #fff;
   border-radius: 12px 12px 0 0;
   position: absolute;
@@ -37,18 +50,22 @@
     padding: 13px 31px;
     display: flex;
     border-bottom: 1px solid #ccc;
+
     .left {
       flex: 1;
     }
+
     .name {
       font-family: Bold;
       font-size: 28px;
     }
+
     .address {
       cursor: pointer;
       font-size: 18px;
       font-family: Light;
     }
+
     .icons i {
       color: $mainColor;
       cursor: pointer;
@@ -62,6 +79,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 31px 24px 31px;
+
     .status-dot {
       border-radius: 100%;
       width: 6px;
@@ -81,28 +99,34 @@
       font-family: Bold;
       font-size: 16px;
     }
+
     .info-row {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 7px;
     }
+
     .total {
       display: flex;
       align-items: center;
       margin-bottom: 17px;
     }
+
     .bold {
       font-size: 18px;
       font-family: Bold;
       padding-left: 10px;
     }
+
     .text {
       font-size: 14px;
     }
+
     .mini-text {
       font-size: 12px;
       margin-bottom: 28px;
+
       &:first-child {
         padding-right: 10px;
       }

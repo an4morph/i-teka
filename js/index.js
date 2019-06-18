@@ -6,6 +6,7 @@ const createExpand = require("./utils/expand");
 const createSidebar = require("./utils/sidebar");
 const modal = require("./utils/modal");
 const basket = require("./basket");
+const map = require("./map");
 const gallery = require("./utils/gallery");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
@@ -63,6 +64,8 @@ $(document).ready(function () {
         reportBtn.css('color', '#555555')
         reportBtn.prop('disabled', false)
     })
+
+    map()
 
 
 
