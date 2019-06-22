@@ -1,5 +1,62 @@
 @import '../vars.scss';
 
+
+.map-btn-container {
+  display: none;
+  position: fixed;
+  z-index: -1;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  @include media(0, $media-lg) {
+    display: flex;
+  }
+  button {
+    @extend %user-select-none;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 7px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: $shadow1;
+    i {
+      margin-right: 7px;
+    }
+  }
+}
+.map-close-btn {
+  cursor: pointer;
+  display: none!important;
+  font-size: 25px;
+  z-index: 101;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @include media(0, $media-lg) {
+    display: flex!important;
+  }
+}
+.map-col {
+  z-index: 100;
+
+  &.non-fixed-map {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    right: 0;
+    z-index: 0;
+
+    @include media(0, $media-lg) {
+      z-index: 100;
+    }
+  }
+}
 .map {
   position: fixed;
   top: 80px;
@@ -10,9 +67,27 @@
   background-size: cover;
   margin-bottom: 20px;
 
+  @include media(0, $media-lg) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  &.open {
+    @include media(0, $media-lg) {
+      transition: 0.5s;
+      transform: translateX(0);
+    }
+  }
+  
+
   &.non-fix {
     position: unset;
     width: 100%;
+
+    @include media(0, $media-lg) {
+      position: fixed;
+    }
   }
 
   .geo-point {
