@@ -4,6 +4,10 @@ $slideH: 366px;
 
 .main-page .slider {
   margin-bottom: 12px!important;
+  @include media(0, $media-sm) {
+    height: 250px;
+    overflow: hidden;
+  }
   button.slick-arrow {
     z-index: 1;
     width: 23px;
