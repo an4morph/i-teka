@@ -13,6 +13,11 @@
     border-radius: 13px;
     overflow: hidden;
     margin-bottom: 16px;
+    @include media(0, $media-sm) {
+      margin-right: -15px;
+      margin-left: -15px;
+      border-radius: 0;
+    }
   }
   .img-block {
     height: 150px;
