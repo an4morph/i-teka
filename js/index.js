@@ -7,6 +7,7 @@ const createSidebar = require("./utils/sidebar");
 const modal = require("./utils/modal");
 const basket = require("./basket");
 const map = require("./map");
+const Swiper = require("swiper");
 const gallery = require("./utils/gallery");
 const searchAutocomplete = require('./utils/search-autocomplete');
 require("../scss/index.scss");
@@ -32,6 +33,14 @@ $(document).ready(function () {
     })
     Header()
 
+    var btnsSwiper = new Swiper.default('.btns-swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        slideClass: 'btns-swiper-slide',
+        wrapperClass: 'btns-swiper-wrapper',
+    });
+    btnsSwiper.init();
+
 
     //=========== Modals GLOBAL ============//
     $(`.booking-modal .title`).append('<div class="close-modal">×</div>')
@@ -45,7 +54,9 @@ $(document).ready(function () {
     //=========== Gallery GLOBAL ============//
     gallery('.gallery')
     //=========== Slider GLOBAL ============//
-    $(".slider").slick({ dots: true });
+    $(".slider").slick({
+        dots: true
+    });
     //=========== Sidebars GLOBAL ============//
     createSidebar('.sort-sidebar', '.sort-btn')
     createSidebar('.filter-sidebar', '.filter-btn')
@@ -95,7 +106,7 @@ $(document).ready(function () {
         searchAutocomplete('#doctors-page__search', searchSource)
         createExpand('.doctors-page .list .var', '.doctors-page .list .var h2')
     }
-    
+
     if ($('.pharmacy-page').length) {
         searchAutocomplete('#pharmacy-page__search', searchSource)
         createExpand('.pharmacy-page .list .var', '.pharmacy-page .list .var h2')
@@ -106,6 +117,3 @@ $(document).ready(function () {
         createExpand('.med-centers-page .list .var', '.med-centers-page .list .var h2')
     }
 });
-
-
-

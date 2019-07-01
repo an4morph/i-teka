@@ -15,6 +15,10 @@
   @extend %services-page-template;
 }
 
+div[class$="-page-body"] {
+  overflow-x: hidden;
+}
+
 div[class$="-search-page"] {
   @extend %page-search-template;
   .big-banner { background-image: url(/img/reklama/oyca.png); }
