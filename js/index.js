@@ -33,14 +33,6 @@ $(document).ready(function () {
     })
     Header()
 
-    var btnsSwiper = new Swiper.default('.btns-swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 15,
-        slideClass: 'btns-swiper-slide',
-        wrapperClass: 'btns-swiper-wrapper',
-    });
-    btnsSwiper.init();
-
 
     //=========== Modals GLOBAL ============//
     $(`.booking-modal .title`).append('<div class="close-modal">×</div>')
@@ -85,6 +77,16 @@ $(document).ready(function () {
 
     if ($('.faq-page').length) {
         createExpand('.faq-item', '.faq-item h2')
+    }
+
+    if ($('.drugs-result-page').length) {
+        var btnsSwiper = new Swiper.default('.btns-swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 15,
+            slideClass: 'btns-swiper-slide',
+            wrapperClass: 'btns-swiper-wrapper',
+        });
+        btnsSwiper.init();
     }
 
     if ($('.diseases-page').length) {
