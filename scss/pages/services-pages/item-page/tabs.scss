@@ -6,30 +6,19 @@
     display: flex;
     border-bottom: 1px solid #CCCCCC;
     margin-top: 23px;
-    @include media(0, $media-lg) {
-      flex-direction: column;
-      margin-top: 0;
-    }
+    overflow-x: auto;
     a {
       color: #000;
     }
     .tab-item {
       cursor: pointer;
-      margin-right: 80px;
+      margin-right: 36px;
       padding-bottom: 17px;
-      @include media(0, $media-lg) {
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        width: 100%;
-      }
+      white-space: nowrap;
+
       &.active {
         color: $mainColor;
         border-bottom: 4px solid $mainColor;
-        @include media(0, $media-lg) {
-          border-bottom: 4px none;
-          background-color: #{$mainColor}22;
-        }
       }
     }
   }
