@@ -43,6 +43,6 @@
     "jquery-ui-dist": "^1.12.1",
     "scrollreveal": "^4.0.5",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
